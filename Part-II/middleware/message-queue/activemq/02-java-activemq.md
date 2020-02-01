@@ -1,4 +1,4 @@
-<intput type="hidden" value="Java 访问 ActiveMQ" />
+<span class="title">Java 访问 ActiveMQ</span>
 
 在 JMS 规范中传递消息的方式有两种：
 

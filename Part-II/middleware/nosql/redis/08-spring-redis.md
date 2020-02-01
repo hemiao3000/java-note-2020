@@ -1,6 +1,6 @@
-# Spring 与 Redis 整合
+<span class="title">Spring 与 Redis 整合</span>
 
-## pom 文件
+# pom 文件
 
 ```xml
 <!-- spring-data-redis.version>2.1.14.RELEASE</spring-data-redis.version -->
@@ -21,7 +21,7 @@
 
 <small>spring-data-redis 2.x 在配置上有大量的变化，有部分 1.x 中的配置属性被标注为过期，此处不深究。</small>
 
-## 与 spring 整合的配置
+# 与 spring 整合的配置
 
 ```properties
 redis.host=127.0.0.1
@@ -80,19 +80,19 @@ redis.testOnBorrow=true
 
 spring-data-redis 默认采用的序列化策略有两种，一种是 String 的序列化策略，一种是 JDK 的序列化策略。
 
-### StringRedisTemplate 和 StringRedisSerializer:
+## StringRedisTemplate 和 StringRedisSerializer:
 
 - StringRedisTemplate 默认采用的是 String 的序列化策略，即保存的 key 和 value 都是采用此策略序列化保存的。
 
 - Key 或者 value 为字符串的场景，根据指定的 charset 对数据的字节序列编码成 String，是 `new String(bytes, charset)` 和 `string.getBytes(charset)` 的直接封装。是最轻量级和高效的策略。
 
-### RedisTemplate 和 JdkSerializationRedisSerializer:
+## RedisTemplate 和 JdkSerializationRedisSerializer:
 
 - RedisTemplate 默认采用的是 JDK 的序列化策略，保存的 key 和 value 都是采用此策略序列化保存的。
 
 - POJO 对象的存取场景，使用 JDK 本身序列化机制，将 pojo 类通过 `ObjectInputStream` / `ObjectOutputStream` 进行序列化操作，最终redis-server 中将存储字节序列。是目前最常用的序列化策略。
 
-### RedisTemplate 和 StringRedisTemplate 不可混用
+## RedisTemplate 和 StringRedisTemplate 不可混用
 
 就是因为 <font color="#0088dd">**默认的**</font> 序列化策略的不同，即使是同一个 key 用不同的 Template 去序列化，结果是不同的。所以根据 key 去删除数据的时候就出现了删除失败的问题。
 
@@ -105,7 +105,7 @@ spring-data-redis 默认采用的序列化策略有两种，一种是 String 的
 
 除非，你为两者指定相同的序列化器，即指定同样一种序列化策略。
 
-## 代码验证
+# 代码验证
 
 ```java
 public static void main(String[] args) {
