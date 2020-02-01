@@ -1,4 +1,4 @@
-# 动态 SQL
+<span class="title">动态 SQL</span>
 
 简而言之，动态 SQL 就是在 Mapper 中使用分支、循环等逻辑。常见的动态 SQL 元素包括：
 
@@ -8,7 +8,7 @@
 - set 元素
 - foreach 元素
 
-## 一、if 元素
+# if 元素
 
 if 元素是我们最常见的元素判断语句，相当于 Java 中的 if 语句。它的 test 属性是它的必要属性。
 
@@ -21,7 +21,7 @@ if 元素是我们最常见的元素判断语句，相当于 Java 中的 if 语�
 </select>
 ```
 
-## 二、choose-when-otherwise 元素
+# choose-when-otherwise 元素
 
 MyBatis 并未提供类似 if-else 元素来处理分支情况，if 元素可出现多次，但它们是并列的判断，而非互斥的判断。
 
@@ -45,7 +45,7 @@ choose-when-otherwise 元素类似于 Java 中的 switch-case，用于处理多�
 </select>
 ```
 
-## 三、where 元素
+# where 元素
 
 如果我们强行规定，上述 choose-when-otherwise 所实现的功能必须使用 if 实现，那么将会写成如下形式：
 
@@ -82,7 +82,7 @@ MyBatis 提供了 Where 元素以解决上述尴尬问题。
 </select>
 ```
 
-## 四、set 元素
+# set 元素
 
 类似于 where 的元素，set 元素对应于 SQL 语句中的 SET 子句。它专用于 update 语句，用于包含所需更新的列。
 
@@ -101,7 +101,7 @@ set 元素常常和 if 元素联合使用。因为在“选择性更新”功能
 </update>
 ```
 
-## 五、foreach 元素
+# foreach 元素
 
 foreach 元素使用不多，但是当需要构建包含 IN 子句的查询时，则必用到。
 

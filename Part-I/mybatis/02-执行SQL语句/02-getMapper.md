@@ -1,4 +1,5 @@
-# getMapper 方法
+
+<span class="title">getMapper 方法</span>
 
 
 通过 SqlSession 的 insert、upate、delete 和 selectOne、selectList 方法可以去调用 Mapper.xml 中定义的配置文件，进而操作数据库。不过，MyBatis 提供了更『高端』的操作，『帮』程序员去实现 DAO 层代码。

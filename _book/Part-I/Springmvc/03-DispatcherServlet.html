@@ -1,0 +1,1588 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DispatcherServlet · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-Controller.html" />
+    
+    
+    <link rel="prev" href="02-工作流程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../Spring/01-IoC.html">
+            
+                <a href="../Spring/01-IoC.html">
+            
+                    
+                    Spring IoC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../Spring/02-AOP.html">
+            
+                <a href="../Spring/02-AOP.html">
+            
+                    
+                    Spring AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../Spring/03-tx.html">
+            
+                <a href="../Spring/03-tx.html">
+            
+                    
+                    Spring TX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../part-I/Spring/05-spring-datasource.md">
+            
+                <span>
+            
+                    
+                    Spring 数据库连接池配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../Spring/06-spring-jdbc.html">
+            
+                <a href="../Spring/06-spring-jdbc.html">
+            
+                    
+                    Spring JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../Spring/07-spring-code-config.html">
+            
+                <a href="../Spring/07-spring-code-config.html">
+            
+                    
+                    Spring 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    Spring MVC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="01-第一个SpringMVC.html">
+            
+                <a href="01-第一个SpringMVC.html">
+            
+                    
+                    第一个 SpringMVC 应用程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="02-工作流程.html">
+            
+                <a href="02-工作流程.html">
+            
+                    
+                    SpringMVC 的工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.3" data-path="03-DispatcherServlet.html">
+            
+                <a href="03-DispatcherServlet.html">
+            
+                    
+                    DispatcherServlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="04-Controller.html">
+            
+                <a href="04-Controller.html">
+            
+                    
+                    Controller 的编写和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="05-参数绑定.html">
+            
+                <a href="05-参数绑定.html">
+            
+                    
+                    参数绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="06-自定义类型转换.html">
+            
+                <a href="06-自定义类型转换.html">
+            
+                    
+                    自定义类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../Servlet/05-EL.html">
+            
+                <a href="../Servlet/05-EL.html">
+            
+                    
+                    EL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../Servlet/06-JSTL.html">
+            
+                <a href="../Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="07-转发和重定向.html">
+            
+                <a href="07-转发和重定向.html">
+            
+                    
+                    转发和重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="08-Session和Cookie.html">
+            
+                <a href="08-Session和Cookie.html">
+            
+                    
+                    操作 Session 和 Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="09-静态资源访问.html">
+            
+                <a href="09-静态资源访问.html">
+            
+                    
+                    静态资源访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="10-拦截器.html">
+            
+                <a href="10-拦截器.html">
+            
+                    
+                    拦截器和 POST 中文乱码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="11-文件上传和下载.html">
+            
+                <a href="11-文件上传和下载.html">
+            
+                    
+                    文件上传和下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="12-统一异常处理.html">
+            
+                <a href="12-统一异常处理.html">
+            
+                    
+                    统一异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="13-Ajax.html">
+            
+                <a href="13-Ajax.html">
+            
+                    
+                    SpringMVC 处理 Ajax 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="../../Restful/03-springmvc-restful.md">
+            
+                <span>
+            
+                    
+                    SpringMVC 对 RESTful 的支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../mybatis/01-基本用法.html">
+            
+                <a href="../mybatis/01-基本用法.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../mybatis/02-执行SQL语句/">
+            
+                <a href="../mybatis/02-执行SQL语句/">
+            
+                    
+                    执行SQL语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.1" data-path="../mybatis/02-执行SQL语句/01-增删改.html">
+            
+                <a href="../mybatis/02-执行SQL语句/01-增删改.html">
+            
+                    
+                    执行增删改操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2" data-path="../mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                <a href="../mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                    
+                    getMapper的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.3" data-path="../mybatis/02-执行SQL语句/03-查.html">
+            
+                <a href="../mybatis/02-执行SQL语句/03-查.html">
+            
+                    
+                    执行查操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.4" data-path="../mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                <a href="../mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                    
+                    传递多个参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.5" data-path="../mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                <a href="../mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                    
+                    动态 SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../mybatis/03-映射结果集.html">
+            
+                <a href="../mybatis/03-映射结果集.html">
+            
+                    
+                    映射结果集（基本）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../mybatis/03-映射结果集-关系.html">
+            
+                <a href="../mybatis/03-映射结果集-关系.html">
+            
+                    
+                    映射结果集（高级）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../mybatis/04-分页.html">
+            
+                <a href="../mybatis/04-分页.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../mybatis/05-Generator_Example.html">
+            
+                <a href="../mybatis/05-Generator_Example.html">
+            
+                    
+                    MybatisGenerator和Example对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../mybatis/06-延迟加载.html">
+            
+                <a href="../mybatis/06-延迟加载.html">
+            
+                    
+                    延迟加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Part-II/spring-boot/02-Java代码配置.html">
+            
+                <a href="../../Part-II/spring-boot/02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Part-II/spring-boot/01-基础.html">
+            
+                <a href="../../Part-II/spring-boot/01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Part-II/spring-boot/03-自动配置.html">
+            
+                <a href="../../Part-II/spring-boot/03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Part-II/spring-boot/04-spring-boot-jsp.html">
+            
+                <a href="../../Part-II/spring-boot/04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Part-II/spring-boot/05-thymeleaf基础.html">
+            
+                <a href="../../Part-II/spring-boot/05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Part-II/spring-boot/06-spring-boot-mybatis.html">
+            
+                <a href="../../Part-II/spring-boot/06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../Part-II/spring-boot/07-spring-boot-jpa.html">
+            
+                <a href="../../Part-II/spring-boot/07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../Part-II/spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../Part-II/spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../Part-II/spring-boot/09-spring-session.html">
+            
+                <a href="../../Part-II/spring-boot/09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../Part-II/spring-boot/10-spring-cache.html">
+            
+                <a href="../../Part-II/spring-boot/10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../Part-II/spring-boot/11-spring-boot-quartz.html">
+            
+                <a href="../../Part-II/spring-boot/11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../Part-II/spring-boot/12-spring-boot-mail.html">
+            
+                <a href="../../Part-II/spring-boot/12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../../Part-II/spring-boot/13-spring-boot-swagger.html">
+            
+                <a href="../../Part-II/spring-boot/13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../Part-II/middleware/nosql/redis/01-简介.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/01-简介.html">
+            
+                    
+                    Redis 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../Part-II/middleware/nosql/redis/02-通用命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/02-通用命令.html">
+            
+                    
+                    Redis 通用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="../../Part-II/middleware/nosql/redis/03-字符串命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/03-字符串命令.html">
+            
+                    
+                    Redis 字符串命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="../../Part-II/middleware/nosql/redis/04-哈希命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/04-哈希命令.html">
+            
+                    
+                    Redis 哈希命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="../../Part-II/middleware/nosql/redis/05-链表命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/05-链表命令.html">
+            
+                    
+                    Redis 链表命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="../../Part-II/middleware/nosql/redis/06-集合命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/06-集合命令.html">
+            
+                    
+                    Redis 集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.7" data-path="../../Part-II/middleware/nosql/redis/07-有序集合命令.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/07-有序集合命令.html">
+            
+                    
+                    Redis 有序集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.8" data-path="../../Part-II/middleware/nosql/redis/08-spring-redis.html">
+            
+                <a href="../../Part-II/middleware/nosql/redis/08-spring-redis.html">
+            
+                    
+                    Spring 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.9" data-path="../../Part-II/spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../Part-II/spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../Part-II/middleware/message-queue/">
+            
+                <a href="../../Part-II/middleware/message-queue/">
+            
+                    
+                    消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    [ActiveMQ]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../Part-II/middleware/message-queue/activemq/01-简介.html">
+            
+                <a href="../../Part-II/middleware/message-queue/activemq/01-简介.html">
+            
+                    
+                    ActiveMQ 基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../Part-II/middleware/message-queue/activemq/02-java-activemq.html">
+            
+                <a href="../../Part-II/middleware/message-queue/activemq/02-java-activemq.html">
+            
+                    
+                    ActiveMQ 原生 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../Part-II/middleware/message-queue/activemq/03-spring-activemq.html">
+            
+                <a href="../../Part-II/middleware/message-queue/activemq/03-spring-activemq.html">
+            
+                    
+                    Spring 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../Part-II/middleware/message-queue/activemq/04-spring-boot-activemq.html">
+            
+                <a href="../../Part-II/middleware/message-queue/activemq/04-spring-boot-activemq.html">
+            
+                    
+                    Spring Boot 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    [RabbitMQ]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../Part-II/middleware/message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                <a href="../../Part-II/middleware/message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                    
+                    RabbitMQ 中的路由和虚拟主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../Part-II/middleware/message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                <a href="../../Part-II/middleware/message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                    
+                    Spring Boot 整合 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    [其他]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../99-webmagic爬虫.html">
+            
+                <a href="../99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../Gist/jdbc.properties.html">
+            
+                <a href="../Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../Gist/logback.xml.html">
+            
+                <a href="../Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../Gist/pom.xml.html">
+            
+                <a href="../Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../Gist/web.xml.html">
+            
+                <a href="../Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../Gist/mybatis-config.xml.html">
+            
+                <a href="../Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../Gist/spring-dao.xml.html">
+            
+                <a href="../Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../Gist/spring-service.xml.html">
+            
+                <a href="../Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../Gist/spring-web.xml.html">
+            
+                <a href="../Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="../Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.10" data-path="../Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >DispatcherServlet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dispatcherservlet"><b>1. </b>DispatcherServlet</a></li><li><span class="title-icon "></span><a href="#&#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;"><b>2. </b>&#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;"><b>3. </b>&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;"><b>4. </b>&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-jsp-&#x89C6;&#x56FE;"><b>5. </b>&#x521B;&#x5EFA; JSP &#x89C6;&#x56FE;</a></li></ul></div><a href="#dispatcherservlet" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">SpringMVC &#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</span></p>
+<h1 id="dispatcherservlet"><a name="dispatcherservlet" class="anchor-navigation-ex-anchor" href="#dispatcherservlet"><i class="fa fa-link" aria-hidden="true"></i></a>1. DispatcherServlet</h1>
+<p>Spring Web &#x7684;&#x6A21;&#x578B; - &#x89C6;&#x56FE; - &#x63A7;&#x5236;&#x5668;<small>&#xFF08;MVC&#xFF09;</small>&#x6846;&#x67B6;&#x662F;&#x56F4;&#x7ED5; <em><code>DispatcherServlet</code></em> &#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x5B83;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684; HTTP &#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x5BF9;&#x5E94;&#x4E8E;&#x5230; <code>DispatcherServlet</code> &#x7684;&#x4F20;&#x5165; HTTP &#x8BF7;&#x6C42;&#x7684;&#x4E8B;&#x4EF6;&#x987A;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;&#x63A5;&#x6536;&#x5230; HTTP &#x8BF7;&#x6C42;&#x540E;&#xFF0C;<em><code>DispatcherServlet</code></em> &#x4F1A;&#x67E5;&#x8BE2; <em><code>HandlerMapping</code></em>&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <em><code>Adapter</code></em> &#x8C03;&#x7528;&#x76F8;&#x5E94;&#x7684; <em><code>Controller</code></em> &#x3002;</p>
+</li>
+<li><p><em><code>Controller</code></em> &#x63A5;&#x53D7;&#x8BF7;&#x6C42;&#x5E76;&#x6839;&#x636E;&#x4F7F;&#x7528;&#x7684; <strong>GET</strong> &#x6216; <strong>POST</strong> &#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x3002; &#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x5C06;&#x57FA;&#x4E8E;&#x5B9A;&#x4E49;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5C06;&#x89C6;&#x56FE;&#x540D;&#x79F0;&#x8FD4;&#x56DE;&#x7ED9; <em><code>DispatcherServlet</code></em> &#x3002;</p>
+</li>
+<li><p><em><code>DispatcherServlet</code></em> &#x5C06;&#x4ECE; <em><code>ViewResolver</code></em> &#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7684;&#x5B9A;&#x4E49;&#x89C6;&#x56FE;&#x3002;&#x5F53;&#x89C6;&#x56FE;&#x5B8C;&#x6210;&#xFF0C;<em><code>DispatcherServlet</code></em> &#x5C06;&#x6A21;&#x578B;&#x6570;&#x636E;&#x4F20;&#x9012;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x5448;&#x73B0;&#x3002;</p>
+</li>
+</ul>
+<h1 id="&#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;"><a name="&#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5FC5;&#x9700;&#x7684;&#x914D;&#x7F6E;</h1>
+<p>&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4F7F;&#x7528; web.xml &#x6587;&#x4EF6;&#x4E2D;&#x7684; URL &#x6620;&#x5C04;&#x6765;&#x6620;&#x5C04;&#x5E0C;&#x671B; DispatcherServlet &#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">web-app</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;</span>
+    <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+    <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;http://xmlns.jcp.org/xml/ns/javaee 
+        http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;</span>
+    <span class="hljs-attr">version</span>=<span class="hljs-string">&quot;3.1&quot;</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E; SpringMVC &#x524D;&#x7AEF;&#x63A7;&#x5236;&#x5668; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>HelloWeb<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>
+            org.springframework.web.servlet.DispatcherServlet
+        <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">load-on-startup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">load-on-startup</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>HelloWeb<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>*.do<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span>
+</code></pre>
+<h1 id="&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;"><a name="&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;" class="anchor-navigation-ex-anchor" href="#&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x65F6;&#x673A;</h1>
+<p>SpringMVC &#x6709;&#x4E24;&#x6B21;&#x52A0;&#x8F7D; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x673A;&#xFF1A;</p>
+<p>&#x9996;&#x5148;&#x5728; SpringMVC &#x9879;&#x76EE;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x4F1A;&#x4F9D;&#x636E; <em><code>web.xml</code></em> &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x914D;&#x7F6E;&#x7684;&#x76D1;&#x542C;&#x5668;&#xFF1A;<em><code>ContextLoaderListener</code></em> &#x53BB;&#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x4E0B;&#x7684; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">web-app</span> <span class="hljs-attr">...</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-name">listener</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">listener-class</span>&gt;</span>org.springframework.web.context.ContextLoaderListener<span class="hljs-tag">&lt;/<span class="hljs-name">listener-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">listener</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">context-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>
+            classpath:spring/spring-dao.xml,
+            classpath:spring/spring-service.xml
+        <span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">context-param</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span>
+</code></pre>
+<p>&#x65E0;&#x8BBA;&#x8BE5;&#x76D1;&#x542C;&#x5668;&#x6709;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48; Spring MVC &#x90FD;&#x4F1A;&#x7EE7;&#x7EED;&#x8FDB;&#x5165;&#x7B2C;&#x4E8C;&#x4E2A;&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65F6;&#x673A;&#xFF0C;&#x6839;&#x636E; <em><code>DispatcherServlet</code></em> &#x7684;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;<small>&#xFF08;init-param&#xFF09;</small>&#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">web-app</span> <span class="hljs-attr">...</span>&gt;</span>
+    ...
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>classpath:spring-web.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">load-on-startup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">load-on-startup</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C; <em><code>&lt;init-param&gt;</code></em> &#x6CA1;&#x6709;&#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x9ED8;&#x8BA4;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>WebContent/WEB-INF/[servlet-name]-servlet.xml<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x5982;&#x679C;&#x662F;&#x4EE5; <em><code>classpath:</code></em> &#x5F00;&#x59CB;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5728; classpath &#x8DEF;&#x5F84;&#x4E0B;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x9879;&#x76EE;&#x7684;&#x5DE5;&#x7A0B;&#x6839;&#x76EE;&#x5F55;&#xFF08;<em><code>webapp</code></em>&#xFF09;&#x4E0B;&#x3002;</p>
+<p>SpringMVC &#x9996;&#x5148;&#x52A0;&#x8F7D;&#x7684;&#x662F; <em><code>&lt;context-param&gt;</code></em> &#x914D;&#x7F6E;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x5E76;&#x4E0D;&#x4F1A;&#x53BB;&#x521D;&#x59CB;&#x5316; servlet&#x3002;&#x53EA;&#x6709;&#x8FDB;&#x884C;&#x4E86;&#x7F51;&#x7AD9;&#x7684;&#x8DF3;&#x8F6C;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E86; <code>DispatcherServlet</code> &#x7684;&#x5BFC;&#x822A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x521D;&#x59CB;&#x5316; servlet&#xFF0C;&#x4ECE;&#x800C;&#x52A0;&#x8F7D; <em><code>&lt;init-param&gt;</code></em> &#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x800C;&#x8A00;&#xFF0C;<em><code>&lt;context-param&gt;</code></em> &#x914D;&#x7F6E;&#x7684; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4E60;&#x60EF;&#x6027;&#x53EB; <strong>applicationContext</strong>&#xFF0C;&#x6216; <strong>webApplicationContext</strong>&#xFF0C;&#x8868;&#x793A;&#x5168;&#x5C40;&#x6027; Spring &#x914D;&#x7F6E;&#x3002;<em><code>&lt;init-param&gt;</code></em> &#x914D;&#x7F6E;&#x7684; Spring &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x53EB; spring-mvc&#xFF0C;&#x8868;&#x793A; spirng-webmvc &#xFF08;web &#x5C42;&#xFF09;&#x76F8;&#x5173;&#x7684; Spring &#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6765;&#x770B;&#x770B; <em><code>HelloWeb-servlet.xml</code></em> &#x6587;&#x4EF6;&#x7684;&#x5FC5;&#x9700;&#x914D;&#x7F6E;&#xFF0C;&#x653E;&#x5728; Web &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684; <code>WebContent/WEB-INF</code> &#x76EE;&#x5F55;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span>
+   <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+   <span class="hljs-attr">xmlns:context</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/context&quot;</span>
+   <span class="hljs-attr">xmlns:mvc</span>=<span class="hljs-string">&quot;http://www.springframework.org/schema/mvc&quot;</span>
+   <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">&quot;
+      http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context.xsd
+      http://www.springframework.org/schema/mvc
+      http://www.springframework.org/schema/mvc/spring-mvc.xsd&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">mvc:annotation-driven</span>/&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">context:component-scan</span> <span class="hljs-attr">base-package</span>=<span class="hljs-string">&quot;com.demo.web.controller&quot;</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h1 id="&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;"><a name="&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;</h1>
+<p><em><code>DispatcherServlet</code></em> &#x5C06;&#x8BF7;&#x6C42;&#x59D4;&#x6D3E;&#x7ED9;&#x63A7;&#x5236;&#x5668;&#x4EE5;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x4E8E;&#x5176;&#x7684;&#x529F;&#x80FD;&#x3002; <em><code>@Controller</code></em> &#x6CE8;&#x91CA;&#x6307;&#x793A;&#x7279;&#x5B9A;&#x7C7B;&#x5145;&#x5F53;&#x63A7;&#x5236;&#x5668;&#x7684;&#x89D2;&#x8272;&#x3002;<em><code>@RequestMapping</code></em> &#x6CE8;&#x91CA;&#x7528;&#x4E8E;&#x5C06; URL &#x6620;&#x5C04;&#x5230;&#x6574;&#x4E2A;&#x7C7B;&#x6216;&#x7279;&#x5B9A;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Controller</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloController</span> </span>{
+
+  <span class="hljs-meta">@RequestMapping</span> ( value = <span class="hljs-string">&quot;/hello&quot;</span>, method = RequestMethod.GET )
+  <span class="hljs-function"><span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title">printHello</span><span class="hljs-params">()</span> </span>{
+    ModelAndView mav = <span class="hljs-keyword">new</span> ModelAndView();
+    mav.addObject(<span class="hljs-string">&quot;message&quot;</span>, <span class="hljs-string">&quot;Hello Spring MVC Framework!&quot;</span>);
+    mav.setViewName(<span class="hljs-string">&quot;/WEB-INF/jsp/hello.jsp&quot;</span>);
+    <span class="hljs-keyword">return</span> mav;
+  }
+}
+</code></pre>
+<p><em><code>@Controller</code></em> &#x6CE8;&#x91CA;&#x5C06;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A; <strong><em>Spring MVC</em></strong> &#x63A7;&#x5236;&#x5668;&#x3002;
+<em><code>@RequestMapping</code></em> &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x6CD5;&#x8868;&#x793A;&#x6B64;&#x63A7;&#x5236;&#x5668;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x90FD;&#x4E0E; <code>/hello</code> &#x8DEF;&#x5F84;&#x76F8;&#x5173;&#x3002;</p>
+<p><em><code>@RequestMapping(method = RequestMethod.GET)</code></em> &#x7528;&#x4E8E;&#x58F0;&#x660E; <em><code>printHello()</code></em> &#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x63A7;&#x5236;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406; HTTP GET&#x8BF7;&#x6C42;&#x3002;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x540C;&#x4E00; URL &#x7684;&#x4EFB;&#x4F55; POST &#x8BF7;&#x6C42;&#x3002;</p>
+<p><em><code>value</code></em> &#x5C5E;&#x6027;&#x6307;&#x793A;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x65B9;&#x6CD5;&#x6620;&#x5C04;&#x5230;&#x7684; URL&#xFF0C;<em><code>method</code></em> &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x5904;&#x7406; HTTP GET &#x8BF7;&#x6C42;&#x7684;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x3002;&#x5173;&#x4E8E;&#x4EE5;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x4E2D;&#x5B9A;&#x4E49;&#x6240;&#x9700;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x5185;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x57FA;&#x4E8E;&#x5B9A;&#x4E49;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x5C06;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x3002;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x5C06;&#x88AB;&#x89C6;&#x56FE;&#x8BBF;&#x95EE;&#x4EE5;&#x5448;&#x73B0;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x3002;&#x6B64;&#x793A;&#x4F8B;&#x521B;&#x5EFA;&#x4E14;&#x6709;&#x5C5E;&#x6027; &#x201C;message&#x201D; &#x7684;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x5B9A;&#x4E49;&#x7684;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; String&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x8981;&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x6A21;&#x578B;&#x7684;&#x89C6;&#x56FE;&#x7684;&#x540D;&#x79F0;&#x3002;&#x6B64;&#x793A;&#x4F8B;&#x5C06; &#x201C;hello&#x201D; &#x8FD4;&#x56DE;&#x4E3A;&#x903B;&#x8F91;&#x89C6;&#x56FE;&#x540D;&#x79F0;&#x3002;</li>
+</ul>
+<h1 id="&#x521B;&#x5EFA;-jsp-&#x89C6;&#x56FE;"><a name="&#x521B;&#x5EFA;-jsp-&#x89C6;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-jsp-&#x89C6;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x521B;&#x5EFA; JSP &#x89C6;&#x56FE;</h1>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;prefix&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;/WEB-INF/jsp/&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;suffix&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;.jsp&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<p>Spring MVC &#x652F;&#x6301;&#x8BB8;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x89C6;&#x56FE;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x793A;&#x6280;&#x672F;&#x3002;<small>&#x5305;&#x62EC; JSP&#xFF0C;HTML&#xFF0C;PDF&#xFF0C;Excel &#x5DE5;&#x4F5C;&#x8868;&#xFF0C;XML&#xFF0C;Velocity &#x6A21;&#x677F;&#xFF0C;XSLT&#xFF0C;JSON&#xFF0C;Atom &#x548C; RSS &#x6E90;&#xFF0C;JasperReports &#x7B49;&#x3002;</small>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F; JSP &#x6A21;&#x677F;&#xFF0C;&#x5E76;&#x5728; <em><code>/WEB-INF/hello/hello.jsp</code></em> &#x4E2D;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; hello &#x89C6;&#x56FE;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello Spring MVC<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>${message}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC; <code>${message}</code> &#x662F;&#x5728; Controller &#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x663E;&#x793A;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-工作流程.html" class="navigation navigation-prev " aria-label="Previous page: SpringMVC 的工作流程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-Controller.html" class="navigation navigation-next " aria-label="Next page: Controller 的编写和配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DispatcherServlet","level":"1.2.2.3","depth":3,"next":{"title":"Controller 的编写和配置","level":"1.2.2.4","depth":3,"path":"Part-I/Springmvc/04-Controller.md","ref":"Part-I/Springmvc/04-Controller.md","articles":[]},"previous":{"title":"SpringMVC 的工作流程","level":"1.2.2.2","depth":3,"path":"Part-I/Springmvc/02-工作流程.md","ref":"Part-I/Springmvc/02-工作流程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-I/Springmvc/03-DispatcherServlet.md","mtime":"2020-02-01T09:47:11.552Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-01T13:01:56.269Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
