@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring 中使用 Java 代码配置 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="01-基础.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Part-I/99-webmagic爬虫.html">
+            
+                <a href="../../Part-I/99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="02-Java代码配置.html">
+            
+                <a href="02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="01-基础.html">
+            
+                <a href="01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-自动配置.html">
+            
+                <a href="03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-spring-boot-jsp.html">
+            
+                <a href="04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="05-thymeleaf基础.html">
+            
+                <a href="05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="06-spring-boot-mybatis.html">
+            
+                <a href="06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="07-spring-boot-jpa.html">
+            
+                <a href="07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="08-spring-boot-redis.html">
+            
+                <a href="08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="09-spring-session.html">
+            
+                <a href="09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10-spring-cache.html">
+            
+                <a href="10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11-spring-boot-quartz.html">
+            
+                <a href="11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="12-spring-boot-mail.html">
+            
+                <a href="12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="13-spring-boot-swagger.html">
+            
+                <a href="13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Part-I/Gist/jdbc.properties.html">
+            
+                <a href="../../Part-I/Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Part-I/Gist/logback.xml.html">
+            
+                <a href="../../Part-I/Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Part-I/Gist/pom.xml.html">
+            
+                <a href="../../Part-I/Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Part-I/Gist/web.xml.html">
+            
+                <a href="../../Part-I/Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                <a href="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Part-I/Gist/spring-dao.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../Part-I/Gist/spring-service.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../Part-I/Gist/spring-web.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Spring 中使用 Java 代码配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;-druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;"><b>1. </b>&#x914D;&#x7F6E; Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;"><b>2. </b>&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;</a></li><ul><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><b>2.1. </b>&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;-autowire-&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><b>2.2. </b>&#x901A;&#x8FC7; @Autowire &#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><b>2.3. </b>&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</a></li></ul><li><span class="title-icon "></span><a href="#druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v2"><b>3. </b>Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v2</a></li><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;-jdbcproperties"><b>3.1. </b>&#x914D;&#x7F6E;&#x6587;&#x4EF6; jdbc.properties</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x7C7B;"><b>3.2. </b>&#x914D;&#x7F6E;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v3"><b>4. </b>Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v3</a></li><li><span class="title-icon "></span><a href="#&#x9644;&#xFF1A;druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v4"><b>5. </b>&#x9644;&#xFF1A;Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v4</a></li></ul></div><a href="#&#x914D;&#x7F6E;-druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">Java &#x4EE3;&#x7801;&#x914D;&#x7F6E;</span></p>
+<p>&#x4ECE; Spring 3.0 &#x5F00;&#x59CB;&#xFF0C;Spring &#x5B98;&#x65B9;&#x5C31;&#x63A8;&#x8350;&#x5927;&#x5BB6;&#x4F7F;&#x7528; java &#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x6765;&#x4EE3;&#x66FF;&#x4EE5;&#x524D;&#x7684; xml &#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x3002;&#x800C;&#x5230;&#x4E86; SpringBoot&#xFF0C;Java &#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x66F4;&#x662F;&#x6210;&#x4E86;&#x6807;&#x914D;&#x3002;</p>
+<p>Java &#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E3B;&#x8981;&#x9760; Java &#x7C7B;&#x548C;&#x4E00;&#x4E9B;&#x6CE8;&#x89E3;&#xFF0C;&#x6BD4;&#x8F83;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x6709;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5E38;&#x7528;&#x6CE8;&#x89E3;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>@Configuration</code></td>
+<td style="text-align:left">&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7C7B;&#x4F5C;&#x4E3A;&#x914D;&#x7F6E;&#x7C7B;&#xFF0C;&#x4EE3;&#x66FF; <em><code>.xml</code></em> &#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@Bean</code></td>
+<td style="text-align:left">&#x58F0;&#x660E;&#x5728;&#x65B9;&#x6CD5;&#x4E0A;&#xFF0C;&#x5C06;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x52A0;&#x5165;Bean&#x5BB9;&#x5668;&#xFF0C;&#x4EE3;&#x66FF; <em><code>&lt;bean&gt;</code></em> &#x6807;&#x7B7E;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@Value</code></td>
+<td style="text-align:left">&#x5C5E;&#x6027;&#x6CE8;&#x5165;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@PropertySource</code></td>
+<td style="text-align:left">&#x6307;&#x5B9A;&#x5916;&#x90E8;&#x5C5E;&#x6027;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x914D;&#x7F6E;-druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;"><a name="&#x914D;&#x7F6E;-druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;-druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x914D;&#x7F6E; Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x7684;&#x7B80;&#x5355;&#x65B9;&#x5F0F;</h1>
+<p>Spring Boot &#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x662F; HikariCP &#x3002;spring-boot-starter-parent &#x4E2D;&#x8BBE;&#x7F6E;&#x4E86; HIkariCP &#x7684;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528; HikariCP &#x53EA;&#x7528;&#x58F0;&#x660E;&#x4F60;&#x8981;&#x7528;&#x5B83;&#x5C31;&#x884C;&#xFF0C;&#x800C;&#x58F0;&#x660E;&#x8981;&#x4F7F;&#x7528; Druid&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x6307;&#x5B9A;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x5F15;&#x5165;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>mysql<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mysql-connector-java<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>druid<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.1.6<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>&#x7F16;&#x5199; Java &#x914D;&#x7F6E;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JdbcConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>(initMethod = <span class="hljs-string">&quot;init&quot;</span>, destroyMethod = <span class="hljs-string">&quot;close&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> DataSource <span class="hljs-title">dataSource</span><span class="hljs-params">()</span> </span>{
+        DruidDataSource dataSource = <span class="hljs-keyword">new</span> DruidDataSource();
+        dataSource.setDriverClassName(<span class="hljs-string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>);
+        dataSource.setUrl(<span class="hljs-string">&quot;jdbc:mysql://192.168.119.130:3306/scott?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&quot;</span>);
+        dataSource.setUsername(<span class="hljs-string">&quot;root&quot;</span>);
+        dataSource.setPassword(<span class="hljs-string">&quot;123456&quot;</span>);
+        <span class="hljs-keyword">return</span> dataSource;
+    }
+}
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x7B49;&#x540C;&#x4E8E;&#x5982;&#x4E0B;&#x7684; <code>.xml</code> &#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">beans</span> <span class="hljs-attr">...</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dataSource&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.alibaba.druid.pool.DruidDataSource.DruidDataSource&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">propertie</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;driverClassName&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;com.mysql.cj.jdbc.Driver&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">propertie</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;url&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;jdbc:mysql://192.168.119.130:3306/scott?serverTimezone=UTC&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;useSSL=false&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">propertie</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;root&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">propertie</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;123456&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<h1 id="&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;"><a name="&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x7684;&#x8868;&#x793A;</h1>
+<p>&#x4E0A;&#x9762;&#x7684; DruidDataSource &#xFF0C;&#x6211;&#x4EEC;&#x4E3A;&#x5176;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x5B83;&#x7684;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x7B80;&#x5355;&#x7C7B;&#x578B;&#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x5341;&#x5206;&#x5BB9;&#x6613;&#x5904;&#x7406;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5728; Spring &#x7684;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;Java Bean &#x53EF;&#x80FD;&#x4F1A;&#x5B58;&#x5728;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x5728; <em><code>.xml</code></em> &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x901A;&#x8FC7; <em><code>ref</code></em> &#x5C5E;&#x6027;&#x4E3A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x7684;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">beans</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;teacher&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;xxx.xxx.xxx.Teacher&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;tom&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;age&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;40&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;student&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;xxx.xxx.xxx.Student&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;jerry&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;age&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;20&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;teacher&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;teacher&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">beans</span>&gt;</span>
+</code></pre>
+<p>&#x800C;&#x5728; Java &#x4EE3;&#x7801;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x914D;&#x7F6E; Java Bean &#x7684;&#x5F15;&#x7528;&#x5173;&#x7CFB;<small>&#xFF08;&#x5176;&#x4E2D;&#xFF0C;&#x63A8;&#x8350;&#x7B2C;&#x4E09;&#x79CD;&#xFF09;</small>&#xFF1A;</p>
+<h2 id="&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><a name="&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x901A;&#x8FC7;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</h2>
+<p>&#x5982;&#x679C;&#x4E24;&#x4E2A; Java Bean <strong>&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;</strong>&#xFF0C;&#x53EF;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Employee <span class="hljs-title">employee</span><span class="hljs-params">()</span> </span>{
+    Employee employee = <span class="hljs-keyword">new</span> Employee();
+    employee.setId(<span class="hljs-number">10</span>);
+    employee.setName(<span class="hljs-string">&quot;tom&quot;</span>);
+    employee.setSalary(<span class="hljs-number">2000.0</span>);
+    employee.setDepartment(department());
+
+    <span class="hljs-keyword">return</span> employee;
+}
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Department <span class="hljs-title">department</span><span class="hljs-params">()</span> </span>{
+    Department department = <span class="hljs-keyword">new</span> Department();
+    department.setId(<span class="hljs-number">1</span>);
+    department.setName(<span class="hljs-string">&quot;&#x7814;&#x53D1;&#x90E8;&quot;</span>);
+    department.setLocation(<span class="hljs-string">&quot;&#x5317;&#x4EAC;&quot;</span>);
+
+    <span class="hljs-keyword">return</span> department;
+}
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;-autowire-&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><a name="&#x901A;&#x8FC7;-autowire-&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;-autowire-&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x901A;&#x8FC7; @Autowire &#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</h2>
+<p>&#x5982;&#x679C;&#x4E24;&#x4E2A; Java Bean <strong>&#x5206;&#x522B;&#x5728;&#x4E0D;&#x540C;&#x7684;</strong> &#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-keyword">public</span> Department department;
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Employee <span class="hljs-title">employee</span><span class="hljs-params">()</span> </span>{
+    Employee employee = <span class="hljs-keyword">new</span> Employee();
+    employee.setId(<span class="hljs-number">10</span>);
+    employee.setName(<span class="hljs-string">&quot;tom&quot;</span>);
+    employee.setSalary(<span class="hljs-number">2000.0</span>);
+    employee.setDepartment(department);
+
+    <span class="hljs-keyword">return</span> employee;
+}
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><a name="&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;</h2>
+<p>&#x65E0;&#x8BBA;&#x4E24;&#x4E2A; Java Bean &#x662F;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#xFF0C;&#x8FD8;&#x662F;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#xFF0C;&#x90FD;&#x53EF;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Employee <span class="hljs-title">employee</span><span class="hljs-params">(Department department)</span> </span>{
+    Employee employee = <span class="hljs-keyword">new</span> Employee();
+    employee.setId(<span class="hljs-number">10</span>);
+    employee.setName(<span class="hljs-string">&quot;tom&quot;</span>);
+    employee.setSalary(<span class="hljs-number">2000.0</span>);
+    employee.setDepartment(department);
+
+    <span class="hljs-keyword">return</span> employee;
+}
+</code></pre>
+<h1 id="druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v2"><a name="druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v2" class="anchor-navigation-ex-anchor" href="#druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v2"><i class="fa fa-link" aria-hidden="true"></i></a>3. Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v2</h1>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684; Druid &#x7684;&#x914D;&#x7F6E;&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x7684;&#x56DB;&#x5927;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x300E;&#x5199;&#x6B7B;&#x300F;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4EEC;&#x300E;&#x62BD;&#x53D6;&#x300F;&#x51FA;&#x6765;&#x653E;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;-jdbcproperties"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;-jdbcproperties" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;-jdbcproperties"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x914D;&#x7F6E;&#x6587;&#x4EF6; jdbc.properties</h2>
+<pre><code class="lang-properties">jdbc.driverClassName = com.mysql.cj.jdbc.Driver
+jdbc.url = jdbc:mysql://127.0.0.1:3306/scott
+jdbc.username = root
+jdbc.password = 123456
+</code></pre>
+<p>&#x5728;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x7ED3;&#x5408; <code>@PropertySource</code> &#x548C; <code>@Value</code> &#x6CE8;&#x89E3;&#xFF0C;&#x8BA9; Spring &#x4ECE;&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x518D;&#x6CE8;&#x5165;&#x5230;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;&#x7C7B;"><a name="&#x914D;&#x7F6E;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x914D;&#x7F6E;&#x7C7B;</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@PropertySource</span>(<span class="hljs-string">&quot;classpath:jdbc.properties&quot;</span>)    <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JdbcConfig</span> </span>{
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${jdbc.url}&quot;</span>)                       <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+    String url;
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${jdbc.driverClassName}&quot;</span>)           <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+    String driverClassName;
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${jdbc.username}&quot;</span>)                  <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+    String username;
+
+    <span class="hljs-meta">@Value</span>(<span class="hljs-string">&quot;${jdbc.password}&quot;</span>)                  <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+    String password;
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> DataSource <span class="hljs-title">dataSource</span><span class="hljs-params">()</span> </span>{
+        DruidDataSource dataSource = <span class="hljs-keyword">new</span> DruidDataSource();
+        dataSource.setUrl(url);
+        dataSource.setDriverClassName(driverClassName);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
+        <span class="hljs-keyword">return</span> dataSource;
+    }
+}
+</code></pre>
+<h1 id="druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v3"><a name="druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v3" class="anchor-navigation-ex-anchor" href="#druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v3"><i class="fa fa-link" aria-hidden="true"></i></a>4. Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v3</h1>
+<p>&#x7531;&#x4E8E; Spring Boot &#x9879;&#x76EE;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x4F1A;&#x52A0;&#x8F7D;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6; <em><code>application.properties</code></em>&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x5199;&#x5728; <em><code>application.properties</code></em> &#x4E2D;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x518D;&#x5355;&#x72EC;&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x672C;&#x8D28;&#x4E0A;&#xFF0C;&#x548C;&#x4E0A;&#x8FF0;&#x7684; <code>jdbc.properties</code> &#x7684;&#x5199;&#x6CD5;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x622A;&#x81F3;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x65E5;&#x5E38;&#x7F16;&#x7A0B;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x5DE5;&#x4F5C;&#x5927;&#x4F53;&#x4E5F;&#x5C31;&#x662F;&#x5982;&#x6B64;&#x3002;&#x7406;&#x8BBA;&#x4E0A;&#xFF0C;&#x8FD8;&#x6709;&#x518D;&#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x8FDB;&#x4F18;&#x5316;&#x7684;&#x4F59;&#x5730;&#xFF0C;&#x4F46;&#x662F;&#x603B;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5FC5;&#x8981;&#x6027;&#x5DF2;&#x7ECF;&#x4E0D;&#x5927;&#x4E86;&#x3002;<small>&#xFF08;&#x53EF;&#x80FD;&#xFF0C;&#x8FD8;&#x628A;&#x7B80;&#x5355;&#x95EE;&#x9898;&#x590D;&#x6742;&#x5316;&#x4E86;&#xFF09;</small>&#x3002;</p>
+<h1 id="&#x9644;&#xFF1A;druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v4"><a name="&#x9644;&#xFF1A;druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v4" class="anchor-navigation-ex-anchor" href="#&#x9644;&#xFF1A;druid-&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E;-v4"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x9644;&#xFF1A;Druid &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x914D;&#x7F6E; v4</h1>
+<p>&#x5728;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x63A5;&#x6536;/&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x56DB;&#x9879;&#x914D;&#x7F6E;&#x7684;&#x503C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;<small>&#xFF08;&#x53CA;&#x5176;&#x529F;&#x80FD;&#xFF09;</small>&#x62BD;&#x53D6;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x7C7B;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x914D;&#x7F6E;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x6D01;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x53EB; <em><code>@EnableConfigurationProperties</code></em> &#x7684;&#x6CE8;&#x89E3;&#xFF0C;&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728; pom &#x4E2D;&#x591A;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-configuration-processor<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">optional</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">optional</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>JdbcProperties&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@ConfigurationProperties</span>(prefix = <span class="hljs-string">&quot;jdbc&quot;</span>)   <span class="hljs-comment">// &#x53BB;&#x6389;&#x524D;&#x7F00;</span>
+<span class="hljs-meta">@PropertySource</span>(<span class="hljs-string">&quot;classpath:application.properties&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JdbcProperties</span> </span>{
+    <span class="hljs-keyword">private</span> String url;
+    <span class="hljs-keyword">private</span> String driverClassName;
+    <span class="hljs-keyword">private</span> String username;
+    <span class="hljs-keyword">private</span> String password;
+
+    <span class="hljs-comment">/* 
+     * &#x5176;&#x5B9E;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x4E25;&#x683C;&#x8981;&#x6C42;&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x4E0E;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x540D;&#x4E00;&#x81F4;&#x3002;
+     * &#x652F;&#x6301;&#x9A7C;&#x5CF0;&#xFF0C;&#x4E2D;&#x5212;&#x7EBF;&#xFF0C;&#x4E0B;&#x5212;&#x7EBF;&#x7B49;&#x8F6C;&#x6362;&#x3002;
+     */</span>
+
+    <span class="hljs-comment">// getter / setter</span>
+    ...
+}
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@EnableConfigurationProperties</span>(JdbcProperties.class)    <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SpringDaoConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> DataSource <span class="hljs-title">dataSource</span><span class="hljs-params">(JdbcProperties jdbc)</span> </span>{ <span class="hljs-comment">// &#x8FD9;&#x91CC;</span>
+        ...
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="01-基础.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Spring Boot 基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring 中使用 Java 代码配置","level":"1.3.1","depth":2,"next":{"title":"Spring Boot 基础","level":"1.3.2","depth":2,"path":"Part-II/spring-boot/01-基础.md","ref":"Part-II/spring-boot/01-基础.md","articles":[]},"previous":{"title":"Spring Boot","level":"1.3","depth":1,"ref":"","articles":[{"title":"Spring 中使用 Java 代码配置","level":"1.3.1","depth":2,"path":"Part-II/spring-boot/02-Java代码配置.md","ref":"Part-II/spring-boot/02-Java代码配置.md","articles":[]},{"title":"Spring Boot 基础","level":"1.3.2","depth":2,"path":"Part-II/spring-boot/01-基础.md","ref":"Part-II/spring-boot/01-基础.md","articles":[]},{"title":"Spring Boot 自动配置","level":"1.3.3","depth":2,"path":"Part-II/spring-boot/03-自动配置.md","ref":"Part-II/spring-boot/03-自动配置.md","articles":[]},{"title":"Spring Boot 中使用 JSP","level":"1.3.4","depth":2,"path":"Part-II/spring-boot/04-spring-boot-jsp.md","ref":"Part-II/spring-boot/04-spring-boot-jsp.md","articles":[]},{"title":"Spring Boot 中使用 Thymeleaf","level":"1.3.5","depth":2,"path":"Part-II/spring-boot/05-thymeleaf基础.md","ref":"Part-II/spring-boot/05-thymeleaf基础.md","articles":[]},{"title":"Spring Boot 集成 Mybatis","level":"1.3.6","depth":2,"path":"Part-II/spring-boot/06-spring-boot-mybatis.md","ref":"Part-II/spring-boot/06-spring-boot-mybatis.md","articles":[]},{"title":"Spring Boot 集成 JPA","level":"1.3.7","depth":2,"path":"Part-II/spring-boot/07-spring-boot-jpa.md","ref":"Part-II/spring-boot/07-spring-boot-jpa.md","articles":[]},{"title":"Spring Boot 集成 Redis","level":"1.3.8","depth":2,"path":"Part-II/spring-boot/08-spring-boot-redis.md","ref":"Part-II/spring-boot/08-spring-boot-redis.md","articles":[]},{"title":"Spring Boot 集成 spring-session","level":"1.3.9","depth":2,"path":"Part-II/spring-boot/09-spring-session.md","ref":"Part-II/spring-boot/09-spring-session.md","articles":[]},{"title":"Spring Boot 集成 spring-cache","level":"1.3.10","depth":2,"path":"Part-II/spring-boot/10-spring-cache.md","ref":"Part-II/spring-boot/10-spring-cache.md","articles":[]},{"title":"Spring Boot 集成 quartz","level":"1.3.11","depth":2,"path":"Part-II/spring-boot/11-spring-boot-quartz.md","ref":"Part-II/spring-boot/11-spring-boot-quartz.md","articles":[]},{"title":"Spring Boot 开发邮件系统","level":"1.3.12","depth":2,"path":"Part-II/spring-boot/12-spring-boot-mail.md","ref":"Part-II/spring-boot/12-spring-boot-mail.md","articles":[]},{"title":"Spring Boot 中使用 Swagger","level":"1.3.13","depth":2,"path":"Part-II/spring-boot/13-spring-boot-swagger.md","ref":"Part-II/spring-boot/13-spring-boot-swagger.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-II/spring-boot/02-Java代码配置.md","mtime":"2020-02-01T09:47:14.221Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-01T09:51:24.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

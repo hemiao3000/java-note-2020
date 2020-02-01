@@ -1,0 +1,711 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring Boot 集成 spring-session · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-spring-cache.html" />
+    
+    
+    <link rel="prev" href="08-spring-boot-redis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Part-I/99-webmagic爬虫.html">
+            
+                <a href="../../Part-I/99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="02-Java代码配置.html">
+            
+                <a href="02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="01-基础.html">
+            
+                <a href="01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03-自动配置.html">
+            
+                <a href="03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04-spring-boot-jsp.html">
+            
+                <a href="04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="05-thymeleaf基础.html">
+            
+                <a href="05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="06-spring-boot-mybatis.html">
+            
+                <a href="06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="07-spring-boot-jpa.html">
+            
+                <a href="07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="08-spring-boot-redis.html">
+            
+                <a href="08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="09-spring-session.html">
+            
+                <a href="09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10-spring-cache.html">
+            
+                <a href="10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11-spring-boot-quartz.html">
+            
+                <a href="11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="12-spring-boot-mail.html">
+            
+                <a href="12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="13-spring-boot-swagger.html">
+            
+                <a href="13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Part-I/Gist/jdbc.properties.html">
+            
+                <a href="../../Part-I/Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../Part-I/Gist/logback.xml.html">
+            
+                <a href="../../Part-I/Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../Part-I/Gist/pom.xml.html">
+            
+                <a href="../../Part-I/Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../Part-I/Gist/web.xml.html">
+            
+                <a href="../../Part-I/Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                <a href="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../Part-I/Gist/spring-dao.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../Part-I/Gist/spring-service.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../Part-I/Gist/spring-web.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Spring Boot 集成 spring-session</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#session-&#x5171;&#x4EAB;&#x95EE;&#x9898;"><b>1. </b>Session &#x5171;&#x4EAB;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#spring-session"><b>2. </b>Spring Session</a></li><ul><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x96C6;&#x6210;"><b>2.1. </b>&#x5FEB;&#x901F;&#x96C6;&#x6210;</a></li><ul><li><span class="title-icon "></span><a href="#pomxml"><b>2.1.1. </b>pom.xml</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b>2.1.2. </b>&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x7C7B;"><b>2.1.3. </b>&#x914D;&#x7F6E;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x9A8C;&#x8BC1;"><b>2.2. </b>&#x9A8C;&#x8BC1;</a></li></ul></ul></div><a href="#session-&#x5171;&#x4EAB;&#x95EE;&#x9898;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">Spring Session &#x5B9E;&#x73B0; Session &#x5171;&#x4EAB;</span></p>
+<h1 id="session-&#x5171;&#x4EAB;&#x95EE;&#x9898;"><a name="session-&#x5171;&#x4EAB;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#session-&#x5171;&#x4EAB;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Session &#x5171;&#x4EAB;&#x95EE;&#x9898;</h1>
+<p>&#x5728;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x4E2D;&#xFF0C;&#x5F80;&#x5F80;&#x7531;&#x591A;&#x4E2A;&#x5FAE;&#x670D;&#x52A1;&#x5171;&#x540C;&#x652F;&#x6491;&#x524D;&#x7AEF;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x6D89;&#x53CA;&#x5230;&#x7528;&#x6237;&#x72B6;&#x6001;&#x5C31;&#x9700;&#x8981;&#x8003;&#x8651;&#x5206;&#x5E03;&#x5F0F; Session &#x7BA1;&#x7406;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x7528;&#x6237;&#x767B;&#x5F55;&#x8BF7;&#x6C42;&#x5206;&#x53D1;&#x5728; <code>&#x670D;&#x52A1;&#x5668;A</code> &#xFF0C;&#x7528;&#x6237;&#x8D2D;&#x4E70;&#x8BF7;&#x6C42;&#x5206;&#x53D1;&#x5230;&#x4E86;<code>&#x670D;&#x52A1;&#x5668;B</code> &#xFF0C; &#x90A3;&#x4E48; <code>&#x670D;&#x52A1;&#x5668;B</code> &#x5C31;&#x5FC5;&#x987B;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x7684;&#x767B;&#x5F55;&#x4FE1;&#x606F;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x4F1A;&#x5F71;&#x54CD;&#x6B63;&#x5E38;&#x4EA4;&#x6613;&#x3002;</p>
+<p><img src="img/spring-boot-session-01.png" alt="spring-boot-session-01.png"></p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;&#x6216;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x4E0B;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x4FDD;&#x5B58; Session &#x540E;&#xFF0C;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x540C;&#x6B65;&#x6216;&#x5171;&#x4EAB;&#x8FD9;&#x4E2A; Session &#x3002;</p>
+<p>&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x5206;&#x5E03;&#x5F0F; Session &#x7BA1;&#x7406;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6848;&#xFF1A;</p>
+<ul>
+<li><p>Session &#x590D;&#x5236;&#x529F;&#x80FD;</p>
+<p>&#x90E8;&#x5206; Web &#x670D;&#x52A1;&#x5668;<small>&#xFF08;&#x4F8B;&#x5982;&#xFF0C;Tomcat&#xFF09;</small>&#x80FD;&#x591F;&#x652F;&#x6301; Session &#x590D;&#x5236;&#x529F;&#x80FD;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539; Web &#x670D;&#x52A1;&#x5668;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x8BA9; Web &#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C; Session &#x590D;&#x5236;&#xFF0C;&#x4FDD;&#x6301;&#x6BCF;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x8282;&#x70B9;&#x7684; Session &#x6570;&#x636E;&#x90FD;&#x80FD;&#x8FBE;&#x5230;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x6848;&#x7684;&#x5C40;&#x9650;&#x6027;&#x5728;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li><p>&#x4F9D;&#x8D56;&#x4E8E; Web &#x670D;&#x52A1;&#x5668;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#x90FD;&#x63D0;&#x4F9B;&#x8FD9;&#x79CD;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+<li><p>&#x6BCF;&#x4E2A; Web &#x670D;&#x52A1;&#x5668;&#x8282;&#x70B9;&#x90FD;&#x4F1A;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x7684; Session &#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x7684;&#x6D6A;&#x8D39;&#x3002;</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Session &#x96C6;&#x4E2D;&#x5B58;&#x50A8;</p>
+<p>&#x5728;&#x5355;&#x72EC;&#x7684;&#x670D;&#x52A1;&#x5668;<small>&#xFF08;&#x6216;&#x670D;&#x52A1;&#x5668;&#x96C6;&#x7FA4;&#xFF09;</small>&#x4E0A;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x6280;&#x672F;&#x96C6;&#x4E2D;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x7684; Session &#x5BF9;&#x8C61;&#x3002;&#x6240;&#x6709;&#x7684; Web &#x670D;&#x52A1;&#x5668;&#x90FD;&#x4ECE;&#x8FD9;&#x4E2A;&#x5B58;&#x50A8;&#x4ECB;&#x8D28;&#x4E2D;&#x5B58;&#x53D6;&#x5BF9;&#x5E94;&#x7684; Session&#xFF0C;&#x5B9E;&#x73B0; Session &#x5171;&#x4EAB;&#x3002;</p>
+</li>
+</ul>
+<h1 id="spring-session"><a name="spring-session" class="anchor-navigation-ex-anchor" href="#spring-session"><i class="fa fa-link" aria-hidden="true"></i></a>2. Spring Session</h1>
+<p>Spring Session &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406; Servlet HttpSession &#x7684;&#x65B9;&#x6848;&#x3002;&#x5B83;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x5916;&#x7F6E;&#x7684; Redis &#x6765;&#x5B58;&#x50A8; Session &#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x89E3;&#x51B3; Session &#x5171;&#x4EAB;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>Spring &#x4E3A; Spring Session &#x548C; Redis &#x7684;&#x96C6;&#x6210;&#x63D0;&#x4F9B;&#x4E86;&#x7EC4;&#x4EF6;&#xFF1A;<em><code>spring-session-data-redis</code></em> &#x3002;</p>
+<h2 id="&#x5FEB;&#x901F;&#x96C6;&#x6210;"><a name="&#x5FEB;&#x901F;&#x96C6;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x5FEB;&#x901F;&#x96C6;&#x6210;</h2>
+<h3 id="pomxml"><a name="pomxml" class="anchor-navigation-ex-anchor" href="#pomxml"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. pom.xml</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x4F9D;&#x8D56;&#x4E8E; Redis --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-data-redis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x52A0;&#x8FD9;&#x4E2A;&#x5305;!!! --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.commons<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>commons-pool2<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.session<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-session-data-redis<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x8FD9;&#x4E2A; <em><code>spring-session-...</code></em> &#x5E76;&#x4E0D;&#x662F; <em><code>spring-session-core</code></em>&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x5F15;&#x7528;&#x5230;&#x4E86; <em><code>spring-session-core</code></em> &#x3002;&#x5F15;&#x5165;&#x8FD9;&#x4E2A;&#x5305;&#x7684;&#x65F6;&#x5019;&#x8BF7;&#x6CE8;&#x610F;&#x4E00;&#x4E0B;&#x3002;</p>
+<h3 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.2. &#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-properties"># Redis &#x914D;&#x7F6E;
+# Redis &#x6570;&#x636E;&#x5E93;&#x7D22;&#x5F15;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF09;
+spring.redis.database=0
+# Redis &#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;
+spring.redis.host=localhost
+# Redis &#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#x7AEF;&#x53E3;
+spring.redis.port=6379
+# Redis &#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;&#x5BC6;&#x7801;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#xFF09;
+spring.redis.password=
+
+# &#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x975E;&#x672C;&#x529F;&#x80FD;&#x5FC5;&#x987B;
+# &#x8FDE;&#x63A5;&#x6C60;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;&#xFF08;&#x4F7F;&#x7528;&#x8D1F;&#x503C;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x9650;&#x5236;&#xFF09;
+spring.redis.lettuce.pool.max-active=8
+spring.redis.lettuce.pool.max-wait=-1
+spring.redis.lettuce.shutdown-timeout=100
+spring.redis.lettuce.pool.max-idle=8
+spring.redis.lettuce.pool.min-idle=0
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;&#x7C7B;"><a name="&#x914D;&#x7F6E;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.3. &#x914D;&#x7F6E;&#x7C7B;</h3>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@EnableRedisHttpSession</span>(maxInactiveIntervalInSeconds = <span class="hljs-number">86400</span>*<span class="hljs-number">30</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SessionConfig</span> </span>{
+}
+</code></pre>
+<p><em><code>maxInactiveIntervalInSeconds</code></em>&#xFF1A;&#x8BBE;&#x7F6E; Session &#x5931;&#x6548;&#x65F6;&#x95F4;&#xFF0C;&#x4F7F;&#x7528; Redis Session &#x4E4B;&#x540E;&#xFF0C;&#x539F; Spring Boot &#x4E2D;
+&#x7684; <em><code>server.session.timeout</code></em> &#x5C5E;&#x6027;&#x4E0D;&#x518D;&#x751F;&#x6548;&#x3002;</p>
+<p>&#x81F3;&#x6B64;&#xFF0C;spring boot &#x7684; session &#x5171;&#x4EAB;&#x529F;&#x80FD;&#x914D;&#x7F6E;&#x7ED3;&#x675F;&#x3002;</p>
+<h2 id="&#x9A8C;&#x8BC1;"><a name="&#x9A8C;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x9A8C;&#x8BC1;</h2>
+<p>&#x5728; Web &#x5C42;&#x5199;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5077;&#x61D2;&#x4E00;&#x70B9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x91CC;&#x6D4B;&#x8BD5;&#x7528;&#x7684; <em><code>@RestController</code></em> &#x8FDE;&#x901A;&#x4E0A;&#x9762;&#x7684; <em><code>@Configuration</code></em> &#x4E00;&#x8D77;&#x5199;&#x5728; spring boot &#x7684;&#x542F;&#x52A8;&#x7C7B;&#x4E2D;&#x3002;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java">
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@EnableRedisHttpSession</span>(maxInactiveIntervalInSeconds = <span class="hljs-number">86400</span> * <span class="hljs-number">30</span>)
+<span class="hljs-meta">@SpringBootApplication</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Application</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        SpringApplication.run(Application.class, args);
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(value = <span class="hljs-string">&quot;/set&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Map&lt;String, Object&gt; <span class="hljs-title">setSession</span><span class="hljs-params">(HttpServletRequest request)</span> </span>{
+        Map&lt;String, Object&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        request.getSession().setAttribute(<span class="hljs-string">&quot;message&quot;</span>, request.getRequestURL());
+        request.getSession().setAttribute(<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-string">&quot;world&quot;</span>);
+        map.put(<span class="hljs-string">&quot;sessionId&quot;</span>, request.getSession().getId());
+        map.put(<span class="hljs-string">&quot;request Url&quot;</span>, request.getRequestURL());
+        <span class="hljs-keyword">return</span> map;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(value = <span class="hljs-string">&quot;/get&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">getSession</span><span class="hljs-params">(HttpServletRequest request)</span> </span>{
+        Map&lt;String, Object&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+        map.put(<span class="hljs-string">&quot;sessionId&quot;</span>, request.getSession().getId());
+        map.put(<span class="hljs-string">&quot;message&quot;</span>, request.getSession().getAttribute(<span class="hljs-string">&quot;message&quot;</span>));
+        map.put(<span class="hljs-string">&quot;hello&quot;</span>, request.getSession().getAttribute(<span class="hljs-string">&quot;hello&quot;</span>));
+        <span class="hljs-keyword">return</span> map;
+    }
+
+}
+</code></pre>
+<p>&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x672C;&#x9879;&#x76EE;<small>&#xFF08;&#x6216;&#x5728; Idea &#x4E2D;&#x542F;&#x52A8;&#x4E24;&#x6B21;&#xFF0C;&#x6CE8;&#x610F;&#x7AEF;&#x53E3;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#xFF09;</small>&#xFF0C;&#x5206;&#x522B;&#x4ECE;&#x4E24;&#x4E2A; URL &#x4E2D;&#x8BBF;&#x95EE;/&#x89E6;&#x53D1; Session &#x7684;&#x5B58;&#x53D6;&#x529F;&#x80FD;&#x3002;</p>
+<p><img src="img/spring-boot-session-03.png" alt="spring-boot-session-03"></p>
+<p><img src="img/spring-boot-session-02.png" alt="spring-boot-session-02"></p>
+<p><img src="img/spring-boot-session-04.png" alt="spring-boot-session-04"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-spring-boot-redis.html" class="navigation navigation-prev " aria-label="Previous page: Spring Boot 集成 Redis">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-spring-cache.html" class="navigation navigation-next " aria-label="Next page: Spring Boot 集成 spring-cache">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring Boot 集成 spring-session","level":"1.3.9","depth":2,"next":{"title":"Spring Boot 集成 spring-cache","level":"1.3.10","depth":2,"path":"Part-II/spring-boot/10-spring-cache.md","ref":"Part-II/spring-boot/10-spring-cache.md","articles":[]},"previous":{"title":"Spring Boot 集成 Redis","level":"1.3.8","depth":2,"path":"Part-II/spring-boot/08-spring-boot-redis.md","ref":"Part-II/spring-boot/08-spring-boot-redis.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-II/spring-boot/09-spring-session.md","mtime":"2020-02-01T09:47:14.221Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-01T09:51:24.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

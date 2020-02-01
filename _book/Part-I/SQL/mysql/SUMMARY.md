@@ -1,0 +1,13 @@
+* [MySQL]()
+    * [MySQL 解压版安装](/Soft-install/windows/MySQL-解压版.md)
+    * [操作 Database](/Part-I/SQL/mysql/01-操作Database.md)
+    * [操作 Table](/Part-I/SQL/mysql/02-操作Table.md)
+    * [查询语句](/Part-I/SQL/mysql/03-查询语句.md)
+    * [插入、更新和删除数据](/Part-I/SQL/mysql/04-CUD.md)
+    * [索引](/Part-I/SQL/mysql/05-索引.md)
+    * [事务](/Part-I/SQL/mysql/06-事务.md)
+    * [视图](/Part-I/SQL/mysql/07-视图.md)
+    * [用户和权限管理](/Part-I/SQL/mysql/08-用户和权限管理.md)
+    * [素材-1](/Part-I/SQL/mysql/素材/01-数据库素材1.md)
+    * [素材-2](/Part-I/SQL/mysql/素材/02-数据库素材2.md)
+
