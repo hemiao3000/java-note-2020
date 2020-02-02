@@ -1,8 +1,8 @@
-# Fastjson
+<span class="title">Fastjson</span>
 
 Fastjson 是一个阿里巴巴公司开源的 Java 语言编写的高性能功能完善的 JSON 库。它采用一种“假定有序快速匹配”的算法，把 JSON Parse 的性能提升到极致，是目前 Java 语言中最快的 JSON 库，并且它不依赖于其它任何库。
 
-## 一、基本用法
+# 基本用法
 
 fastjson 提供了 `JSON.parseObject()` 和 `JSON.toJSONString` 两个直接用于解析和生成的方法。前者实现了反序列化，后者实现了序列化。
 
@@ -34,7 +34,7 @@ String jsonString = "{\"name\":\"怪盗kidou\",\"age\":24}";
 User user = JSON.parseObject(jsonString, User.class);
 ```
 
-## 二、JSONObject
+# JSONObject
 
 在 Java 中，一个 Map<String, Object> 对象可以等价描述一个 JavaBean。Map 中的每个键值对，对应 JavaBean 中的一个属性。键为属性名，值为属性值。
 
@@ -59,7 +59,7 @@ int val2 = map.getIntValue("age");
 
 对于不同类型的各种属性，JSONObject 提供了不同的 `getXXX()` 方法与之对应。
 
-## 三、@JSONField 注解：name 属性
+# @JSONField 注解：name 属性
 
 默认/一般情况下，JSON 字段中的名字和类的属性名是一致的。但是也有不一致的情况，因为本身驼峰命名法（如 Java）和下划线命名法（如 C）本身就是两大命名规则“流派”。
 
@@ -83,7 +83,7 @@ String jsonString = "{\"name\":\"怪盗kidou\",\"age\":24, \"email_address\":\"1
 User user = JSON.parseObject(jsonString, User.class);
 ```
 
-## 四、数组、集合的序列化和反序列化
+# 数组、集合的序列化和反序列化
 
 数组的序列化很简单，与普通对象类似;
 
@@ -114,7 +114,7 @@ for (User user : list)
     System.out.println(user);
 ```
 
-## 五、JSONArray
+# JSONArray
 
 反序列化数组形式的 JSON 格式字符串的第三种方案是利用 fastJson 提供的 JSONArray 。
 
@@ -136,7 +136,7 @@ for (int i = 0; i < arr2.size(); i++) {
 }
 ```
 
-## 六、泛型 和 RESETfull API
+# 泛型 和 RESETfull API
 
 泛型的引入可以减少无关的代码，这在 resetful api 返回数据时反映得更为清楚，通常 resetful api 接口返回的 JSON 数据为：
 
@@ -171,7 +171,7 @@ for (int i = 0; i < list.size(); i++) {
 }
 ```
 
-## 七、@JSONField 注解：serialzeFeatures 属性
+# @JSONField 注解：serialzeFeatures 属性
 
 在将一个对象转换成 JSON 格式字符串时，fastJson 会自动忽略掉其中值为 null 的属性，及不包含在 JSON 格式为字符串中。
 
@@ -203,7 +203,7 @@ System.out.println(JSON.toJSONString(user));
 // {"age":0,"emailAddress":null,"list":null,"name":"tom"}
 ```
 
-## 八、@JSONField 注解：format 属性
+# @JSONField 注解：format 属性
 
 当所需要序列化和反序列化的对象的属性有 Date 类型时，这里就涉及到 Date 类型的字符串形式的格式问题，为此 @JSONField 注解提供了 format 属性用以自定义其字符串格式：
 
@@ -212,14 +212,17 @@ System.out.println(JSON.toJSONString(user));
 private Date birthDate;
 ```
 
-## 九、循环引用
+# 循环引用
 
 fastJson 自动识别循环混用的问题，并将其替换成 `$ref` 形式。而是不是 StackOverflowError 异常。
 
-> “$ref”:”..” 上一级
-> “$ref”:”@” 当前对象，也就是自引用
-> “$ref”:”$” 根对象
-> “$ref”:”$.children.0” 基于路径的引用，相当于root.getChildren().get(0)
+> `$ref`：`..` 上一级
+>
+> `$ref`：`@` 当前对象，也就是自引用
+>
+> `$ref`：`$` 根对象
+>
+> `$ref`：`$.children.0` 基于路径的引用，相当于 `root.getChildren().get(0)`
 
 如果百分百肯定所要序列化的对象不存在循环引用问题，可以在序列化时关闭该检测功能（默认是开启的）。
 
@@ -227,12 +230,12 @@ fastJson 自动识别循环混用的问题，并将其替换成 `$ref` 形式。
 JSON.toJSONString(object, SerializerFeature.DisableCircularReferenceDetect);
 ```
 
-## 十、@JSONField 注解：serialize 属性
+# @JSONField 注解：serialize 属性
 
 标注了 `@JSONField(serialize=false)` 的属性在序列化成JSON格式字符串的过程中，会被 fastJSON 忽略。无论其是否有值。
 
 
-## 后记：Fastjson 快的代价
+# 后记：Fastjson 快的代价
 
 知乎上有一篇对 fastJson 的论题，各方相关、不相关人士<small>（包括 fastJson 开发作者）</small>都积极参与讨论，其中高票回答中写道：
 
