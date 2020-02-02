@@ -1,0 +1,3017 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redis 链表命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-集合命令.html" />
+    
+    
+    <link rel="prev" href="04-哈希命令.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    Apache Commons 工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                    
+                    commons-lang 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                    
+                    commons-collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../../../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                    
+                    commons-io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4" data-path="../../../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                    
+                    commons-codec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" >
+            
+                <span>
+            
+                    
+                    Spring 内置工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                <a href="../../../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                    
+                    最常用的四个工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" >
+            
+                <span>
+            
+                    
+                    JSON 库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../../../../Part-I/Utils/json-jackson.html">
+            
+                <a href="../../../../Part-I/Utils/json-jackson.html">
+            
+                    
+                    jackson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../../../../Part-I/Utils/json-fastjson.html">
+            
+                <a href="../../../../Part-I/Utils/json-fastjson.html">
+            
+                    
+                    fastjson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../../Part-I/Utils/log.html">
+            
+                <a href="../../../../Part-I/Utils/log.html">
+            
+                    
+                    日志库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../Soft-install/windows/MySQL-解压版.html">
+            
+                <a href="../../../../Soft-install/windows/MySQL-解压版.html">
+            
+                    
+                    MySQL 解压版安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                    
+                    操作 Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                    
+                    操作 Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                    
+                    查询语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../../Part-I/SQL/mysql/04-CUD.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/04-CUD.html">
+            
+                    
+                    插入、更新和删除数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../../Part-I/SQL/mysql/06-事务.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/06-事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                    
+                    素材-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                    
+                    JDBC 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                    
+                    JDBC 高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                    
+                    数据库连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Java Web
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                <a href="../../../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                    
+                    HTLM基本概念和结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                    
+                    单标签元素与双标签元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../../../Part-I/Web/HTML/03-常用元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/03-常用元素.html">
+            
+                    
+                    常用元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../../../Part-I/Web/HTML/08-表单元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/08-表单元素.html">
+            
+                    
+                    表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                <a href="../../../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                    
+                    元素的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                <a href="../../../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                    
+                    HTML5-role
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../../../Part-I/Web/CSS/01-基本概念.html">
+            
+                <a href="../../../../Part-I/Web/CSS/01-基本概念.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                <a href="../../../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                    
+                    CSS选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                <a href="../../../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                    
+                    CSS继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                <a href="../../../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                    
+                    颜色相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                <a href="../../../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                    
+                    文本相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                <a href="../../../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                    
+                    伪类和伪元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../../../Part-I/Web/CSS/07-盒模型.html">
+            
+                <a href="../../../../Part-I/Web/CSS/07-盒模型.html">
+            
+                    
+                    盒模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.8" data-path="../../../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                <a href="../../../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                    
+                    列表和表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.9" data-path="../../../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                <a href="../../../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                    
+                    定位与浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.10" data-path="../../../../Part-I/Web/CSS/10-布局.html">
+            
+                <a href="../../../../Part-I/Web/CSS/10-布局.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                    
+                    编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                    
+                    值和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                    
+                    定义变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                    
+                    程序的分支与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../../../../Part-I/Web/JavaScript/06-数组.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/06-数组.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../../../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                    
+                    创建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../../../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                    
+                    变量的作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.9" data-path="../../../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                    
+                    JavaScript 类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.10" data-path="../../../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                    
+                    JavaScript 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                    
+                    函数、方法与对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.11.1" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                    
+                    String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.2" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                    
+                    Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.3" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                    
+                    全局 Math 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.4" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.5" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.6" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                    
+                    日期与事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.12" data-path="../../../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                    
+                    浏览器对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.13" data-path="../../../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.14" data-path="../../../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" >
+            
+                <span>
+            
+                    
+                    jQuery
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../../../Part-I/Web/JQuery/00-简介.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/00-简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../../../Part-I/Web/JQuery/01-选择器.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/01-选择器.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                    
+                    操作 DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../../../../Part-I/Web/JQuery/04-事件.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/04-事件.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.6" data-path="../../../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                    
+                    动画与特效
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" >
+            
+                <span>
+            
+                    
+                    Servlet
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="../../../../Part-I/Servlet/00-HTTP概述.html">
+            
+                <a href="../../../../Part-I/Servlet/00-HTTP概述.html">
+            
+                    
+                    HTTP 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="../../../../Part-I/Servlet/01-Servlet.html">
+            
+                <a href="../../../../Part-I/Servlet/01-Servlet.html">
+            
+                    
+                    Servlet 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="../../../../Part-I/Servlet/02-ServletMapping.html">
+            
+                <a href="../../../../Part-I/Servlet/02-ServletMapping.html">
+            
+                    
+                    配置 Servlet 映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="../../../../Part-I/Servlet/03-Session.html">
+            
+                <a href="../../../../Part-I/Servlet/03-Session.html">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.5" data-path="../../../../Part-I/Servlet/Servlet/04-JSP.md">
+            
+                <span>
+            
+                    
+                    JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.6" data-path="../../../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.7" data-path="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.8" data-path="../../../../Part-I/Servlet/07-过滤器.html">
+            
+                <a href="../../../../Part-I/Servlet/07-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.9" data-path="../../../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                <a href="../../../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                    
+                    文件上传与下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.10" data-path="../../../../Part-I/Servlet/09-Cookie.html">
+            
+                <a href="../../../../Part-I/Servlet/09-Cookie.html">
+            
+                    
+                    Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.11" data-path="../../../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                <a href="../../../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                    
+                    Ajax请求和响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.12" data-path="../../../../Part-I/Servlet/11-乱码问题.html">
+            
+                <a href="../../../../Part-I/Servlet/11-乱码问题.html">
+            
+                    
+                    乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../../../Part-I/Spring/01-IoC.html">
+            
+                <a href="../../../../Part-I/Spring/01-IoC.html">
+            
+                    
+                    Spring IoC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../../../Part-I/Spring/02-AOP.html">
+            
+                <a href="../../../../Part-I/Spring/02-AOP.html">
+            
+                    
+                    Spring AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="../../../../Part-I/Spring/03-tx.html">
+            
+                <a href="../../../../Part-I/Spring/03-tx.html">
+            
+                    
+                    Spring TX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="../../../../part-I/Spring/05-spring-datasource.md">
+            
+                <span>
+            
+                    
+                    Spring 数据库连接池配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="../../../../Part-I/Spring/06-spring-jdbc.html">
+            
+                <a href="../../../../Part-I/Spring/06-spring-jdbc.html">
+            
+                    
+                    Spring JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="../../../../Part-I/Spring/07-spring-code-config.html">
+            
+                <a href="../../../../Part-I/Spring/07-spring-code-config.html">
+            
+                    
+                    Spring 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    Spring MVC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                <a href="../../../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                    
+                    第一个 SpringMVC 应用程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../../../Part-I/Springmvc/02-工作流程.html">
+            
+                <a href="../../../../Part-I/Springmvc/02-工作流程.html">
+            
+                    
+                    SpringMVC 的工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                <a href="../../../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                    
+                    DispatcherServlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../../../Part-I/Springmvc/04-Controller.html">
+            
+                <a href="../../../../Part-I/Springmvc/04-Controller.html">
+            
+                    
+                    Controller 的编写和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../../../Part-I/Springmvc/05-参数绑定.html">
+            
+                <a href="../../../../Part-I/Springmvc/05-参数绑定.html">
+            
+                    
+                    参数绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../../../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                <a href="../../../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                    
+                    自定义类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../../../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../../../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                <a href="../../../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                    
+                    转发和重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.10" data-path="../../../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                <a href="../../../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                    
+                    操作 Session 和 Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.11" data-path="../../../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                <a href="../../../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                    
+                    静态资源访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.12" data-path="../../../../Part-I/Springmvc/10-拦截器.html">
+            
+                <a href="../../../../Part-I/Springmvc/10-拦截器.html">
+            
+                    
+                    拦截器和 POST 中文乱码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.13" data-path="../../../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                <a href="../../../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                    
+                    文件上传和下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.14" data-path="../../../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                <a href="../../../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                    
+                    统一异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.15" data-path="../../../../Part-I/Springmvc/13-Ajax.html">
+            
+                <a href="../../../../Part-I/Springmvc/13-Ajax.html">
+            
+                    
+                    SpringMVC 处理 Ajax 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.16" data-path="../../../../Restful/03-springmvc-restful.md">
+            
+                <span>
+            
+                    
+                    SpringMVC 对 RESTful 的支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../../../Part-I/mybatis/01-基本用法.html">
+            
+                <a href="../../../../Part-I/mybatis/01-基本用法.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../../../Part-I/mybatis/02-执行SQL语句/">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/">
+            
+                    
+                    执行SQL语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.2.1" data-path="../../../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                    
+                    执行增删改操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.2" data-path="../../../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                    
+                    getMapper的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.3" data-path="../../../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                    
+                    执行查操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.4" data-path="../../../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                    
+                    传递多个参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.5" data-path="../../../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                    
+                    动态 SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../../../Part-I/mybatis/03-映射结果集.html">
+            
+                <a href="../../../../Part-I/mybatis/03-映射结果集.html">
+            
+                    
+                    映射结果集（基本）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                <a href="../../../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                    
+                    映射结果集（高级）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../../../Part-I/mybatis/04-分页.html">
+            
+                <a href="../../../../Part-I/mybatis/04-分页.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../../../../Part-I/mybatis/05-Generator_Example.html">
+            
+                <a href="../../../../Part-I/mybatis/05-Generator_Example.html">
+            
+                    
+                    MybatisGenerator和Example对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.7" data-path="../../../../Part-I/mybatis/06-延迟加载.html">
+            
+                <a href="../../../../Part-I/mybatis/06-延迟加载.html">
+            
+                    
+                    延迟加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../../../Part-I/Maven/01-Maven.html">
+            
+                <a href="../../../../Part-I/Maven/01-Maven.html">
+            
+                    
+                    Maven 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../../../Part-I/Maven/02-Maven继承.html">
+            
+                <a href="../../../../Part-I/Maven/02-Maven继承.html">
+            
+                    
+                    Maven 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../../../../Part-I/Maven/03-Maven多模块.html">
+            
+                <a href="../../../../Part-I/Maven/03-Maven多模块.html">
+            
+                    
+                    Maven 多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../../spring-boot/02-Java代码配置.html">
+            
+                <a href="../../../spring-boot/02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../../spring-boot/01-基础.html">
+            
+                <a href="../../../spring-boot/01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../../spring-boot/03-自动配置.html">
+            
+                <a href="../../../spring-boot/03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../../spring-boot/04-spring-boot-jsp.html">
+            
+                <a href="../../../spring-boot/04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../../spring-boot/05-thymeleaf基础.html">
+            
+                <a href="../../../spring-boot/05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../../spring-boot/06-spring-boot-mybatis.html">
+            
+                <a href="../../../spring-boot/06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../../../spring-boot/07-spring-boot-jpa.html">
+            
+                <a href="../../../spring-boot/07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../../../spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../../spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../../../spring-boot/09-spring-session.html">
+            
+                <a href="../../../spring-boot/09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../../../spring-boot/10-spring-cache.html">
+            
+                <a href="../../../spring-boot/10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../../../spring-boot/11-spring-boot-quartz.html">
+            
+                <a href="../../../spring-boot/11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../../../spring-boot/12-spring-boot-mail.html">
+            
+                <a href="../../../spring-boot/12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../../../spring-boot/13-spring-boot-swagger.html">
+            
+                <a href="../../../spring-boot/13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1.1" data-path="01-简介.html">
+            
+                <a href="01-简介.html">
+            
+                    
+                    Redis 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.2" data-path="02-通用命令.html">
+            
+                <a href="02-通用命令.html">
+            
+                    
+                    Redis 通用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.3" data-path="03-字符串命令.html">
+            
+                <a href="03-字符串命令.html">
+            
+                    
+                    Redis 字符串命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.4" data-path="04-哈希命令.html">
+            
+                <a href="04-哈希命令.html">
+            
+                    
+                    Redis 哈希命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.1.5" data-path="05-链表命令.html">
+            
+                <a href="05-链表命令.html">
+            
+                    
+                    Redis 链表命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.6" data-path="06-集合命令.html">
+            
+                <a href="06-集合命令.html">
+            
+                    
+                    Redis 集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.7" data-path="07-有序集合命令.html">
+            
+                <a href="07-有序集合命令.html">
+            
+                    
+                    Redis 有序集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.8" data-path="08-spring-redis.html">
+            
+                <a href="08-spring-redis.html">
+            
+                    
+                    Spring 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.9" data-path="../../../spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../../spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../message-queue/">
+            
+                <a href="../../message-queue/">
+            
+                    
+                    消息队列总论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
+                    ActiveMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../../message-queue/activemq/01-简介.html">
+            
+                <a href="../../message-queue/activemq/01-简介.html">
+            
+                    
+                    ActiveMQ 基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../../message-queue/activemq/02-java-activemq.html">
+            
+                <a href="../../message-queue/activemq/02-java-activemq.html">
+            
+                    
+                    ActiveMQ 原生 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.3" data-path="../../message-queue/activemq/03-spring-activemq.html">
+            
+                <a href="../../message-queue/activemq/03-spring-activemq.html">
+            
+                    
+                    Spring 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.4" data-path="../../message-queue/activemq/04-spring-boot-activemq.html">
+            
+                <a href="../../message-queue/activemq/04-spring-boot-activemq.html">
+            
+                    
+                    Spring Boot 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" >
+            
+                <span>
+            
+                    
+                    RabbitMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="../../message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                <a href="../../message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                    
+                    RabbitMQ 中的路由和虚拟主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4.2" data-path="../../message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                <a href="../../message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                    
+                    Spring Boot 整合 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../../../Part-I/99-webmagic爬虫.html">
+            
+                <a href="../../../../Part-I/99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../../../Part-I/Gist/jdbc.properties.html">
+            
+                <a href="../../../../Part-I/Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../../../../Part-I/Gist/logback.xml.html">
+            
+                <a href="../../../../Part-I/Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../../../../Part-I/Gist/pom.xml.html">
+            
+                <a href="../../../../Part-I/Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../../../../Part-I/Gist/web.xml.html">
+            
+                <a href="../../../../Part-I/Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../../../../Part-I/Gist/mybatis-config.xml.html">
+            
+                <a href="../../../../Part-I/Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="../../../../Part-I/Gist/spring-dao.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="../../../../Part-I/Gist/spring-service.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.8" data-path="../../../../Part-I/Gist/spring-web.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.9" data-path="../../../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../../../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.10" data-path="../../../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../../../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Redis 链表命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#lpush-&#x547D;&#x4EE4;"><b>1. </b>Lpush &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;"><b>1.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;"><b>1.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;"><b>1.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;"><b>1.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#rpush-&#x547D;&#x4EE4;"><b>2. </b>Rpush &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_1"><b>2.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_1"><b>2.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_1"><b>2.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_1"><b>2.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lindex-&#x547D;&#x4EE4;"><b>3. </b>Lindex &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_2"><b>3.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_2"><b>3.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_2"><b>3.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_2"><b>3.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#llen-&#x547D;&#x4EE4;"><b>4. </b>Llen &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_3"><b>4.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_3"><b>4.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_3"><b>4.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_3"><b>4.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lpop-&#x547D;&#x4EE4;"><b>5. </b>Lpop &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_4"><b>5.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_4"><b>5.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_4"><b>5.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_4"><b>5.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#rpop-&#x547D;&#x4EE4;"><b>6. </b>Rpop &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_5"><b>6.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_5"><b>6.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_5"><b>6.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_5"><b>6.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#linsert-&#x547D;&#x4EE4;"><b>7. </b>Linsert &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_6"><b>7.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_6"><b>7.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_6"><b>7.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_6"><b>7.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lpushx-&#x547D;&#x4EE4;"><b>8. </b>Lpushx &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_7"><b>8.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_7"><b>8.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_7"><b>8.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_7"><b>8.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#rpushx-&#x547D;&#x4EE4;"><b>9. </b>Rpushx &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_8"><b>9.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_8"><b>9.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_8"><b>9.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_8"><b>9.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lrange-&#x547D;&#x4EE4;"><b>10. </b>Lrange &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_9"><b>10.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_9"><b>10.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_9"><b>10.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_9"><b>10.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lrem-&#x547D;&#x4EE4;"><b>11. </b>Lrem &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_10"><b>11.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_10"><b>11.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_10"><b>11.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_10"><b>11.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#lset-&#x547D;&#x4EE4;"><b>12. </b>Lset &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_11"><b>12.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_11"><b>12.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_11"><b>12.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_11"><b>12.4. </b>&#x5B9E;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#ltrim-&#x547D;&#x4EE4;"><b>13. </b>Ltrim &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F5C;&#x7528;_12"><b>13.1. </b>&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x8BED;&#x6CD5;_12"><b>13.2. </b>&#x8BED;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_12"><b>13.3. </b>&#x8FD4;&#x56DE;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x4F8B;_12"><b>13.4. </b>&#x5B9E;&#x4F8B;</a></li></ul></ul></div><a href="#lpush-&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">&#x94FE;&#x8868;&#x547D;&#x4EE4;</span></p>
+<h1 id="lpush-&#x547D;&#x4EE4;"><a name="lpush-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lpush-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Lpush &#x547D;&#x4EE4;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x589E;</th>
+<th style="text-align:left">&#x5220;</th>
+<th style="text-align:left">&#x6539;</th>
+<th style="text-align:left">&#x67E5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">lpush</td>
+<td style="text-align:left">lpop</td>
+<td style="text-align:left">lset</td>
+<td style="text-align:left">lrange</td>
+</tr>
+<tr>
+<td style="text-align:left">linsert</td>
+<td style="text-align:left">rpop</td>
+<td style="text-align:left">lindex</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">lrem</td>
+<td style="text-align:left">llen</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">ltrim</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4F5C;&#x7528;"><a name="&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4F5C;&#x7528;</h2>
+<p>Lpush &#x547D;&#x4EE4;&#x5C06;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#x63D2;&#x5165;&#x5230;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x5934;&#x90E8;&#xFF08;&#x5DE6;&#x4FA7;&#xFF09;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x54EA;&#x4E2A;&#x94FE;&#x8868;&#x7531;&#x53C2;&#x6570; <em>key</em> &#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x94FE;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x800C;&#x540E;&#x518D;&#x6267;&#x884C; Lpush &#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5F53; key &#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728; Redis 2.4 &#x7248;&#x672C;&#x4EE5;&#x524D;&#x7684; Lpush &#x547D;&#x4EE4;&#xFF0C;&#x90FD;&#x53EA;&#x63A5;&#x53D7;&#x5355;&#x4E2A; value &#x503C;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;"><a name="&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lpush</strong> <em>key value [ value ... ]</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;"><a name="&#x8FD4;&#x56DE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x6267;&#x884C; Lpush &#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;"><a name="&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; LPUSH 9527 10
+(integer) 1
+redis 127.0.0.1:6379&gt; LPUSH 9527 20
+(integer) 2
+redis 127.0.0.1:6379&gt; LRANGE 9527 0 -1
+1) &quot;10&quot;
+2) &quot;20&quot;
+</code></pre><h1 id="rpush-&#x547D;&#x4EE4;"><a name="rpush-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#rpush-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Rpush &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_1"><a name="&#x4F5C;&#x7528;_1" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x4F5C;&#x7528;</h2>
+<p>Rpush &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#x63D2;&#x5165;&#x5230;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x5C3E;&#x90E8;(&#x6700;&#x53F3;&#x8FB9;)&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x54EA;&#x4E2A;&#x5217;&#x8868;&#x7531;&#x53C2;&#x6570; <em>key</em> &#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6267;&#x884C; Rpush &#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5F53; key &#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728; Redis 2.4 &#x7248;&#x672C;&#x4EE5;&#x524D;&#x7684; RPUSH &#x547D;&#x4EE4;&#xFF0C;&#x90FD;&#x53EA;&#x63A5;&#x53D7;&#x5355;&#x4E2A; value &#x503C;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_1"><a name="&#x8BED;&#x6CD5;_1" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Rpush</strong> <em>key value [value ... ]</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_1"><a name="&#x8FD4;&#x56DE;&#x503C;_1" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x6267;&#x884C; Rpush &#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_1"><a name="&#x5B9E;&#x4F8B;_1" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH 9528 &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH 9528 &quot;world&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSH 9528 &quot;goodbye&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; LRANGE 9528 0 -1
+1) &quot;hello&quot;
+2) &quot;world&quot;
+3) &quot;goodbye&quot;
+</code></pre><h1 id="lindex-&#x547D;&#x4EE4;"><a name="lindex-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lindex-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Lindex &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_2"><a name="&#x4F5C;&#x7528;_2" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x4F5C;&#x7528;</h2>
+<p>Lindex &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x54EA;&#x4E2A;&#x5217;&#x8868;&#x7531;&#x53C2;&#x6570; <em>key</em> &#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x7D22;&#x5F15;&#x90FD;&#x662F;&#x4ECE;&#x5934;&#x5411;&#x5C3E;&#xFF08;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#xFF09;&#x7684;&#x65B9;&#x5411;&#x7B97;&#xFF0C;&#x4ECE; 0 &#x5F00;&#x59CB;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8D1F;&#x6570;&#x4E0B;&#x6807;&#xFF0C;&#x4EE5; -1 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C; -2 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_2"><a name="&#x8BED;&#x6CD5;_2" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lindex</strong> <em>key index</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_2"><a name="&#x8FD4;&#x56DE;&#x503C;_2" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x5217;&#x8868;&#x4E2D;&#x4E0B;&#x6807;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x503C;&#x4E0D;&#x5728;&#x5217;&#x8868;&#x7684;&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x8FD4;&#x56DE; nil &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_2"><a name="&#x5B9E;&#x4F8B;_2" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_2"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; LPUSH list_1 &quot;World&quot;
+(integer) 1
+
+redis 127.0.0.1:6379&gt; LPUSH list_1 &quot;Hello&quot;
+(integer) 2
+
+redis 127.0.0.1:6379&gt; LINDEX list_1 0
+&quot;Hello&quot;
+
+redis 127.0.0.1:6379&gt; LINDEX list_1 -1
+&quot;World&quot;
+
+redis 127.0.0.1:6379&gt; LINDEX list_1 3        # index&#x4E0D;&#x5728; mylist &#x7684;&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;
+(nil)
+</code></pre><h1 id="llen-&#x547D;&#x4EE4;"><a name="llen-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#llen-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Llen &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_3"><a name="&#x4F5C;&#x7528;_3" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_3"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x4F5C;&#x7528;</h2>
+<p>Llen &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0 &#x3002;</p>
+<p>&#x5982;&#x679C; key &#x5BF9;&#x5E94;&#x7684;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_3"><a name="&#x8BED;&#x6CD5;_3" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_3"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Llen</strong> <em>key</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_3"><a name="&#x8FD4;&#x56DE;&#x503C;_3" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_3"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_3"><a name="&#x5B9E;&#x4F8B;_3" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_3"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH list1 &quot;foo&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH list1 &quot;bar&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; LLEN list1
+(integer) 2
+</code></pre><h1 id="lpop-&#x547D;&#x4EE4;"><a name="lpop-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lpop-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>5. Lpop &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_4"><a name="&#x4F5C;&#x7528;_4" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_4"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. &#x4F5C;&#x7528;</h2>
+<p>Lpop &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x79FB;&#x9664;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x6700;&#x5DE6;&#x4FA7;&#x7684;&#x5143;&#x7D20;&#xFF09;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_4"><a name="&#x8BED;&#x6CD5;_4" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_4"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lpop</strong> <em>key</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_4"><a name="&#x8FD4;&#x56DE;&#x503C;_4" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_4"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5F53;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE; nil &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_4"><a name="&#x5B9E;&#x4F8B;_4" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_4"><i class="fa fa-link" aria-hidden="true"></i></a>5.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH list1 &quot;foo&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH list1 &quot;bar&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; LPOP list1
+&quot;foo&quot;
+</code></pre><h1 id="rpop-&#x547D;&#x4EE4;"><a name="rpop-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#rpop-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>6. Rpop &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_5"><a name="&#x4F5C;&#x7528;_5" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_5"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. &#x4F5C;&#x7528;</h2>
+<p>Rpop &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x79FB;&#x9664;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x6700;&#x53F3;&#x4FA7;&#x7684;&#x5143;&#x7D20;&#xFF09;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_5"><a name="&#x8BED;&#x6CD5;_5" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_5"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>RPOP</strong> <em>key</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_5"><a name="&#x8FD4;&#x56DE;&#x503C;_5" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_5"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5F53;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE; nil &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_5"><a name="&#x5B9E;&#x4F8B;_5" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_5"><i class="fa fa-link" aria-hidden="true"></i></a>6.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;foo&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;bar&quot;
+(integer) 4
+redis 127.0.0.1:6379&gt; RPOP mylist
+OK
+redis 127.0.0.1:6379&gt; LRANGE mylist 0 -1
+1) &quot;hello&quot;
+2) &quot;hello&quot;
+3) &quot;foo&quot;
+</code></pre><h1 id="linsert-&#x547D;&#x4EE4;"><a name="linsert-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#linsert-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>7. Linsert &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_6"><a name="&#x4F5C;&#x7528;_6" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_6"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. &#x4F5C;&#x7528;</h2>
+<p>Linsert &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5728;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x951A;&#x70B9;&#x5143;&#x7D20;&#xFF09;&#x524D;&#x6216;&#x8005;&#x540E;&#x63D2;&#x5165;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5F53;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#xFF0C;&#x88AB;&#x89C6;&#x4E3A;&#x7A7A;&#x5217;&#x8868;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5982;&#x679C; key &#x5BF9;&#x5E94;&#x7684;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x7C7B;&#x578B;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x5F53;&#x6307;&#x5B9A;&#x7684;&#x951A;&#x70B9;&#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x4E8E;&#x5217;&#x8868;&#x4E2D;&#x65F6;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_6"><a name="&#x8BED;&#x6CD5;_6" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_6"><i class="fa fa-link" aria-hidden="true"></i></a>7.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Linsert</strong> <em>key before | after pivot value</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_6"><a name="&#x8FD4;&#x56DE;&#x503C;_6" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_6"><i class="fa fa-link" aria-hidden="true"></i></a>7.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x5982;&#x679C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6307;&#x5B9A;&#x5143;&#x7D20; &#xFF0C;&#x8FD4;&#x56DE; -1 &#x3002;</p>
+<p>&#x5982;&#x679C;&#x7C7B;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x6216;&#x4E3A;&#x7A7A;&#x5217;&#x8868;&#xFF0C;&#x8FD4;&#x56DE; 0 &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_6"><a name="&#x5B9E;&#x4F8B;_6" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_6"><i class="fa fa-link" aria-hidden="true"></i></a>7.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH list1 &quot;foo&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH list1 &quot;bar&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; LINSERT list1 BEFORE &quot;bar&quot; &quot;Yes&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; LRANGE mylist 0 -1
+1) &quot;foo&quot;
+2) &quot;Yes&quot;
+3) &quot;bar&quot;
+</code></pre><h1 id="lpushx-&#x547D;&#x4EE4;"><a name="lpushx-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lpushx-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>8. Lpushx &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_7"><a name="&#x4F5C;&#x7528;_7" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_7"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. &#x4F5C;&#x7528;</h2>
+<p>Lpushx &#x5C06;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#x63D2;&#x5165;&#x5230;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x5934;&#x90E8;&#xFF08;&#x6700;&#x5DE6;&#x4FA7;&#xFF09;&#xFF0C;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x64CD;&#x4F5C;&#x65E0;&#x6548;&#x3002;</p>
+<p>&#x4E0E; Lpush &#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5728; Lpushx &#x201D;&#x9884;&#x671F;&#x5217;&#x8868;&#x5B58;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;&#x5217;&#x8868;&#xFF0C;&#x800C; Lpush &#x4F1A;&#x65B0;&#x5EFA;&#x5217;&#x8868;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_7"><a name="&#x8BED;&#x6CD5;_7" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_7"><i class="fa fa-link" aria-hidden="true"></i></a>8.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lpushx</strong> <em>key value [ value ... ]</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_7"><a name="&#x8FD4;&#x56DE;&#x503C;_7" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_7"><i class="fa fa-link" aria-hidden="true"></i></a>8.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>Lpushx &#x547D;&#x4EE4;&#x6267;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_7"><a name="&#x5B9E;&#x4F8B;_7" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_7"><i class="fa fa-link" aria-hidden="true"></i></a>8.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; LPUSH list1 &quot;foo&quot;
+(integer) 1
+
+redis 127.0.0.1:6379&gt; LPUSHX list1 &quot;bar&quot;
+(integer) 2
+
+redis 127.0.0.1:6379&gt; LPUSHX list2 &quot;bar&quot;
+(integer) 0
+
+redis 127.0.0.1:6379&gt; LRANGE list1 0 -1
+1) &quot;foo&quot;
+2) &quot;bar&quot;
+</code></pre><h1 id="rpushx-&#x547D;&#x4EE4;"><a name="rpushx-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#rpushx-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>9. Rpushx &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_8"><a name="&#x4F5C;&#x7528;_8" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_8"><i class="fa fa-link" aria-hidden="true"></i></a>9.1. &#x4F5C;&#x7528;</h2>
+<p>Rpushx &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x503C;&#x63D2;&#x5165;&#x5230;&#x67D0;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5217;&#x8868;&#x5C3E;&#x90E8;(&#x6700;&#x53F3;&#x8FB9;)&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x64CD;&#x4F5C;&#x65E0;&#x6548;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;&#x5217;&#x8868;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_8"><a name="&#x8BED;&#x6CD5;_8" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_8"><i class="fa fa-link" aria-hidden="true"></i></a>9.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Rpushx</strong> <em>key value [ value ... ]</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_8"><a name="&#x8FD4;&#x56DE;&#x503C;_8" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_8"><i class="fa fa-link" aria-hidden="true"></i></a>9.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x6267;&#x884C; Rpushx &#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_8"><a name="&#x5B9E;&#x4F8B;_8" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_8"><i class="fa fa-link" aria-hidden="true"></i></a>9.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;foo&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSHX mylist2 &quot;bar&quot;
+(integer) 0
+redis 127.0.0.1:6379&gt; LRANGE mylist 0 -1
+1) &quot;hello&quot;
+2) &quot;foo&quot;
+</code></pre><h1 id="lrange-&#x547D;&#x4EE4;"><a name="lrange-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lrange-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>10. Lrange &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_9"><a name="&#x4F5C;&#x7528;_9" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_9"><i class="fa fa-link" aria-hidden="true"></i></a>10.1. &#x4F5C;&#x7528;</h2>
+<p>Lrange &#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x5185;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x533A;&#x95F4;&#x4EE5;&#x53C2;&#x6570; <em>start</em> &#x548C; <em>end</em> &#x6307;&#x5B9A;&#x3002;&#x5176;&#x4E2D; 0 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C; 1 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8D1F;&#x6570;&#x4E0B;&#x6807;&#xFF0C;&#x4EE5; -1 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C; -2 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_9"><a name="&#x8BED;&#x6CD5;_9" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_9"><i class="fa fa-link" aria-hidden="true"></i></a>10.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lrange</strong> <em>key start end</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_9"><a name="&#x8FD4;&#x56DE;&#x503C;_9" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_9"><i class="fa fa-link" aria-hidden="true"></i></a>10.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x5185;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_9"><a name="&#x5B9E;&#x4F8B;_9" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_9"><i class="fa fa-link" aria-hidden="true"></i></a>10.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; LPUSH list1 &quot;foo&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; LPUSH list1 &quot;bar&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; LPUSHX list1 &quot;bar&quot;
+(integer) 0
+redis 127.0.0.1:6379&gt; LRANGE list1 0 -1
+1) &quot;foo&quot;
+2) &quot;bar&quot;
+3) &quot;bar&quot;
+</code></pre><h1 id="lrem-&#x547D;&#x4EE4;"><a name="lrem-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lrem-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>11. Lrem &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_10"><a name="&#x4F5C;&#x7528;_10" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_10"><i class="fa fa-link" aria-hidden="true"></i></a>11.1. &#x4F5C;&#x7528;</h2>
+<p>Lrem &#x6839;&#x636E;&#x53C2;&#x6570; <em>count</em> &#x7684;&#x503C;&#xFF0C;&#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x4E0E;&#x53C2;&#x6570; <em>value</em> &#x76F8;&#x7B49;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p><em>count</em> &#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<p>count &gt; 0 : &#x4ECE;&#x8868;&#x5934;&#x5F00;&#x59CB;&#x5411;&#x8868;&#x5C3E;&#x641C;&#x7D22;&#xFF0C;&#x79FB;&#x9664;&#x4E0E; VALUE &#x76F8;&#x7B49;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6570;&#x91CF;&#x4E3A; <em>count</em> &#x3002;</p>
+<p>count &lt; 0 : &#x4ECE;&#x8868;&#x5C3E;&#x5F00;&#x59CB;&#x5411;&#x8868;&#x5934;&#x641C;&#x7D22;&#xFF0C;&#x79FB;&#x9664;&#x4E0E; VALUE &#x76F8;&#x7B49;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6570;&#x91CF;&#x4E3A; <em>count</em> &#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x3002;</p>
+<p>count = 0 : &#x79FB;&#x9664;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x4E0E; VALUE &#x76F8;&#x7B49;&#x7684;&#x503C;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_10"><a name="&#x8BED;&#x6CD5;_10" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_10"><i class="fa fa-link" aria-hidden="true"></i></a>11.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lrem</strong> <em>key count value</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_10"><a name="&#x8FD4;&#x56DE;&#x503C;_10" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_10"><i class="fa fa-link" aria-hidden="true"></i></a>11.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x88AB;&#x79FB;&#x9664;&#x5143;&#x7D20;&#x7684;&#x6570;&#x91CF;&#x3002; &#x5217;&#x8868;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x8FD4;&#x56DE; 0 &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_10"><a name="&#x5B9E;&#x4F8B;_10" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_10"><i class="fa fa-link" aria-hidden="true"></i></a>11.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;foo&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 4
+redis 127.0.0.1:6379&gt; LREM mylist -2 &quot;hello&quot;
+(integer) 2
+</code></pre><h1 id="lset-&#x547D;&#x4EE4;"><a name="lset-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#lset-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>12. Lset &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_11"><a name="&#x4F5C;&#x7528;_11" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_11"><i class="fa fa-link" aria-hidden="true"></i></a>12.1. &#x4F5C;&#x7528;</h2>
+<p>Lset &#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x53C2;&#x6570; <em>index</em> &#x6765;&#x8BBE;&#x7F6E;&#x67D0;&#x4E2A;&#x5217;&#x8868;&#x4E0A;&#x7684;&#x5143;&#x7D20;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x7D22;&#x5F15;&#x53C2;&#x6570;&#x8D85;&#x51FA;&#x8303;&#x56F4;&#xFF0C;&#x6216;&#x5BF9;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;&#x8FDB;&#x884C; LSET &#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_11"><a name="&#x8BED;&#x6CD5;_11" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_11"><i class="fa fa-link" aria-hidden="true"></i></a>12.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Lset</strong> <em>key index value</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_11"><a name="&#x8FD4;&#x56DE;&#x503C;_11" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_11"><i class="fa fa-link" aria-hidden="true"></i></a>12.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x8FD4;&#x56DE; ok &#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_11"><a name="&#x5B9E;&#x4F8B;_11" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_11"><i class="fa fa-link" aria-hidden="true"></i></a>12.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;foo&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 4
+redis 127.0.0.1:6379&gt; LSET mylist 0 &quot;bar&quot;
+OK
+
+redis 127.0.0.1:6379&gt; LRANGE mylist 0 -1
+1: &quot;bar&quot;
+2) &quot;hello&quot;
+3) &quot;foo&quot;
+4) &quot;hello&quot;
+</code></pre><h1 id="ltrim-&#x547D;&#x4EE4;"><a name="ltrim-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#ltrim-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>13. Ltrim &#x547D;&#x4EE4;</h1>
+<h2 id="&#x4F5C;&#x7528;_12"><a name="&#x4F5C;&#x7528;_12" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;_12"><i class="fa fa-link" aria-hidden="true"></i></a>13.1. &#x4F5C;&#x7528;</h2>
+<p>Ltrim &#x5BF9;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x88C1;&#x526A;&#xFF08;trim&#xFF09;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8BA9;&#x5217;&#x8868;&#x53EA;&#x4FDD;&#x7559;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x5185;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x5728;&#x6307;&#x5B9A;&#x533A;&#x95F4;&#x4E4B;&#x5185;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5C06;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+<p>&#x4E0B;&#x6807; 0 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5; 1 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;<em>start</em> &#x548C; <em>stop</em> &#x5305;&#x542B;&#x5728;&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8D1F;&#x6570;&#x4E0B;&#x6807;&#xFF0C;&#x4EE5; -1 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C; -2 &#x8868;&#x793A;&#x5217;&#x8868;&#x7684;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;_12"><a name="&#x8BED;&#x6CD5;_12" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;_12"><i class="fa fa-link" aria-hidden="true"></i></a>13.2. &#x8BED;&#x6CD5;</h2>
+<p><strong>Ltrim</strong> <em>key start stop</em></p>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_12"><a name="&#x8FD4;&#x56DE;&#x503C;_12" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_12"><i class="fa fa-link" aria-hidden="true"></i></a>13.3. &#x8FD4;&#x56DE;&#x503C;</h2>
+<p>&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x65F6;&#xFF0C;&#x8FD4;&#x56DE; ok &#x3002;</p>
+<h2 id="&#x5B9E;&#x4F8B;_12"><a name="&#x5B9E;&#x4F8B;_12" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x4F8B;_12"><i class="fa fa-link" aria-hidden="true"></i></a>13.4. &#x5B9E;&#x4F8B;</h2>
+<pre><code>redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 1
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;hello&quot;
+(integer) 2
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;foo&quot;
+(integer) 3
+redis 127.0.0.1:6379&gt; RPUSH mylist &quot;bar&quot;
+(integer) 4
+redis 127.0.0.1:6379&gt; LTRIM mylist 1 -1
+OK
+redis 127.0.0.1:6379&gt; LRANGE mylist 0 -1
+1) &quot;hello&quot;
+2) &quot;foo&quot;
+3) &quot;bar&quot;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-哈希命令.html" class="navigation navigation-prev " aria-label="Previous page: Redis 哈希命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-集合命令.html" class="navigation navigation-next " aria-label="Next page: Redis 集合命令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redis 链表命令","level":"5.1.1.5","depth":3,"next":{"title":"Redis 集合命令","level":"5.1.1.6","depth":3,"path":"Part-II/middleware/nosql/redis/06-集合命令.md","ref":"Part-II/middleware/nosql/redis/06-集合命令.md","articles":[]},"previous":{"title":"Redis 哈希命令","level":"5.1.1.4","depth":3,"path":"Part-II/middleware/nosql/redis/04-哈希命令.md","ref":"Part-II/middleware/nosql/redis/04-哈希命令.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-II/middleware/nosql/redis/05-链表命令.md","mtime":"2020-02-01T12:34:34.829Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-02T10:52:43.315Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

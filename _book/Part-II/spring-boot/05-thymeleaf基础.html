@@ -1,0 +1,3043 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring Boot 中使用 Thymeleaf · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-spring-boot-mybatis.html" />
+    
+    
+    <link rel="prev" href="04-spring-boot-jsp.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    Apache Commons 工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                <a href="../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                    
+                    commons-lang 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                <a href="../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                    
+                    commons-collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                <a href="../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                    
+                    commons-io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4" data-path="../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                <a href="../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                    
+                    commons-codec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" >
+            
+                <span>
+            
+                    
+                    Spring 内置工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                <a href="../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                    
+                    最常用的四个工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" >
+            
+                <span>
+            
+                    
+                    JSON 库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../../Part-I/Utils/json-jackson.html">
+            
+                <a href="../../Part-I/Utils/json-jackson.html">
+            
+                    
+                    jackson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../../Part-I/Utils/json-fastjson.html">
+            
+                <a href="../../Part-I/Utils/json-fastjson.html">
+            
+                    
+                    fastjson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../Part-I/Utils/log.html">
+            
+                <a href="../../Part-I/Utils/log.html">
+            
+                    
+                    日志库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../Soft-install/windows/MySQL-解压版.html">
+            
+                <a href="../../Soft-install/windows/MySQL-解压版.html">
+            
+                    
+                    MySQL 解压版安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                <a href="../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                    
+                    操作 Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                <a href="../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                    
+                    操作 Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                <a href="../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                    
+                    查询语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../Part-I/SQL/mysql/04-CUD.html">
+            
+                <a href="../../Part-I/SQL/mysql/04-CUD.html">
+            
+                    
+                    插入、更新和删除数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../Part-I/SQL/mysql/06-事务.html">
+            
+                <a href="../../Part-I/SQL/mysql/06-事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                <a href="../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                    
+                    素材-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                <a href="../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                    
+                    JDBC 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                <a href="../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                    
+                    JDBC 高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                <a href="../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                    
+                    数据库连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Java Web
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                <a href="../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                    
+                    HTLM基本概念和结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                <a href="../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                    
+                    单标签元素与双标签元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../Part-I/Web/HTML/03-常用元素.html">
+            
+                <a href="../../Part-I/Web/HTML/03-常用元素.html">
+            
+                    
+                    常用元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../Part-I/Web/HTML/08-表单元素.html">
+            
+                <a href="../../Part-I/Web/HTML/08-表单元素.html">
+            
+                    
+                    表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                <a href="../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                    
+                    元素的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                <a href="../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                    
+                    HTML5-role
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../Part-I/Web/CSS/01-基本概念.html">
+            
+                <a href="../../Part-I/Web/CSS/01-基本概念.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                <a href="../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                    
+                    CSS选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                <a href="../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                    
+                    CSS继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                <a href="../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                    
+                    颜色相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                <a href="../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                    
+                    文本相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                <a href="../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                    
+                    伪类和伪元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../Part-I/Web/CSS/07-盒模型.html">
+            
+                <a href="../../Part-I/Web/CSS/07-盒模型.html">
+            
+                    
+                    盒模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.8" data-path="../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                <a href="../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                    
+                    列表和表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.9" data-path="../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                <a href="../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                    
+                    定位与浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.10" data-path="../../Part-I/Web/CSS/10-布局.html">
+            
+                <a href="../../Part-I/Web/CSS/10-布局.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                <a href="../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                    
+                    编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                <a href="../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                    
+                    值和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                <a href="../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                    
+                    定义变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                <a href="../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                <a href="../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                    
+                    程序的分支与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../../Part-I/Web/JavaScript/06-数组.html">
+            
+                <a href="../../Part-I/Web/JavaScript/06-数组.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                <a href="../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                    
+                    创建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                <a href="../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                    
+                    变量的作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.9" data-path="../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                <a href="../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                    
+                    JavaScript 类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.10" data-path="../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                <a href="../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                    
+                    JavaScript 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                    
+                    函数、方法与对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.11.1" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                    
+                    String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.2" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                    
+                    Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.3" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                    
+                    全局 Math 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.4" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.5" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.6" data-path="../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                <a href="../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                    
+                    日期与事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.12" data-path="../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                <a href="../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                    
+                    浏览器对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.13" data-path="../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                <a href="../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.14" data-path="../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                <a href="../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" >
+            
+                <span>
+            
+                    
+                    jQuery
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../Part-I/Web/JQuery/00-简介.html">
+            
+                <a href="../../Part-I/Web/JQuery/00-简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../Part-I/Web/JQuery/01-选择器.html">
+            
+                <a href="../../Part-I/Web/JQuery/01-选择器.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                <a href="../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                <a href="../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                    
+                    操作 DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../../Part-I/Web/JQuery/04-事件.html">
+            
+                <a href="../../Part-I/Web/JQuery/04-事件.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.6" data-path="../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                <a href="../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                    
+                    动画与特效
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" >
+            
+                <span>
+            
+                    
+                    Servlet
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="../../Part-I/Servlet/00-HTTP概述.html">
+            
+                <a href="../../Part-I/Servlet/00-HTTP概述.html">
+            
+                    
+                    HTTP 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="../../Part-I/Servlet/01-Servlet.html">
+            
+                <a href="../../Part-I/Servlet/01-Servlet.html">
+            
+                    
+                    Servlet 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="../../Part-I/Servlet/02-ServletMapping.html">
+            
+                <a href="../../Part-I/Servlet/02-ServletMapping.html">
+            
+                    
+                    配置 Servlet 映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="../../Part-I/Servlet/03-Session.html">
+            
+                <a href="../../Part-I/Servlet/03-Session.html">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.5" data-path="../../Part-I/Servlet/Servlet/04-JSP.md">
+            
+                <span>
+            
+                    
+                    JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.6" data-path="../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.7" data-path="../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.8" data-path="../../Part-I/Servlet/07-过滤器.html">
+            
+                <a href="../../Part-I/Servlet/07-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.9" data-path="../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                <a href="../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                    
+                    文件上传与下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.10" data-path="../../Part-I/Servlet/09-Cookie.html">
+            
+                <a href="../../Part-I/Servlet/09-Cookie.html">
+            
+                    
+                    Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.11" data-path="../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                <a href="../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                    
+                    Ajax请求和响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.12" data-path="../../Part-I/Servlet/11-乱码问题.html">
+            
+                <a href="../../Part-I/Servlet/11-乱码问题.html">
+            
+                    
+                    乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../Part-I/Spring/01-IoC.html">
+            
+                <a href="../../Part-I/Spring/01-IoC.html">
+            
+                    
+                    Spring IoC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../Part-I/Spring/02-AOP.html">
+            
+                <a href="../../Part-I/Spring/02-AOP.html">
+            
+                    
+                    Spring AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="../../Part-I/Spring/03-tx.html">
+            
+                <a href="../../Part-I/Spring/03-tx.html">
+            
+                    
+                    Spring TX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="../../part-I/Spring/05-spring-datasource.md">
+            
+                <span>
+            
+                    
+                    Spring 数据库连接池配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="../../Part-I/Spring/06-spring-jdbc.html">
+            
+                <a href="../../Part-I/Spring/06-spring-jdbc.html">
+            
+                    
+                    Spring JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="../../Part-I/Spring/07-spring-code-config.html">
+            
+                <a href="../../Part-I/Spring/07-spring-code-config.html">
+            
+                    
+                    Spring 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    Spring MVC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                <a href="../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                    
+                    第一个 SpringMVC 应用程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../Part-I/Springmvc/02-工作流程.html">
+            
+                <a href="../../Part-I/Springmvc/02-工作流程.html">
+            
+                    
+                    SpringMVC 的工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                <a href="../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                    
+                    DispatcherServlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../Part-I/Springmvc/04-Controller.html">
+            
+                <a href="../../Part-I/Springmvc/04-Controller.html">
+            
+                    
+                    Controller 的编写和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../Part-I/Springmvc/05-参数绑定.html">
+            
+                <a href="../../Part-I/Springmvc/05-参数绑定.html">
+            
+                    
+                    参数绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                <a href="../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                    
+                    自定义类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                <a href="../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                    
+                    转发和重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.10" data-path="../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                <a href="../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                    
+                    操作 Session 和 Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.11" data-path="../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                <a href="../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                    
+                    静态资源访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.12" data-path="../../Part-I/Springmvc/10-拦截器.html">
+            
+                <a href="../../Part-I/Springmvc/10-拦截器.html">
+            
+                    
+                    拦截器和 POST 中文乱码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.13" data-path="../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                <a href="../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                    
+                    文件上传和下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.14" data-path="../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                <a href="../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                    
+                    统一异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.15" data-path="../../Part-I/Springmvc/13-Ajax.html">
+            
+                <a href="../../Part-I/Springmvc/13-Ajax.html">
+            
+                    
+                    SpringMVC 处理 Ajax 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.16" data-path="../../Restful/03-springmvc-restful.md">
+            
+                <span>
+            
+                    
+                    SpringMVC 对 RESTful 的支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../Part-I/mybatis/01-基本用法.html">
+            
+                <a href="../../Part-I/mybatis/01-基本用法.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../Part-I/mybatis/02-执行SQL语句/">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/">
+            
+                    
+                    执行SQL语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.2.1" data-path="../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                    
+                    执行增删改操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.2" data-path="../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                    
+                    getMapper的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.3" data-path="../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                    
+                    执行查操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.4" data-path="../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                    
+                    传递多个参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.5" data-path="../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                <a href="../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                    
+                    动态 SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../Part-I/mybatis/03-映射结果集.html">
+            
+                <a href="../../Part-I/mybatis/03-映射结果集.html">
+            
+                    
+                    映射结果集（基本）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                <a href="../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                    
+                    映射结果集（高级）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../Part-I/mybatis/04-分页.html">
+            
+                <a href="../../Part-I/mybatis/04-分页.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../../Part-I/mybatis/05-Generator_Example.html">
+            
+                <a href="../../Part-I/mybatis/05-Generator_Example.html">
+            
+                    
+                    MybatisGenerator和Example对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.7" data-path="../../Part-I/mybatis/06-延迟加载.html">
+            
+                <a href="../../Part-I/mybatis/06-延迟加载.html">
+            
+                    
+                    延迟加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../Part-I/Maven/01-Maven.html">
+            
+                <a href="../../Part-I/Maven/01-Maven.html">
+            
+                    
+                    Maven 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../Part-I/Maven/02-Maven继承.html">
+            
+                <a href="../../Part-I/Maven/02-Maven继承.html">
+            
+                    
+                    Maven 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../../Part-I/Maven/03-Maven多模块.html">
+            
+                <a href="../../Part-I/Maven/03-Maven多模块.html">
+            
+                    
+                    Maven 多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="02-Java代码配置.html">
+            
+                <a href="02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="01-基础.html">
+            
+                <a href="01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="03-自动配置.html">
+            
+                <a href="03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04-spring-boot-jsp.html">
+            
+                <a href="04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.5" data-path="05-thymeleaf基础.html">
+            
+                <a href="05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="06-spring-boot-mybatis.html">
+            
+                <a href="06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="07-spring-boot-jpa.html">
+            
+                <a href="07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="08-spring-boot-redis.html">
+            
+                <a href="08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="09-spring-session.html">
+            
+                <a href="09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="10-spring-cache.html">
+            
+                <a href="10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="11-spring-boot-quartz.html">
+            
+                <a href="11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="12-spring-boot-mail.html">
+            
+                <a href="12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="13-spring-boot-swagger.html">
+            
+                <a href="13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1.1" data-path="../middleware/nosql/redis/01-简介.html">
+            
+                <a href="../middleware/nosql/redis/01-简介.html">
+            
+                    
+                    Redis 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.2" data-path="../middleware/nosql/redis/02-通用命令.html">
+            
+                <a href="../middleware/nosql/redis/02-通用命令.html">
+            
+                    
+                    Redis 通用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.3" data-path="../middleware/nosql/redis/03-字符串命令.html">
+            
+                <a href="../middleware/nosql/redis/03-字符串命令.html">
+            
+                    
+                    Redis 字符串命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.4" data-path="../middleware/nosql/redis/04-哈希命令.html">
+            
+                <a href="../middleware/nosql/redis/04-哈希命令.html">
+            
+                    
+                    Redis 哈希命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.5" data-path="../middleware/nosql/redis/05-链表命令.html">
+            
+                <a href="../middleware/nosql/redis/05-链表命令.html">
+            
+                    
+                    Redis 链表命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.6" data-path="../middleware/nosql/redis/06-集合命令.html">
+            
+                <a href="../middleware/nosql/redis/06-集合命令.html">
+            
+                    
+                    Redis 集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.7" data-path="../middleware/nosql/redis/07-有序集合命令.html">
+            
+                <a href="../middleware/nosql/redis/07-有序集合命令.html">
+            
+                    
+                    Redis 有序集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.8" data-path="../middleware/nosql/redis/08-spring-redis.html">
+            
+                <a href="../middleware/nosql/redis/08-spring-redis.html">
+            
+                    
+                    Spring 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.9" data-path="08-spring-boot-redis.html">
+            
+                <a href="08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../middleware/message-queue/">
+            
+                <a href="../middleware/message-queue/">
+            
+                    
+                    消息队列总论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
+                    ActiveMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../middleware/message-queue/activemq/01-简介.html">
+            
+                <a href="../middleware/message-queue/activemq/01-简介.html">
+            
+                    
+                    ActiveMQ 基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../middleware/message-queue/activemq/02-java-activemq.html">
+            
+                <a href="../middleware/message-queue/activemq/02-java-activemq.html">
+            
+                    
+                    ActiveMQ 原生 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.3" data-path="../middleware/message-queue/activemq/03-spring-activemq.html">
+            
+                <a href="../middleware/message-queue/activemq/03-spring-activemq.html">
+            
+                    
+                    Spring 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.4" data-path="../middleware/message-queue/activemq/04-spring-boot-activemq.html">
+            
+                <a href="../middleware/message-queue/activemq/04-spring-boot-activemq.html">
+            
+                    
+                    Spring Boot 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" >
+            
+                <span>
+            
+                    
+                    RabbitMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="../middleware/message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                <a href="../middleware/message-queue/rabbitmq/01-路由-虚拟主机.html">
+            
+                    
+                    RabbitMQ 中的路由和虚拟主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4.2" data-path="../middleware/message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                <a href="../middleware/message-queue/rabbitmq/02-spring-boot-rabbitmq.html">
+            
+                    
+                    Spring Boot 整合 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../Part-I/99-webmagic爬虫.html">
+            
+                <a href="../../Part-I/99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../Part-I/Gist/jdbc.properties.html">
+            
+                <a href="../../Part-I/Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../../Part-I/Gist/logback.xml.html">
+            
+                <a href="../../Part-I/Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../../Part-I/Gist/pom.xml.html">
+            
+                <a href="../../Part-I/Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../../Part-I/Gist/web.xml.html">
+            
+                <a href="../../Part-I/Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                <a href="../../Part-I/Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="../../Part-I/Gist/spring-dao.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="../../Part-I/Gist/spring-service.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.8" data-path="../../Part-I/Gist/spring-web.xml.html">
+            
+                <a href="../../Part-I/Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.9" data-path="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.10" data-path="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Spring Boot 中使用 Thymeleaf</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#thymeleaf-&#x7B80;&#x4ECB;"><b>1. </b>Thymeleaf &#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><b>2. </b>&#x5FEB;&#x901F;&#x4E0A;&#x624B;</a></li><ul><li><span class="title-icon "></span><a href="#pomxml"><b>2.1. </b>pom.xml</a></li><li><span class="title-icon "></span><a href="#applicationproperties"><b>2.2. </b>application.properties</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;"><b>2.3. </b>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;</a></li><li><span class="title-icon "></span><a href="#controller"><b>2.4. </b>Controller</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><b>3. </b>&#x5E38;&#x7528;&#x8BED;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;"><b>3.1. </b>&#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#&#x6761;&#x4EF6;&#x5224;&#x65AD;-ifunless"><b>3.2. </b>&#x6761;&#x4EF6;&#x5224;&#x65AD; If/Unless</a></li><li><span class="title-icon "></span><a href="#for-&#x5FAA;&#x73AF;"><b>3.3. </b>for &#x5FAA;&#x73AF;</a></li></ul><li><span class="title-icon "></span><a href="#url-&#x5904;&#x7406;"><b>4. </b>URL &#x5904;&#x7406;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x76EE;&#x8FD0;&#x7B97;"><b>4.1.1. </b>&#x4E09;&#x76EE;&#x8FD0;&#x7B97;</a></li><li><span class="title-icon "></span><a href="#switch-&#x9009;&#x62E9;"><b>4.1.2. </b>switch &#x9009;&#x62E9;</a></li></ul></ul></ul></div><a href="#thymeleaf-&#x7B80;&#x4ECB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">Thymeleaf</span></p>
+<h1 id="thymeleaf-&#x7B80;&#x4ECB;"><a name="thymeleaf-&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#thymeleaf-&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Thymeleaf &#x7B80;&#x4ECB;</h1>
+<p>Thymeleaf &#x65E8;&#x5728;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x4F18;&#x96C5;&#x7684;&#x3001;&#x9AD8;&#x5EA6;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x521B;&#x5EFA;&#x6A21;&#x677F;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x76EE;&#x6807;&#xFF0C;Thymeleaf &#x5EFA;&#x7ACB;&#x5728;&#x81EA;&#x7136;&#x6A21;&#x677F;&#x7684;&#x6982;&#x5FF5;&#x4E0A;&#xFF0C;&#x5C06;&#x5176;&#x903B;&#x8F91;&#x6CE8;&#x5165;&#x5230;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;<strong>&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6A21;&#x677F;&#x8BBE;&#x8BA1;&#x539F;&#x578B;</strong>&#xFF0C;&#x4ECE;&#x800C;&#x6539;&#x5584;&#x4E86;&#x8BBE;&#x8BA1;&#x7684;&#x6C9F;&#x901A;&#xFF0C;&#x5F25;&#x5408;&#x4E86;&#x8BBE;&#x8BA1;&#x548C;&#x5F00;&#x53D1;&#x56E2;&#x961F;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x8DDD;&#x3002;</p>
+<p>Thymeleaf &#x4ECE;&#x8BBE;&#x8BA1;&#x4E4B;&#x521D;&#x5C31;&#x9075;&#x5FAA; Web &#x6807;&#x51C6;&#x2014;&#x2014;&#x7279;&#x522B;&#x662F; HTML 5 &#x6807;&#x51C6;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;Thymeleaf &#x5141;&#x8BB8;&#x521B;&#x5EFA;&#x5B8C;&#x5168;&#x7B26;&#x5408; HTML 5 &#x9A8C;&#x8BC1;&#x6807;&#x51C6;&#x7684;&#x6A21;&#x677F;&#x3002; </p>
+<p>Spring Boot &#x4F53;&#x7CFB;&#x5185;&#x63A8;&#x8350;&#x4F7F;&#x7528; Thymeleaf &#x4F5C;&#x4E3A;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x6A21;&#x677F;&#xFF0C;&#x5E76;&#x4E14; Spring Boot 2.0 &#x4E2D;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; Thymeleaf 3.0&#xFF0C;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x5E45;&#x5EA6;&#x5F88;&#x5927;&#x3002;</p>
+<p>&#x4E0E;&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x677F;&#x5F15;&#x64CE;<small>&#xFF08;JSP&#x3001;Velocity&#x3001;FreeMarker&#xFF09;</small>&#x76F8;&#x6BD4;&#x8F83;&#xFF0C;&#x5B83;&#x6709;&#x5982;&#x4E0B;&#x4E09;&#x4E2A;&#x6781;&#x5438;&#x5F15;&#x4EBA;&#x7684;&#x7279;&#x70B9;&#xFF1A;</p>
+<ol>
+<li><p>Thymeleaf &#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x67E5;&#x770B;&#x9875;&#x9762;&#x7684;&#x9759;&#x6001;&#x6548;&#x679C;&#x3002;</p>
+</li>
+<li><p>Thymeleaf &#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684;&#x7279;&#x6027;&#x3002;&#x5B83;&#x652F;&#x6301;&#x6807;&#x51C6;&#x65B9;&#x8A00;&#x548C; Spring &#x65B9;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5957;&#x7528;&#x6A21;&#x677F;&#x5B9E;&#x73B0; JSTL&#x3001;OGNL &#x8868;&#x8FBE;&#x5F0F;&#x6548;&#x679C;&#x3002;</p>
+</li>
+<li><p>Thymeleaf &#x65B9;&#x4FBF;&#x4E0E; SpringMVC &#x96C6;&#x6210;&#x3002;</p>
+</li>
+</ol>
+<p>&#x5BF9;&#x6BD4; Velocity&#x3001;FreeMarker &#x4E0E; Thymeleaf &#x6253;&#x5370;&#x51FA;&#x540C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-html">Velocity: <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>$message<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+FreeMarker: <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>${message}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+Thymeleaf: <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${message}&quot;</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765; Thymeleaf &#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5728; HTML &#x6807;&#x7B7E;&#x5185;&#xFF0C;&#x7C7B;&#x4F3C;&#x6807;&#x7B7E;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x5B83;&#x7684;&#x7279;&#x70B9;&#x3002;</p>
+<h1 id="&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><a name="&#x5FEB;&#x901F;&#x4E0A;&#x624B;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5FEB;&#x901F;&#x4E0A;&#x624B;</h1>
+<h2 id="pomxml"><a name="pomxml" class="anchor-navigation-ex-anchor" href="#pomxml"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. pom.xml</h2>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h2 id="applicationproperties"><a name="applicationproperties" class="anchor-navigation-ex-anchor" href="#applicationproperties"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. application.properties</h2>
+<pre><code class="lang-properties">spring.thymeleaf.cache=false
+
+logging.level.root=INFO
+logging.level.xxx.yyy.zzz=DEBUG
+logging.pattern.console=${CONSOLE_LOG_PATTERN:\
+  %clr(${LOG_LEVEL_PATTERN:%5p}) \
+  %clr(|){faint} \
+  %clr(%-40.40logger{39}){cyan} \
+  %clr(:){faint} \
+  %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}}
+</code></pre>
+<p>&#x5173;&#x95ED; Thymeleaf &#x7684;&#x7F13;&#x5B58;&#x3002;&#x4E0D;&#x7136;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4FEE;&#x6539;&#x9875;&#x9762;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x751F;&#x6548;&#x9700;&#x8981;&#x91CD;&#x542F;&#xFF0C;&#x751F;&#x4EA7;&#x53EF;&#x914D;&#x7F6E;&#x4E3A; <em><code>true</code></em> &#x3002;</p>
+<h2 id="&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;"><a name="&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9875;&#x9762;</h2>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">xmlns:th</span>=<span class="hljs-string">&quot;http://www.thymeleaf.org&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${message}&quot;</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x6240;&#x6709;&#x4F7F;&#x7528; Thymeleaf &#x7684;&#x9875;&#x9762; <strong>&#x5FC5;&#x987B;</strong> &#x5728; HTML &#x6807;&#x7B7E;&#x58F0;&#x660E; Thymeleaf&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">xmlns:th</span>=<span class="hljs-string">&quot;http://www.thymeleaf.org&quot;</span>&gt;</span>
+</code></pre>
+<p>&#x8868;&#x660E;&#x9875;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x662F; Thymeleaf &#x8BED;&#x6CD5;&#x3002;</p>
+<h2 id="controller"><a name="controller" class="anchor-navigation-ex-anchor" href="#controller"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Controller</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Controller</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloController</span> </span>{
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">index</span><span class="hljs-params">(ModelMap map)</span> </span>{
+        map.addAttribute(<span class="hljs-string">&quot;message&quot;</span>, <span class="hljs-string">&quot;http://www.baidu.com&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello&quot;</span>;
+    }
+
+}
+</code></pre>
+<h1 id="&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><a name="&#x5E38;&#x7528;&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5E38;&#x7528;&#x8BED;&#x6CD5;</h1>
+<h2 id="&#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;"><a name="&#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x8D4B;&#x503C;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;</h2>
+<ul>
+<li><p>&#x8D4B;&#x503C;&#x548C;&#x62FC;&#x63A5;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${userName}&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;&apos;Welcome to our application, &apos; + ${userName} + &apos;!&apos;&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x7B80;&#x6D01;&#x7684;&#x5199;&#x6CD5;<small>&#xFF08;&#x63A8;&#x8350;&#xFF09;</small>&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;|Welcome to our application, ${userName}!|&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>string.html &#x9875;&#x9762;&#xFF1A;</p>
+<pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>text<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${userName}&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;&apos;Welcome to our application, &apos; + ${userName} + &apos;!&apos;&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;|Welcome to our application, ${userName}!|&quot;</span>&gt;</span>&#x6211;&#x662F;&#x9ED8;&#x8BA4;&#x503C;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x540E;&#x7AEF;&#x4F20;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/string&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">string</span><span class="hljs-params">(ModelMap map)</span> </span>{
+    map.addAttribute(<span class="hljs-string">&quot;userName&quot;</span>, <span class="hljs-string">&quot;baidu&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;string&quot;</span>;
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x6761;&#x4EF6;&#x5224;&#x65AD;-ifunless"><a name="&#x6761;&#x4EF6;&#x5224;&#x65AD;-ifunless" class="anchor-navigation-ex-anchor" href="#&#x6761;&#x4EF6;&#x5224;&#x65AD;-ifunless"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x6761;&#x4EF6;&#x5224;&#x65AD; If/Unless</h2>
+<p>Thymeleaf &#x4E2D;&#x4F7F;&#x7528; <em><code>th:if</code></em> &#x548C; <em><code>th:unless</code></em> &#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C; <em><code>&lt;a&gt;</code></em> &#x6807;&#x7B7E;&#x53EA;&#x6709;&#x5728; <em><code>th:if</code></em> &#x4E2D;&#x6761;&#x4EF6;&#x6210;&#x7ACB;&#x65F6;&#x624D;&#x663E;&#x793A;&#xFF1A;</p>
+<ul>
+<li><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:if</span>=<span class="hljs-string">&quot;${flag == &apos;yes&apos;}&quot;</span> 
+   <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.163.com/}&quot;</span>&gt;</span>163<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:unless</span>=<span class="hljs-string">&quot;${flag != &apos;no&apos;}&quot;</span> 
+   <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/}&quot;</span>&gt;</span>baidu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p><em><code>th:unless</code></em> &#x4E0E; <em><code>th:if</code></em> &#x6070;&#x597D;&#x76F8;&#x53CD;&#xFF0C;&#x53EA;&#x6709;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x6761;&#x4EF6;&#x7ACB;&#xFF0C;&#x624D;&#x4F1A;&#x663E;&#x793A;&#x5176;&#x5185;&#x5BB9;&#x3002;</p>
+</li>
+<li><p>&#x9875;&#x9762; if.html&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>If/Unless<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:if</span>=<span class="hljs-string">&quot;${flag == &apos;yes&apos;}&quot;</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.163.com/}&quot;</span>&gt;</span>163<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:unless</span>=<span class="hljs-string">&quot;${flag != &apos;no&apos;}&quot;</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/}&quot;</span>&gt;</span>baidu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x540E;&#x7AEF;&#x4F20;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/if&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">ifunless</span><span class="hljs-params">(ModelMap map)</span> </span>{
+    map.addAttribute(<span class="hljs-string">&quot;flag&quot;</span>, <span class="hljs-string">&quot;yes&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;if&quot;</span>;
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="for-&#x5FAA;&#x73AF;"><a name="for-&#x5FAA;&#x73AF;" class="anchor-navigation-ex-anchor" href="#for-&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. for &#x5FAA;&#x73AF;</h2>
+<p>for &#x5FAA;&#x73AF;&#x5728;&#x6211;&#x4EEC;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x9891;&#x7387;&#x592A;&#x9AD8;&#xFF0C;&#x4E00;&#x822C;&#x7ED3;&#x5408;&#x524D;&#x7AEF;&#x7684;&#x8868;&#x683C;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
+<ul>
+<li><p>&#x5728;&#x540E;&#x7AEF;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x952E; <code>users</code>&#xFF0C;&#x4F20;&#x9012;&#x5230;&#x524D;&#x7AEF;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/list&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">list</span><span class="hljs-params">(ModelMap map)</span> </span>{
+    User user1 = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;&#x5927;&#x725B;&quot;</span>,<span class="hljs-number">12</span>,<span class="hljs-string">&quot;123456&quot;</span>);
+    User user2 = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;&#x5C0F;&#x725B;&quot;</span>,<span class="hljs-number">6</span>,<span class="hljs-string">&quot;123563&quot;</span>);
+    User user3 = <span class="hljs-keyword">new</span> User(<span class="hljs-string">&quot;&#x7EAF;&#x6D01;&#x7684;&#x5FAE;&#x7B11;&quot;</span>,<span class="hljs-number">66</span>,<span class="hljs-string">&quot;666666&quot;</span>);
+
+    List&lt;User&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;User&gt;();
+    list.add(user1);
+    list.add(user2);
+    list.add(user3);
+
+    map.addAttribute(<span class="hljs-string">&quot;users&quot;</span>, list);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;list&quot;</span>;
+}
+</code></pre>
+</li>
+<li><p>list.html &#x8FDB;&#x884C;&#x6570;&#x636E;&#x5C55;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>for &#x5FAA;&#x73AF;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">th:each</span>=<span class="hljs-string">&quot;user,iterStat : ${users}&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${user.name}&quot;</span>&gt;</span>neo<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${user.age}&quot;</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${user.pass}&quot;</span>&gt;</span>213<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">th:text</span>=<span class="hljs-string">&quot;${iterStat.index}&quot;</span>&gt;</span>index<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p>iterStat &#x79F0;&#x4F5C;&#x72B6;&#x6001;&#x53D8;&#x91CF;&#xFF0C;&#x5C5E;&#x6027;&#x6709;&#xFF1A;</p>
+<pre><code>    &#x5C5E;&#x6027; | &#x8BF4;&#x660E; 
+   index | &#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x7684; index &#xFF08;&#x4ECE; 0 &#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#xFF09;
+   count | &#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x7684; index &#xFF08;&#x4ECE; 1 &#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#xFF09;
+    size | &#x88AB;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#x7684;&#x5927;&#x5C0F;
+ current | &#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x53D8;&#x91CF;
+even/odd | &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x662F;&#x5426;&#x662F;&#x5076;&#x6570;/&#x5947;&#x6570;&#xFF08;&#x4ECE; 0 &#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#xFF09;
+   first | &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x662F;&#x5426;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;
+    last | &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x662F;&#x5426;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;
+</code></pre></li>
+<li><p>&#x9875;&#x9762;&#x5C55;&#x793A;&#x6548;&#x679C;</p>
+<pre><code>for &#x5FAA;&#x73AF;
+
+&#x5927;&#x725B; 12 123456 0
+&#x5C0F;&#x725B; 6 123563 1
+&#x7EAF;&#x6D01;&#x7684;&#x5FAE;&#x7B11; 66 666666 2
+</code></pre></li>
+</ul>
+<h1 id="url-&#x5904;&#x7406;"><a name="url-&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#url-&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>4. URL &#x5904;&#x7406;</h1>
+<p>&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x7684;&#x662F; Thymeleaf &#x5BF9;&#x4E8E; URL &#x7684;&#x5904;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x8BED;&#x6CD5; <em><code>@{...}</code></em> &#x6765;&#x5904;&#x7406;&#x7684;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981; Thymeleaf &#x5BF9; URL &#x8FDB;&#x884C;&#x6E32;&#x67D3;&#xFF0C;&#x90A3;&#x4E48;&#x52A1;&#x5FC5;&#x4F7F;&#x7528; <em><code>th:href</code></em>&#x3001;<em><code>th:src</code></em> &#x7B49;&#x5C5E;&#x6027;&#x3002;</p>
+<ul>
+<li><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/{xxx}(xxx=${type})}&quot;</span>&gt;</span>link1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/{pageId}/can-use-springcloud.html(pageId=${pageId})}&quot;</span>&gt;</span>view<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">th:action</span>=<span class="hljs-string">&quot;@{/order}&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x51E0;&#x70B9;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>&#x4E0A;&#x4F8B;&#x4E2D; URL &#x6700;&#x540E;&#x7684; <em><code>(pageId=${pageId})</code></em> &#x8868;&#x793A;&#x5C06;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x5185;&#x5BB9;&#x4F5C;&#x4E3A; URL &#x53C2;&#x6570;&#x5904;&#x7406;&#xFF0C;&#x8BE5;&#x8BED;&#x6CD5;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#xFF0C;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x4E86;&#x53EF;&#x8BFB;&#x6027;&#xFF1B;</p>
+<p><em><code>@{...}</code></em> &#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <em><code>{pageId}</code></em> &#x8BBF;&#x95EE; Context &#x4E2D;&#x7684; <em><code>pageId</code></em> &#x53D8;&#x91CF;&#xFF1B;</p>
+<p><em><code>@{/order}</code></em> &#x662F; Context &#x76F8;&#x5173;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5728;&#x6E32;&#x67D3;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x4E0A;&#x5F53;&#x524D; Web &#x5E94;&#x7528;&#x7684; Context &#x540D;&#x5B57;&#xFF0C;&#x5047;&#x8BBE; context &#x540D;&#x5B57;&#x4E3A; app&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x5E94;&#x8BE5;&#x662F; <code>/app/order</code> &#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x9875;&#x9762;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>URL<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/{type}(type=${type})}&quot;</span>&gt;</span>link1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/{pageId}/can-use-springcloud.html(pageId=${pageId})}&quot;</span>&gt;</span>view<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">th:style</span>=<span class="hljs-string">&quot;&apos;background:url(&apos; + @{${img}} + &apos;);&apos;&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x540E;&#x7AEF;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/url&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">url</span><span class="hljs-params">(ModelMap map)</span> </span>{
+  map.addAttribute(<span class="hljs-string">&quot;type&quot;</span>, <span class="hljs-string">&quot;link&quot;</span>);
+  map.addAttribute(<span class="hljs-string">&quot;pageId&quot;</span>, <span class="hljs-string">&quot;springcloud/2017/09/11/&quot;</span>);
+  map.addAttribute(<span class="hljs-string">&quot;img&quot;</span>, <span class="hljs-string">&quot;http://www.baidu.com/assets/images/neo.jpg&quot;</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;url&quot;</span>;
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4E09;&#x76EE;&#x8FD0;&#x7B97;"><a name="&#x4E09;&#x76EE;&#x8FD0;&#x7B97;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x76EE;&#x8FD0;&#x7B97;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1. &#x4E09;&#x76EE;&#x8FD0;&#x7B97;</h3>
+<p>&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x529F;&#x80FD;&#x4E4B;&#x4E00;&#xFF0C;&#x666E;&#x904D;&#x5E94;&#x7528;&#x5728;&#x5404;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#x3002;</p>
+<ul>
+<li><p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">th:value</span>=<span class="hljs-string">&quot;${name}&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">th:value</span>=<span class="hljs-string">&quot;${age gt 30 ? &apos;&#x4E2D;&#x5E74;&apos;:&apos;&#x9752;&#x5E74;&apos;}&quot;</span>/&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>&#x8868;&#x793A;&#x5982;&#x679C; age &#x5927;&#x4E8E; 30 &#x5219;&#x8F93;&#x5165;&#x6846;&#x4E2D;&#x663E;&#x793A;&#x4E2D;&#x5E74;&#xFF0C;&#x5426;&#x5219;&#x663E;&#x793A;&#x9752;&#x5E74;&#x3002;</p>
+</li>
+<li><p>&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;&#x5173;&#x952E;&#x5B57;&#xFF1A;</p>
+<pre><code>&#x5173;&#x952E;&#x5B57; | &#x8BF4;&#x660E; 
+   gt | great than&#xFF08;&#x5927;&#x4E8E;&#xFF09;
+   ge | great equal&#xFF08;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#xFF09;
+   eq | equal&#xFF08;&#x7B49;&#x4E8E;&#xFF09;
+   lt | less than&#xFF08;&#x5C0F;&#x4E8E;&#xFF09;
+   le | less equal&#xFF08;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#xFF09;
+   ne | not equal&#xFF08;&#x4E0D;&#x7B49;&#x4E8E;&#xFF09;
+</code></pre></li>
+<li><p>&#x7ED3;&#x5408;&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x4E0A;&#x9762;&#x7684; if else &#x6539;&#x6210;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:if</span>=<span class="hljs-string">&quot;${flag eq &apos;yes&apos;}&quot;</span> 
+   <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/}&quot;</span>&gt;</span> &#x767E;&#x5EA6; <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x9875;&#x9762;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>EQ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">th:value</span>=<span class="hljs-string">&quot;${name}&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">th:value</span>=<span class="hljs-string">&quot;${age gt 30 ? &apos;&#x4E2D;&#x5E74;&#xF98E;:&apos;&#x9752;&#x5E74;&apos;}&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">th:if</span>=<span class="hljs-string">&quot;${flag eq &apos;yes&apos;}&quot;</span> <span class="hljs-attr">th:href</span>=<span class="hljs-string">&quot;@{http://www.baidu.com/}&quot;</span>&gt;</span> &#x767E;&#x5EA6; <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x540E;&#x7AEF;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/eq&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">eq</span><span class="hljs-params">(ModelMap map)</span> </span>{
+  map.addAttribute(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;neo&quot;</span>);
+  map.addAttribute(<span class="hljs-string">&quot;age&quot;</span>, <span class="hljs-number">30</span>);
+  map.addAttribute(<span class="hljs-string">&quot;flag&quot;</span>, <span class="hljs-string">&quot;yes&quot;</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;eq&quot;</span>;
+}
+</code></pre>
+</li>
+<li><p>&#x9875;&#x9762;&#x6548;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-txt">EQ
+
+neo
+&#x9752;&#x5E74;
+
+&#x767E;&#x5EA6;
+</code></pre>
+<p>&#x5355;&#x51FB; <code>&#x767E;&#x5EA6;</code> &#x94FE;&#x63A5;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;&#xFF1A;<code>http://www.baidu.com/</code> &#x5730;&#x5740;&#x3002;</p>
+</li>
+</ul>
+<h3 id="switch-&#x9009;&#x62E9;"><a name="switch-&#x9009;&#x62E9;" class="anchor-navigation-ex-anchor" href="#switch-&#x9009;&#x62E9;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2. switch &#x9009;&#x62E9;</h3>
+<p>switch/case &#x591A;&#x7528;&#x4E8E;&#x591A;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x7684;&#x573A;&#x666F;&#x4E0B;&#x3002;</p>
+<ul>
+<li><p>&#x4EE5;&#x6027;&#x522B;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">xmlns:th</span>=<span class="hljs-string">&quot;http://www.thymeleaf.org&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">meta</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Example switch <span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">th:switch</span>=<span class="hljs-string">&quot;${sex}&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:case</span>=<span class="hljs-string">&quot;&apos;woman&apos;&quot;</span>&gt;</span>&#x5979;&#x662F;&#x4E00;&#x4E2A;&#x59D1;&#x5A18;...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:case</span>=<span class="hljs-string">&quot;&apos;man&apos;&quot;</span>&gt;</span>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7237;&#x4EEC;!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-comment">&lt;!-- *: case&#x7684;&#x9ED8;&#x8BA4;&#x7684;&#x9009;&#x9879; --&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">th:case</span>=<span class="hljs-string">&quot;*&quot;</span>&gt;</span>&#x672A;&#x77E5;&#x6027;&#x522B;&#x7684;&#x4E00;&#x4E2A;&#x5BB6;&#x4F19;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x540E;&#x7AEF;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;/switch&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">switchcase</span><span class="hljs-params">(ModelMap map)</span> </span>{
+  map.addAttribute(<span class="hljs-string">&quot;sex&quot;</span>, <span class="hljs-string">&quot;woman&quot;</span>);
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;switch&quot;</span>;
+}
+</code></pre>
+</li>
+</ul>
+<p>&#x5728;&#x6D4F;&#x89C8;&#xFA38;&#x4E2D;&#x8F93;&#x5165;&#x7F51;&#x5740;&#xFF1A;<code>http://localhost:8080/switch</code>&#x3002;</p>
+<ul>
+<li><p>&#x9875;&#x9762;&#x5C55;&#x793A;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&#x5979;&#x662F;&#x4E00;&#x4E2A;&#x59D1;&#x5A18;...
+</code></pre><p>&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x53F0;&#x6539; sex &#x7684;&#x503C;&#x6765;&#x67E5;&#x770B;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+</ul>
+<p>&#x300E;&#x5B8C;&#x300F;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-spring-boot-jsp.html" class="navigation navigation-prev " aria-label="Previous page: Spring Boot 中使用 JSP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-spring-boot-mybatis.html" class="navigation navigation-next " aria-label="Next page: Spring Boot 集成 Mybatis">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring Boot 中使用 Thymeleaf","level":"4.1.5","depth":2,"next":{"title":"Spring Boot 集成 Mybatis","level":"4.1.6","depth":2,"path":"Part-II/spring-boot/06-spring-boot-mybatis.md","ref":"Part-II/spring-boot/06-spring-boot-mybatis.md","articles":[]},"previous":{"title":"Spring Boot 中使用 JSP","level":"4.1.4","depth":2,"path":"Part-II/spring-boot/04-spring-boot-jsp.md","ref":"Part-II/spring-boot/04-spring-boot-jsp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-II/spring-boot/05-thymeleaf基础.md","mtime":"2020-02-01T09:47:14.221Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-02T10:52:43.315Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

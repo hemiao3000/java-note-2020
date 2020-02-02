@@ -1,0 +1,3156 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spring Boot 整合 RabbitMQ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="01-路由-虚拟主机.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    Apache Commons 工具箱
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1.1" data-path="../../../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/01-commons-lang3.html">
+            
+                    
+                    commons-lang 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="../../../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/02-commons-collections4.html">
+            
+                    
+                    commons-collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.3" data-path="../../../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/03-commons-io.html">
+            
+                    
+                    commons-io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.4" data-path="../../../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                <a href="../../../../Part-I/Utils/apache-commons/04-commons-codec.html">
+            
+                    
+                    commons-codec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" >
+            
+                <span>
+            
+                    
+                    Spring 内置工具类
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                <a href="../../../../Part-I/Utils/Spring-util/01-top4.html">
+            
+                    
+                    最常用的四个工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" >
+            
+                <span>
+            
+                    
+                    JSON 库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="../../../../Part-I/Utils/json-jackson.html">
+            
+                <a href="../../../../Part-I/Utils/json-jackson.html">
+            
+                    
+                    jackson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="../../../../Part-I/Utils/json-fastjson.html">
+            
+                <a href="../../../../Part-I/Utils/json-fastjson.html">
+            
+                    
+                    fastjson 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../../Part-I/Utils/log.html">
+            
+                <a href="../../../../Part-I/Utils/log.html">
+            
+                    
+                    日志库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../Soft-install/windows/MySQL-解压版.html">
+            
+                <a href="../../../../Soft-install/windows/MySQL-解压版.html">
+            
+                    
+                    MySQL 解压版安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/01-操作Database.html">
+            
+                    
+                    操作 Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/02-操作Table.html">
+            
+                    
+                    操作 Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/03-查询语句.html">
+            
+                    
+                    查询语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../../Part-I/SQL/mysql/04-CUD.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/04-CUD.html">
+            
+                    
+                    插入、更新和删除数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../../../../Part-I/SQL/mysql/06-事务.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/06-事务.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../../../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                <a href="../../../../Part-I/SQL/mysql/素材/01-数据库素材1.html">
+            
+                    
+                    素材-1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/01-JDBC基础.html">
+            
+                    
+                    JDBC 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/02-JDBC高级.html">
+            
+                    
+                    JDBC 高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                <a href="../../../../Part-I/SQL/jdbc/03-数据库连接池.html">
+            
+                    
+                    数据库连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Java Web
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                <a href="../../../../Part-I/Web/HTML/01-HTLM基本概念和结构.html">
+            
+                    
+                    HTLM基本概念和结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/02-单标签元素与双标签元素.html">
+            
+                    
+                    单标签元素与双标签元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../../../Part-I/Web/HTML/03-常用元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/03-常用元素.html">
+            
+                    
+                    常用元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../../../Part-I/Web/HTML/08-表单元素.html">
+            
+                <a href="../../../../Part-I/Web/HTML/08-表单元素.html">
+            
+                    
+                    表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                <a href="../../../../Part-I/Web/HTML/09-元素的分类.html">
+            
+                    
+                    元素的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                <a href="../../../../Part-I/Web/HTML/10.HTML5-role.html">
+            
+                    
+                    HTML5-role
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../../../Part-I/Web/CSS/01-基本概念.html">
+            
+                <a href="../../../../Part-I/Web/CSS/01-基本概念.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                <a href="../../../../Part-I/Web/CSS/02-CSS选择器.html">
+            
+                    
+                    CSS选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                <a href="../../../../Part-I/Web/CSS/03-CSS继承.html">
+            
+                    
+                    CSS继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                <a href="../../../../Part-I/Web/CSS/04-颜色相关属性.html">
+            
+                    
+                    颜色相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                <a href="../../../../Part-I/Web/CSS/05-文本相关属性.html">
+            
+                    
+                    文本相关属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                <a href="../../../../Part-I/Web/CSS/06-伪类和伪元素.html">
+            
+                    
+                    伪类和伪元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../../../Part-I/Web/CSS/07-盒模型.html">
+            
+                <a href="../../../../Part-I/Web/CSS/07-盒模型.html">
+            
+                    
+                    盒模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.8" data-path="../../../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                <a href="../../../../Part-I/Web/CSS/08-列表和表格.html">
+            
+                    
+                    列表和表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.9" data-path="../../../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                <a href="../../../../Part-I/Web/CSS/09-定位与浮动.html">
+            
+                    
+                    定位与浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.10" data-path="../../../../Part-I/Web/CSS/10-布局.html">
+            
+                <a href="../../../../Part-I/Web/CSS/10-布局.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/01-编程基础.html">
+            
+                    
+                    编程基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/02-值和变量.html">
+            
+                    
+                    值和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/03-定义变量.html">
+            
+                    
+                    定义变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/04-JavaScript中的运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/05-JavaScript中的程序分支与循环.html">
+            
+                    
+                    程序的分支与循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../../../../Part-I/Web/JavaScript/06-数组.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/06-数组.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../../../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/07-创建函数.html">
+            
+                    
+                    创建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.8" data-path="../../../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/08-变量的作用域.html">
+            
+                    
+                    变量的作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.9" data-path="../../../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/09-JavaScript类和对象.html">
+            
+                    
+                    JavaScript 类和对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.10" data-path="../../../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/10-JavaScript继承.html">
+            
+                    
+                    JavaScript 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/">
+            
+                    
+                    函数、方法与对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.11.1" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/1.String类.html">
+            
+                    
+                    String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.2" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/2.Number类.html">
+            
+                    
+                    Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.3" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/3.全局Math对象.html">
+            
+                    
+                    全局 Math 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.4" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/4.Array对象.html">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.5" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/5.RegExp对象.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.11.6" data-path="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/11-函数_方法与对象/6.日期与时间.html">
+            
+                    
+                    日期与事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.12" data-path="../../../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/12-浏览器对象模型.html">
+            
+                    
+                    浏览器对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.13" data-path="../../../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/13-DOM.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.14" data-path="../../../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                <a href="../../../../Part-I/Web/JavaScript/14-事件处理.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" >
+            
+                <span>
+            
+                    
+                    jQuery
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../../../Part-I/Web/JQuery/00-简介.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/00-简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../../../Part-I/Web/JQuery/01-选择器.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/01-选择器.html">
+            
+                    
+                    选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/02-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/03-操作DOM.html">
+            
+                    
+                    操作 DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" data-path="../../../../Part-I/Web/JQuery/04-事件.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/04-事件.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.6" data-path="../../../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                <a href="../../../../Part-I/Web/JQuery/05-动画与特效.html">
+            
+                    
+                    动画与特效
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" >
+            
+                <span>
+            
+                    
+                    Servlet
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="../../../../Part-I/Servlet/00-HTTP概述.html">
+            
+                <a href="../../../../Part-I/Servlet/00-HTTP概述.html">
+            
+                    
+                    HTTP 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="../../../../Part-I/Servlet/01-Servlet.html">
+            
+                <a href="../../../../Part-I/Servlet/01-Servlet.html">
+            
+                    
+                    Servlet 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="../../../../Part-I/Servlet/02-ServletMapping.html">
+            
+                <a href="../../../../Part-I/Servlet/02-ServletMapping.html">
+            
+                    
+                    配置 Servlet 映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="../../../../Part-I/Servlet/03-Session.html">
+            
+                <a href="../../../../Part-I/Servlet/03-Session.html">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.5" data-path="../../../../Part-I/Servlet/Servlet/04-JSP.md">
+            
+                <span>
+            
+                    
+                    JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.6" data-path="../../../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL 表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.7" data-path="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.8" data-path="../../../../Part-I/Servlet/07-过滤器.html">
+            
+                <a href="../../../../Part-I/Servlet/07-过滤器.html">
+            
+                    
+                    过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.9" data-path="../../../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                <a href="../../../../Part-I/Servlet/08-文件上传与下载.html">
+            
+                    
+                    文件上传与下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.10" data-path="../../../../Part-I/Servlet/09-Cookie.html">
+            
+                <a href="../../../../Part-I/Servlet/09-Cookie.html">
+            
+                    
+                    Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.11" data-path="../../../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                <a href="../../../../Part-I/Servlet/10-Ajax请求和响应.html">
+            
+                    
+                    Ajax请求和响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.12" data-path="../../../../Part-I/Servlet/11-乱码问题.html">
+            
+                <a href="../../../../Part-I/Servlet/11-乱码问题.html">
+            
+                    
+                    乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    SSM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1.1" data-path="../../../../Part-I/Spring/01-IoC.html">
+            
+                <a href="../../../../Part-I/Spring/01-IoC.html">
+            
+                    
+                    Spring IoC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.2" data-path="../../../../Part-I/Spring/02-AOP.html">
+            
+                <a href="../../../../Part-I/Spring/02-AOP.html">
+            
+                    
+                    Spring AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.3" data-path="../../../../Part-I/Spring/03-tx.html">
+            
+                <a href="../../../../Part-I/Spring/03-tx.html">
+            
+                    
+                    Spring TX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.4" data-path="../../../../part-I/Spring/05-spring-datasource.md">
+            
+                <span>
+            
+                    
+                    Spring 数据库连接池配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.5" data-path="../../../../Part-I/Spring/06-spring-jdbc.html">
+            
+                <a href="../../../../Part-I/Spring/06-spring-jdbc.html">
+            
+                    
+                    Spring JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.1.6" data-path="../../../../Part-I/Spring/07-spring-code-config.html">
+            
+                <a href="../../../../Part-I/Spring/07-spring-code-config.html">
+            
+                    
+                    Spring 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    Spring MVC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                <a href="../../../../Part-I/Springmvc/01-第一个SpringMVC.html">
+            
+                    
+                    第一个 SpringMVC 应用程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../../../Part-I/Springmvc/02-工作流程.html">
+            
+                <a href="../../../../Part-I/Springmvc/02-工作流程.html">
+            
+                    
+                    SpringMVC 的工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                <a href="../../../../Part-I/Springmvc/03-DispatcherServlet.html">
+            
+                    
+                    DispatcherServlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../../../Part-I/Springmvc/04-Controller.html">
+            
+                <a href="../../../../Part-I/Springmvc/04-Controller.html">
+            
+                    
+                    Controller 的编写和配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../../../Part-I/Springmvc/05-参数绑定.html">
+            
+                <a href="../../../../Part-I/Springmvc/05-参数绑定.html">
+            
+                    
+                    参数绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.6" data-path="../../../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                <a href="../../../../Part-I/Springmvc/06-自定义类型转换.html">
+            
+                    
+                    自定义类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.7" data-path="../../../../Part-I/Servlet/05-EL.html">
+            
+                <a href="../../../../Part-I/Servlet/05-EL.html">
+            
+                    
+                    EL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.8" data-path="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                <a href="../../../../Part-I/Servlet/06-JSTL.html">
+            
+                    
+                    JSTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.9" data-path="../../../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                <a href="../../../../Part-I/Springmvc/07-转发和重定向.html">
+            
+                    
+                    转发和重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.10" data-path="../../../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                <a href="../../../../Part-I/Springmvc/08-Session和Cookie.html">
+            
+                    
+                    操作 Session 和 Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.11" data-path="../../../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                <a href="../../../../Part-I/Springmvc/09-静态资源访问.html">
+            
+                    
+                    静态资源访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.12" data-path="../../../../Part-I/Springmvc/10-拦截器.html">
+            
+                <a href="../../../../Part-I/Springmvc/10-拦截器.html">
+            
+                    
+                    拦截器和 POST 中文乱码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.13" data-path="../../../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                <a href="../../../../Part-I/Springmvc/11-文件上传和下载.html">
+            
+                    
+                    文件上传和下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.14" data-path="../../../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                <a href="../../../../Part-I/Springmvc/12-统一异常处理.html">
+            
+                    
+                    统一异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.15" data-path="../../../../Part-I/Springmvc/13-Ajax.html">
+            
+                <a href="../../../../Part-I/Springmvc/13-Ajax.html">
+            
+                    
+                    SpringMVC 处理 Ajax 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.16" data-path="../../../../Restful/03-springmvc-restful.md">
+            
+                <span>
+            
+                    
+                    SpringMVC 对 RESTful 的支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../../../Part-I/mybatis/01-基本用法.html">
+            
+                <a href="../../../../Part-I/mybatis/01-基本用法.html">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../../../Part-I/mybatis/02-执行SQL语句/">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/">
+            
+                    
+                    执行SQL语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.2.1" data-path="../../../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/01-增删改.html">
+            
+                    
+                    执行增删改操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.2" data-path="../../../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/02-getMapper.html">
+            
+                    
+                    getMapper的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.3" data-path="../../../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/03-查.html">
+            
+                    
+                    执行查操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.4" data-path="../../../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/04-传递多个参数.html">
+            
+                    
+                    传递多个参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2.5" data-path="../../../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                <a href="../../../../Part-I/mybatis/02-执行SQL语句/05-动态SQL.html">
+            
+                    
+                    动态 SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../../../Part-I/mybatis/03-映射结果集.html">
+            
+                <a href="../../../../Part-I/mybatis/03-映射结果集.html">
+            
+                    
+                    映射结果集（基本）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                <a href="../../../../Part-I/mybatis/03-映射结果集-关系.html">
+            
+                    
+                    映射结果集（高级）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../../../Part-I/mybatis/04-分页.html">
+            
+                <a href="../../../../Part-I/mybatis/04-分页.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.6" data-path="../../../../Part-I/mybatis/05-Generator_Example.html">
+            
+                <a href="../../../../Part-I/mybatis/05-Generator_Example.html">
+            
+                    
+                    MybatisGenerator和Example对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.7" data-path="../../../../Part-I/mybatis/06-延迟加载.html">
+            
+                <a href="../../../../Part-I/mybatis/06-延迟加载.html">
+            
+                    
+                    延迟加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    Maven
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="../../../../Part-I/Maven/01-Maven.html">
+            
+                <a href="../../../../Part-I/Maven/01-Maven.html">
+            
+                    
+                    Maven 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="../../../../Part-I/Maven/02-Maven继承.html">
+            
+                <a href="../../../../Part-I/Maven/02-Maven继承.html">
+            
+                    
+                    Maven 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="../../../../Part-I/Maven/03-Maven多模块.html">
+            
+                <a href="../../../../Part-I/Maven/03-Maven多模块.html">
+            
+                    
+                    Maven 多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../../spring-boot/02-Java代码配置.html">
+            
+                <a href="../../../spring-boot/02-Java代码配置.html">
+            
+                    
+                    Spring 中使用 Java 代码配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../../spring-boot/01-基础.html">
+            
+                <a href="../../../spring-boot/01-基础.html">
+            
+                    
+                    Spring Boot 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../../spring-boot/03-自动配置.html">
+            
+                <a href="../../../spring-boot/03-自动配置.html">
+            
+                    
+                    Spring Boot 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../../spring-boot/04-spring-boot-jsp.html">
+            
+                <a href="../../../spring-boot/04-spring-boot-jsp.html">
+            
+                    
+                    Spring Boot 中使用 JSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../../../spring-boot/05-thymeleaf基础.html">
+            
+                <a href="../../../spring-boot/05-thymeleaf基础.html">
+            
+                    
+                    Spring Boot 中使用 Thymeleaf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../../../spring-boot/06-spring-boot-mybatis.html">
+            
+                <a href="../../../spring-boot/06-spring-boot-mybatis.html">
+            
+                    
+                    Spring Boot 集成 Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../../../spring-boot/07-spring-boot-jpa.html">
+            
+                <a href="../../../spring-boot/07-spring-boot-jpa.html">
+            
+                    
+                    Spring Boot 集成 JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../../../spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../../spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 集成 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../../../spring-boot/09-spring-session.html">
+            
+                <a href="../../../spring-boot/09-spring-session.html">
+            
+                    
+                    Spring Boot 集成 spring-session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../../../spring-boot/10-spring-cache.html">
+            
+                <a href="../../../spring-boot/10-spring-cache.html">
+            
+                    
+                    Spring Boot 集成 spring-cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../../../spring-boot/11-spring-boot-quartz.html">
+            
+                <a href="../../../spring-boot/11-spring-boot-quartz.html">
+            
+                    
+                    Spring Boot 集成 quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../../../spring-boot/12-spring-boot-mail.html">
+            
+                <a href="../../../spring-boot/12-spring-boot-mail.html">
+            
+                    
+                    Spring Boot 开发邮件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../../../spring-boot/13-spring-boot-swagger.html">
+            
+                <a href="../../../spring-boot/13-spring-boot-swagger.html">
+            
+                    
+                    Spring Boot 中使用 Swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1.1" data-path="../../nosql/redis/01-简介.html">
+            
+                <a href="../../nosql/redis/01-简介.html">
+            
+                    
+                    Redis 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.2" data-path="../../nosql/redis/02-通用命令.html">
+            
+                <a href="../../nosql/redis/02-通用命令.html">
+            
+                    
+                    Redis 通用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.3" data-path="../../nosql/redis/03-字符串命令.html">
+            
+                <a href="../../nosql/redis/03-字符串命令.html">
+            
+                    
+                    Redis 字符串命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.4" data-path="../../nosql/redis/04-哈希命令.html">
+            
+                <a href="../../nosql/redis/04-哈希命令.html">
+            
+                    
+                    Redis 哈希命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.5" data-path="../../nosql/redis/05-链表命令.html">
+            
+                <a href="../../nosql/redis/05-链表命令.html">
+            
+                    
+                    Redis 链表命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.6" data-path="../../nosql/redis/06-集合命令.html">
+            
+                <a href="../../nosql/redis/06-集合命令.html">
+            
+                    
+                    Redis 集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.7" data-path="../../nosql/redis/07-有序集合命令.html">
+            
+                <a href="../../nosql/redis/07-有序集合命令.html">
+            
+                    
+                    Redis 有序集合命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.8" data-path="../../nosql/redis/08-spring-redis.html">
+            
+                <a href="../../nosql/redis/08-spring-redis.html">
+            
+                    
+                    Spring 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.1.9" data-path="../../../spring-boot/08-spring-boot-redis.html">
+            
+                <a href="../../../spring-boot/08-spring-boot-redis.html">
+            
+                    
+                    Spring Boot 整合 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    消息队列总论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" >
+            
+                <span>
+            
+                    
+                    ActiveMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../activemq/01-简介.html">
+            
+                <a href="../activemq/01-简介.html">
+            
+                    
+                    ActiveMQ 基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../activemq/02-java-activemq.html">
+            
+                <a href="../activemq/02-java-activemq.html">
+            
+                    
+                    ActiveMQ 原生 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.3" data-path="../activemq/03-spring-activemq.html">
+            
+                <a href="../activemq/03-spring-activemq.html">
+            
+                    
+                    Spring 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.4" data-path="../activemq/04-spring-boot-activemq.html">
+            
+                <a href="../activemq/04-spring-boot-activemq.html">
+            
+                    
+                    Spring Boot 整合 ActiveMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" >
+            
+                <span>
+            
+                    
+                    RabbitMQ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="01-路由-虚拟主机.html">
+            
+                <a href="01-路由-虚拟主机.html">
+            
+                    
+                    RabbitMQ 中的路由和虚拟主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.4.2" data-path="02-spring-boot-rabbitmq.html">
+            
+                <a href="02-spring-boot-rabbitmq.html">
+            
+                    
+                    Spring Boot 整合 RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../../../Part-I/99-webmagic爬虫.html">
+            
+                <a href="../../../../Part-I/99-webmagic爬虫.html">
+            
+                    
+                    WebMagic 爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" >
+            
+                <span>
+            
+                    
+                    Gist
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../../../../Part-I/Gist/jdbc.properties.html">
+            
+                <a href="../../../../Part-I/Gist/jdbc.properties.html">
+            
+                    
+                    jdbc.properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../../../../Part-I/Gist/logback.xml.html">
+            
+                <a href="../../../../Part-I/Gist/logback.xml.html">
+            
+                    
+                    logback.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../../../../Part-I/Gist/pom.xml.html">
+            
+                <a href="../../../../Part-I/Gist/pom.xml.html">
+            
+                    
+                    pom.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../../../../Part-I/Gist/web.xml.html">
+            
+                <a href="../../../../Part-I/Gist/web.xml.html">
+            
+                    
+                    web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../../../../Part-I/Gist/mybatis-config.xml.html">
+            
+                <a href="../../../../Part-I/Gist/mybatis-config.xml.html">
+            
+                    
+                    mybatis-config.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="../../../../Part-I/Gist/spring-dao.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-dao.xml.html">
+            
+                    
+                    spring-dao.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="../../../../Part-I/Gist/spring-service.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-service.xml.html">
+            
+                    
+                    spring-service.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.8" data-path="../../../../Part-I/Gist/spring-web.xml.html">
+            
+                <a href="../../../../Part-I/Gist/spring-web.xml.html">
+            
+                    
+                    spring-web.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.9" data-path="../../../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                <a href="../../../../Part-I/Gist/dependencies.spring-boot-2.0.9.html">
+            
+                    
+                    Spring Boot 2.0.9 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.10" data-path="../../../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                <a href="../../../../Part-I/Gist/dependencies.mybatis-spring-boot-2.0.1.html">
+            
+                    
+                    Mybatis Spring 2.0.1 版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Spring Boot 整合 RabbitMQ</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#pomxml"><b>1. </b>pom.xml</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b>2. </b>&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x7B80;&#x5355;&#x793A;&#x4F8B;"><b>3. </b>&#x7B80;&#x5355;&#x793A;&#x4F8B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x961F;&#x5217;"><b>3.1. </b>&#x5B9A;&#x4E49;&#x961F;&#x5217;</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;&#x6D88;&#x8D39;&#x8005;"><b>3.2. </b>&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;/&#x6D88;&#x8D39;&#x8005;</a></li><li><span class="title-icon "></span><a href="#&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;"><b>3.3. </b>&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-exchange&#x3001;queue-&#x548C;-binding"><b>4. </b>&#x521B;&#x5EFA; Exchange&#x3001;Queue &#x548C; Binding</a></li><ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-exchange"><b>4.1. </b>&#x521B;&#x5EFA; Exchange</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-queue"><b>4.2. </b>&#x521B;&#x5EFA; Queue</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;-binding"><b>4.3. </b>&#x521B;&#x5EFA; Binding</a></li></ul><li><span class="title-icon "></span><a href="#&#x53D1;&#x9001;&#x6D88;&#x606F;"><b>5. </b>&#x53D1;&#x9001;&#x6D88;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;push-&#x578B;&#xFF09;"><b>6. </b>&#x63A5;&#x6536;/&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;PUSH &#x578B;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;"><b>7. </b>&#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;</a></li><li><span class="title-icon "></span><a href="#topic-exchange"><b>8. </b>Topic Exchange</a></li><li><span class="title-icon "></span><a href="#fanout-exchange"><b>9. </b>Fanout Exchange</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;pull-&#x578B;&#xFF09;"><b>10. </b>&#x63A5;&#x6536;/&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;PULL &#x578B;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;"><b>11. </b>&#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;</a></li><li><span class="title-icon "></span><a href="#&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;"><b>12. </b>&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;</a></li><ul><li><span class="title-icon "></span><a href="#&#x786E;&#x8BA4;&#x6D88;&#x606F;"><b>12.1. </b>&#x786E;&#x8BA4;&#x6D88;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x62D2;&#x7EDD;&#x6D88;&#x606F;"><b>12.2. </b>&#x62D2;&#x7EDD;&#x6D88;&#x606F;</a></li></ul></ul></div><a href="#pomxml" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><span class="title">Spring Boot &#x6574;&#x5408; RabbitMQ</span></p>
+<p>Spring Boot &#x63D0;&#x4F9B;&#x4E86; <em><code>spring-boot-starter-amqp</code></em> &#x7EC4;&#x4EF6;&#x5BF9;&#x5B9E;&#x73B0;&#x4E86; AMQP &#x534F;&#x8BAE;&#x7684;&#x6D88;&#x606F;&#x961F;&#x5217;<small>&#xFF08;RabbitMQ&#xFF09;</small>&#x7684;&#x5FEB;&#x901F;&#x6574;&#x5408;&#x3002;</p>
+<h1 id="pomxml"><a name="pomxml" class="anchor-navigation-ex-anchor" href="#pomxml"><i class="fa fa-link" aria-hidden="true"></i></a>1. pom.xml</h1>
+<p><img src="img/spring-boot-rabbitmq-01.png" alt="rabbitmq-01"></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-amqp<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h1 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
+<p>&#x914D;&#x7F6E; rabbitmq &#x7684;&#x5B89;&#x88C5;&#x5730;&#x5740;&#x3001;&#x7AEF;&#x53E3;&#x4EE5;&#x53CA;&#x8D26;&#x6237;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-properties">spring.application.name=spring-rabbitmq-demo
+
+spring.rabbitmq.host=127.0.0.1
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+
+logging.level.root=INFO
+logging.level.hemiao3000.gitee.io=DEBUG
+logging.pattern.console=${CONSOLE_LOG_PATTERN:\
+  %clr([%15.15t]){faint} \
+  %clr(${LOG_LEVEL_PATTERN:%5p}) \
+  %clr(|){faint} \
+  %clr(%-40.40logger{39}){cyan} \
+  %clr(:){faint} %m%n\
+  ${LOG_EXCEPTION_CONVERSION_WORD:%wEx}}
+</code></pre>
+<h1 id="&#x7B80;&#x5355;&#x793A;&#x4F8B;"><a name="&#x7B80;&#x5355;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x5355;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x7B80;&#x5355;&#x793A;&#x4F8B;</h1>
+<p><small>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x79F0;&#x4F7F;&#x7528;&#x4E0B;&#x8FF0;&#x6CE8;&#x89E3;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x4F7F;&#x7528; <strong><em><code>@EnableRabbit</code></em></strong> &#x6CE8;&#x89E3;&#x6807;&#x6CE8;&#x4E8E;&#x914D;&#x7F6E;&#x7C7B;&#x4E0A;&#xFF0C;&#x4EE5;&#x8868;&#x793A;&#x4F7F;&#x7528; RabbitMQ &#x7684;&#x6CE8;&#x89E3;&#x529F;&#x80FD;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x7ECF;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#x5B83;&#x4F3C;&#x4E4E;&#x4E5F;&#x53EF;&#x884C;&#x3002;&#x7A33;&#x59A5;&#x8D77;&#x89C1;&#x7684;&#x8BDD;&#x8FD8;&#x662F;&#x7528;&#x4E0A;&#x3002;</small></p>
+<h2 id="&#x5B9A;&#x4E49;&#x961F;&#x5217;"><a name="&#x5B9A;&#x4E49;&#x961F;&#x5217;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x961F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x5B9A;&#x4E49;&#x961F;&#x5217;</h2>
+<div><p class="code-filename">RabbitMQConfig.java</p></div>
+<pre><code class="lang-java"><span class="hljs-comment">// import org.springframework.amqp.core.Queue;</span>
+
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RabbitMQConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">queue</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;hello&quot;</span>);
+    }
+}
+</code></pre>
+<h2 id="&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;&#x6D88;&#x8D39;&#x8005;"><a name="&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;&#x6D88;&#x8D39;&#x8005;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;&#x6D88;&#x8D39;&#x8005;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x5B9A;&#x4E49;&#x6D88;&#x606F;&#x63A5;&#x6536;&#x8005;/&#x6D88;&#x8D39;&#x8005;</h2>
+<div><p class="code-filename">HelloReceiver.java</p></div>
+<pre><code class="lang-java"><span class="hljs-meta">@Slf</span>4j
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;hello&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloReceiver</span> </span>{
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(String hello)</span> </span>{
+        log.info(<span class="hljs-string">&quot;Receiver : {}&quot;</span>, hello);
+    }
+
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x4F7F;&#x7528;&#x6CE8;&#x89E3; <em><code>@RabbitListener</code></em> &#x7684; <em><code>queues</code></em> &#x5C5E;&#x6027;&#x6307;&#x660E;&#x961F;&#x5217;&#x540D;&#x79F0;&#xFF0C;<em><code>@RabbitHandler</code></em> &#x4E3A;&#x5177;&#x4F53;&#x63A5;&#x6536;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;"><a name="&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x6D4B;&#x8BD5;&#x5E76;&#x9A8C;&#x8BC1;&#xFF09;</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">send</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    String context = <span class="hljs-string">&quot;hello &quot;</span> + <span class="hljs-keyword">new</span> Date();
+    log.info(<span class="hljs-string">&quot;Sender : {}&quot;</span>, context);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;hello&quot;</span>, context);
+    Thread.sleep(<span class="hljs-number">1000l</span>);
+}
+</code></pre>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x6848;&#x4F8B;&#x3002;&#x4E0A;&#x8FF0;&#x7684;&#x4EE3;&#x7801;&#x79CD;&#xFF0C;&#x5E76;&#x672A;&#x660E;&#x786E;&#x6D89;&#x53CA;&#x5230; <strong>Exchange</strong> &#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x662F; <strong>Default Exchange</strong> &#x3002;</p>
+<p>Default Exchange &#x7684;&#x6295;&#x9012;&#x89C4;&#x5219;&#x662F;&#xFF1A;&#x4EE5; <strong>Queue Name</strong> &#x4F5C;&#x4E3A; <strong>Binding Key</strong>&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528; <em><code>hello</code></em> &#x4F5C;&#x4E3A; Binding Key &#x65F6;&#xFF0C;&#x6D88;&#x606F;&#x6700;&#x7EC8;&#x88AB;&#x6295;&#x9012;&#x5230;&#x4E86; hello &#x961F;&#x5217;&#x3002;</p>
+<h1 id="&#x521B;&#x5EFA;-exchange&#x3001;queue-&#x548C;-binding"><a name="&#x521B;&#x5EFA;-exchange&#x3001;queue-&#x548C;-binding" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-exchange&#x3001;queue-&#x548C;-binding"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x521B;&#x5EFA; Exchange&#x3001;Queue &#x548C; Binding</h1>
+<p>&#x867D;&#x7136;&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x4E0D;&#x5EFA;&#x8BAE;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x53BB;&#x521B;&#x5EFA; Exchange&#x3001;Queue &#x548C; Binding&#x3002;&#x901A;&#x5E38;&#x8FD8;&#x662F;&#x5728; RabbitMQ &#x4E2D;&#x628A;&#x8FD9;&#x4E9B;&#x4E1C;&#x897F;&#x90FD;&#x5EFA;&#x597D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8BBF;&#x95EE;/&#x64CD;&#x4F5C;&#x3002;</p>
+<p><small>&#x5176;&#x5B9E;&#xFF0C;&#x8FD9;&#x5F88;&#x7C7B;&#x4F3C;&#x4E8E; Hibernate/JPA &#x7684;&#x5EFA;&#x8868;&#x529F;&#x80FD;&#x3002;&#x867D;&#x7136;&#x6709;&#x8FD9;&#x79CD;&#x529F;&#x80FD;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x7684;&#x673A;&#x4F1A;&#x548C;&#x573A;&#x666F;&#x5E76;&#x4E0D;&#x591A;&#x3002;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x73B0;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x628A;&#x8868;&#x5EFA;&#x597D;&#x4E4B;&#x540E;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;&#x9664;&#x975E;&#x662F;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x4E34;&#x65F6;&#x8868;&#xFF0C;&#x624D;&#x4F1A;&#x7528;&#x5230;&#x8FD9;&#x79CD;&#x529F;&#x80FD;&#x3002;</small></p>
+<h2 id="&#x521B;&#x5EFA;-exchange"><a name="&#x521B;&#x5EFA;-exchange" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-exchange"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x521B;&#x5EFA; Exchange</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Exchange <span class="hljs-title">exchange</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">//  return new TopicExchange(&quot;test-exchange-1&quot;); </span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> TopicExchange(<span class="hljs-string">&quot;test-exchange-1&quot;</span>, <span class="hljs-keyword">true</span>, <span class="hljs-keyword">false</span>);
+}
+</code></pre>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF0C;exchange &#x7684;&#x540D;&#x79F0;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">durable</td>
+<td style="text-align:left">&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x8BE5; exchage &#x662F;&#x5426;&#x6301;&#x4E45;&#x5316;&#x3002;<br> &#x6301;&#x4E45;&#x5316;&#x610F;&#x5473;&#x7740;&#x5F53; RabbitMQ &#x91CD;&#x542F;&#x540E;&#xFF0C;&#x8BE5; exchange &#x662F;&#x5426;&#x4F1A;&#x6062;&#x590D;/&#x4ECD;&#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">autoDelete</td>
+<td style="text-align:left">&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x8BE5; exchange &#x6CA1;&#x201C;&#x4EBA;&#x201D;<small>&#xFF08;queue&#xFF09;</small>&#x7528;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0D;&#x6307;&#x5B9A; durable &#x548C; autoDelete &#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <em><code>true</code></em> &#x548C; <em><code>false</code></em> &#x3002;&#x8868;&#x793A;&#x6301;&#x4E45;&#x5316;&#x3001;&#x4E0D;&#x7528;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;</p>
+<p><small>&#x8865;&#x5145;&#xFF0C;&#x8FD9;&#x80CC;&#x540E;&#x8C03;&#x7528;&#x7684;&#x662F;&#x539F;&#x751F; API &#x4E2D;&#x7684; <strong><em><code>Channel</code></em></strong> &#x7684; <em><code>.exchangeDeclare()</code></em> &#x65B9;&#x6CD5;&#x3002;</small></p>
+<h2 id="&#x521B;&#x5EFA;-queue"><a name="&#x521B;&#x5EFA;-queue" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-queue"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x521B;&#x5EFA; Queue</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">queue</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">//  return new Queue(&quot;test-queue-1&quot;); </span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;test-queue-1&quot;</span>, <span class="hljs-keyword">true</span>, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">false</span>);
+}
+</code></pre>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF0C;exchange &#x7684;&#x540D;&#x79F0;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">durable</td>
+<td style="text-align:left">&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x8BE5; queue &#x662F;&#x5426;&#x6301;&#x4E45;&#x5316;&#x3002;<br> &#x6301;&#x4E45;&#x5316;&#x610F;&#x5473;&#x7740;&#x5F53; RabbitMQ &#x91CD;&#x542F;&#x540E;&#xFF0C;&#x8BE5; queue &#x662F;&#x5426;&#x4F1A;&#x6062;&#x590D;/&#x4ECD;&#x5B58;&#x5728;&#x3002;<br>&#x53E6;&#x5916;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;queue &#x7684;&#x6301;&#x4E45;&#x5316;&#x4E0D;&#x7B49;&#x4E8E;&#x5176;&#x4E2D;&#x7684;&#x6D88;&#x606F;&#x4E5F;&#x4F1A;&#x88AB;&#x6301;&#x4E45;&#x5316;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">exclusive</td>
+<td style="text-align:left">&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x8BE5; queue &#x662F;&#x5426;&#x6392;&#x5B83;&#x5F0F;&#x4F7F;&#x7528;&#x3002;&#x6392;&#x5B83;&#x5F0F;&#x4F7F;&#x7528;&#x610F;&#x5473;&#x7740;&#x4EC5;&#x58F0;&#x660E;&#x4ED6;&#x7684;&#x8FDE;&#x63A5;&#x53EF;&#x89C1;/&#x53EF;&#x7528;&#xFF0C;&#x5176;&#x5B83;&#x8FDE;&#x63A5;&#x4E0D;&#x53EF;&#x89C1;/&#x4E0D;&#x53EF;&#x7528;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">autoDelete</td>
+<td style="text-align:left">&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x8BE5; queue &#x6CA1;&#x201C;&#x4EBA;&#x201D;<small>&#xFF08;connection&#xFF09;</small>&#x7528;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0D;&#x6307;&#x5B9A; durable&#x3001;exclusive &#x548C; autoDelete &#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; <em><code>true</code></em>&#x3001; <em><code>false</code></em> &#x548C; <em><code>false</code></em> &#x3002;&#x8868;&#x793A;&#x6301;&#x4E45;&#x5316;&#x3001;&#x975E;&#x6392;&#x5B83;&#x3001;&#x4E0D;&#x7528;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;</p>
+<p><small>&#x8865;&#x5145;&#xFF0C;&#x8FD9;&#x80CC;&#x540E;&#x8C03;&#x7528;&#x7684;&#x662F;&#x539F;&#x751F; API &#x4E2D;&#x7684; <strong><em><code>Channel</code></em></strong> &#x7684; <em><code>.queueDeclare()</code></em> &#x65B9;&#x6CD5;&#x3002;</small></p>
+<h2 id="&#x521B;&#x5EFA;-binding"><a name="&#x521B;&#x5EFA;-binding" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;-binding"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. &#x521B;&#x5EFA; Binding</h2>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binding</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> BindingBuilder
+        .bind(queue())
+        .to(exchange())
+        .with(<span class="hljs-string">&quot;*.orange.*&quot;</span>)
+        .noargs();
+}
+</code></pre>
+<h1 id="&#x53D1;&#x9001;&#x6D88;&#x606F;"><a name="&#x53D1;&#x9001;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x53D1;&#x9001;&#x6D88;&#x606F;</h1>
+<p>spring-rabbit &#x63D0;&#x4F9B;&#x4E86; RabbitTemplate &#x6765;&#x7B80;&#x5316;&#x539F;&#x751F; API &#x7684;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><small>&#xFF08;&#x6700;&#x7B80;&#x5355;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF09;&#xFF0C;</small>&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8981;&#x6C42; Spring &#x7ED9;&#x4F60;&#x6CE8;&#x5165;&#x4E00;&#x4E2A; <strong><em><code>RabbitTemplate</code></em></strong>&#xFF0C;&#x901A;&#x8FC7;&#x5B83;&#x6765;&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span> </span>{
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;queue-demo-1&quot;</span>, <span class="hljs-string">&quot;hello world&quot;</span>);
+}
+</code></pre>
+<p><em><code>.convertAndSend()</code></em> &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F; <strong><code>routing-key</code></strong>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4F60;&#x6240;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x5728;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x6307;&#x5B9A; Exchange &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x7ED9;&#x4E86; RabbitMQ &#x7684; <strong><code>default-exchange</code></strong>&#x3002;&#x8BE5; exchage &#x4EE5;&#x961F;&#x5217;&#x540D;&#x4F5C;&#x4E3A; <strong><code>routing-key</code></strong> &#x3002;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E2D;&#x7684; <strong><code>routing-key</code></strong> &#x662F; <em><code>queue-demo-1</code></em>&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x6D88;&#x606F;&#x6700;&#x7EC8;&#x662F;&#x53D1;&#x9001;&#x7ED9; <em><code>queue-demo-1</code></em> &#x961F;&#x5217;&#x3002;</p>
+<p><small><em><code>.convertAndSend()</code></em> &#x65B9;&#x6CD5;&#x662F; <em><code>.send()</code></em> &#x65B9;&#x6CD5;&#x7684;&#x5305;&#x88C5;/&#x7B80;&#x5316;&#x3002;<em><code>.send()</code></em> &#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x76F8;&#x5BF9;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#x3002;</small></p>
+<h1 id="&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;push-&#x578B;&#xFF09;"><a name="&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;push-&#x578B;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;push-&#x578B;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x63A5;&#x6536;/&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;PUSH &#x578B;&#xFF09;</h1>
+<p>&#x63A5;&#x6536;/&#x6D88;&#x8D39;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;Push &#x578B;&#x548C; Pull &#x578B;&#x3002;</p>
+<p>Push &#x578B;&#x8868;&#x793A;&#x7531; RabbitMQ Broker &#x8D1F;&#x8D23;&#x5C06;&#x6D88;&#x606F;&#x63A8;&#x9001;&#x7ED9;&#x6D88;&#x8D39;&#x8005;&#x3002;&#x6D88;&#x8D39;&#x8005;&#x5728;&#x4E00;&#x5F00;&#x59CB;&#x6307;&#x5B9A;/&#x914D;&#x7F6E;&#x76D1;&#x542C;&#x54EA;&#x4E2A;&#x961F;&#x5217;&#x7684;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x5C31;&#x65E0;&#x9700;&#x8003;&#x8651;&#x5176;&#x5B83;&#x3002;&#x5F53;&#x8BE5;&#x961F;&#x5217;&#x6536;&#x5230;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;&#x5C31;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x6267;&#x884C;&#x3002;</p>
+<p>PUSH &#x6D88;&#x8D39;&#x7684;&#x914D;&#x7F6E;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x5BF9;&#x4F60;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x7C7B;&#x6807;&#x6CE8; <strong><em><code>@RabbitListener</code></em></strong> &#x6CE8;&#x89E3;&#xFF0C;&#x4E3A;&#x4F60;&#x7684;&#x6D88;&#x8D39;&#x65B9;&#x6CD5;&#x6807;&#x6CE8; <strong><em><code>@RabbitHandler</code></em></strong> &#x6CE8;&#x89E3;&#x5373;&#x53EF;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x6D88;&#x8D39;&#x8005;&#x7C7B;&#x8981;&#x6258;&#x7BA1;&#x7ED9; Spring&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;queue-demo-1&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Consumer1</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(Consumer1.class);
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;Consumer 1: {}&quot;</span>, message);
+    }
+
+}
+</code></pre>
+<p>&#x751A;&#x81F3;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06; <strong><em><code>@RabbitListener</code></em></strong> &#x6807;&#x6CE8;&#x5728;&#x65B9;&#x6CD5;&#x4E0A;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x914D;&#x5957;&#x4F7F;&#x7528; <strong><em><code>@RabbitHandler</code></em></strong> &#x6CE8;&#x89E3;&#x3002;</p>
+<h1 id="&#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;"><a name="&#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x5BF9;&#x8C61;&#x7684;&#x652F;&#x6301;</h1>
+<p>Spring Boot &#x5DF2;&#x7ECF;&#x5B8C;&#x7F8E;&#x652F;&#x6301;&#x5BF9;&#x8C61;&#x7684;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x914D;&#x7F6E;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x6240;&#x4F20;&#x9012;&#x7684;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x5B9E;&#x73B0; <strong><em><code>Serializable</code></em></strong> &#x63A5;&#x53E3;&#x3002;</p>
+<p>!&#x58F0;&#x660E;&#x961F;&#x5217;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">departmentQueue</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;department&quot;</span>);
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-keyword">private</span> RabbitTemplate rabbitTemplate;
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo</span><span class="hljs-params">()</span> </span>{
+    Department department = <span class="hljs-keyword">new</span> Department(<span class="hljs-number">10L</span>, <span class="hljs-string">&quot;&#x6D4B;&#x8BD5;&quot;</span>, <span class="hljs-string">&quot;&#x6B66;&#x6C49;&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;department&quot;</span>, department);
+}
+
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;department&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DepartmentReceiver</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(DepartmentReceiver.class);
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(Department department)</span> </span>{
+        log.info(<span class="hljs-string">&quot;Receiver : {}&quot;</span>, department);
+    }
+
+}
+</code></pre>
+<h1 id="topic-exchange"><a name="topic-exchange" class="anchor-navigation-ex-anchor" href="#topic-exchange"><i class="fa fa-link" aria-hidden="true"></i></a>8. Topic Exchange</h1>
+<p>Topic &#x662F; RabbitMQ &#x4E2D;&#x6700;&#x7075;&#x6D3B;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E; routing_key &#x81EA;&#x7531;&#x5730;&#x7ED1;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x961F;&#x5217;&#x3002;</p>
+<p><small>&#x8003;&#x8651;&#x5230;&#x73AF;&#x5883;&#x4E2D;&#x6B8B;&#x7559;&#x7684;&#x4E4B;&#x524D;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5BF9;&#x6D4B;&#x8BD5;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3010;&#x83AB;&#x540D;&#x5176;&#x5999;&#x3011;&#xFF0C;&#x8BB0;&#x5F97;&#x5728; RabbitMQ &#x7684;web &#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4E2D;&#x5C06;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x6E05;&#x9664;&#x5E72;&#x51C0;&#xFF0C;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x7EAF;&#x51C0;&#x7684;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x6D4B;&#x8BD5;&#x3002;</small></p>
+<p><img src="img/spring-boot-rabbitmq-02.png" alt="rabbitmq"></p>
+<p>&#x9996;&#x5148;&#x5BF9; Topic &#x89C4;&#x5219;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/* &#x4E24;&#x4E2A; Queue */</span>
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">queue1</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;Q1&quot;</span>); }
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">queue2</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;Q2&quot;</span>); }
+
+<span class="hljs-comment">/* &#x4E00;&#x4E2A; Exchange */</span>
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Exchange <span class="hljs-title">exchange</span><span class="hljs-params">()</span> </span>{ 
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> TopicExchange(<span class="hljs-string">&quot;testTopic&quot;</span>); 
+}
+
+<span class="hljs-comment">/* &#x4E09;&#x4E2A; Binding&#xFF1A;&#x5173;&#x8054; Exchange &#x548C; Queue */</span>
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binding1</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> BindingBuilder
+        .bind(queue1())
+        .to(exchange())
+        .with(<span class="hljs-string">&quot;*.orange.*&quot;</span>)
+        .noargs();
+}
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binding21</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> BindingBuilder
+        .bind(queue2())
+        .to(exchange())
+        .with(<span class="hljs-string">&quot;*.*.rabbit&quot;</span>)
+        .noargs();
+}
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binding22</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> BindingBuilder
+        .bind(queue2())
+        .to(exchange())
+        .with(<span class="hljs-string">&quot;lazy.#&quot;</span>)
+        .noargs();
+}
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;Q1&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C1</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(C1.class);
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;C1: {}&quot;</span>, message);
+    }
+
+}
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;Q2&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C2</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(C2.class);
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(String message)</span> </span>{
+        log.info(<span class="hljs-string">&quot;C2: {}&quot;</span>, message);
+    }
+
+}
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#xFF1A;<small>&#xFF08;&#x8FD9;&#x91CC;&#x5077;&#x4E86;&#x4E2A;&#x61D2;&#xFF0C;&#x6CA1;&#x6709;&#x53BB;&#x521B;&#x5EFA;&#x53D1;&#x9001;&#x8005;&#x7C7B;&#xFF0C;&#x76F4;&#x63A5;&#x5728; Junit &#x4E2D;&#x4F7F;&#x7528;&#x4E86; <strong><em><code>AmqpTemplate</code></em></strong> &#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF09;</small>&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Autowired</span>
+<span class="hljs-keyword">private</span> AmqpTemplate rabbitTemplate;
+
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo1</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;hello.orange&quot;</span>, <span class="hljs-string">&quot;hello orange&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;hello.orange.world&quot;</span>, <span class="hljs-string">&quot;hello orange world&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;hello.world.rabbit&quot;</span>, <span class="hljs-string">&quot;hello world rabbit&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;lazy&quot;</span>, <span class="hljs-string">&quot;lazy&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;lazy.good&quot;</span>, <span class="hljs-string">&quot;good&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testTopic&quot;</span>, <span class="hljs-string">&quot;lazy.good.bye&quot;</span>, <span class="hljs-string">&quot;goodbye&quot;</span>);
+    Thread.sleep(<span class="hljs-number">1000L</span>);
+}
+</code></pre>
+<h1 id="fanout-exchange"><a name="fanout-exchange" class="anchor-navigation-ex-anchor" href="#fanout-exchange"><i class="fa fa-link" aria-hidden="true"></i></a>9. Fanout Exchange</h1>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span> 
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">green</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;green&quot;</span>); }
+
+<span class="hljs-meta">@Bean</span> 
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">red</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;red&quot;</span>); }
+
+<span class="hljs-meta">@Bean</span> 
+<span class="hljs-function"><span class="hljs-keyword">public</span> Queue <span class="hljs-title">orange</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Queue(<span class="hljs-string">&quot;orange&quot;</span>); }
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> FanoutExchange <span class="hljs-title">exchange</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> FanoutExchange(<span class="hljs-string">&quot;testFanout&quot;</span>); }
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binging1</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> BindingBuilder.bind(green()).to(exchange()); }
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binging2</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> BindingBuilder.bind(red()).to(exchange()); }
+
+<span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Binding <span class="hljs-title">binging3</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> BindingBuilder.bind(orange()).to(exchange()); }
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo2</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testFanout&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;green&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testFanout&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;red&quot;</span>);
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;testFanout&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;orange&quot;</span>);
+    Thread.sleep(<span class="hljs-number">1000L</span>);
+}
+</code></pre>
+<p>Customer-A&#x3001;Customer-B&#x3001;Customer-C &#x90FD;&#x4F1A;&#x6536;&#x5230;&#x8FD9;&#x4E09;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x5373;&#xFF0C;&#x63A7;&#x5236;&#x53F0;&#x4F1A;&#x6253;&#x5370;&#x51FA; 9 &#x6761;&#x65E5;&#x5FD7;&#x3002;</p>
+<h1 id="&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;pull-&#x578B;&#xFF09;"><a name="&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;pull-&#x578B;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x6536;&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;pull-&#x578B;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>10. &#x63A5;&#x6536;/&#x6D88;&#x8D39;&#x6D88;&#x606F;&#xFF08;PULL &#x578B;&#xFF09;</h1>
+<p>PULL &#x578B;&#x6D88;&#x8D39;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;&#x6D88;&#x8D39;&#x8005;&#x4E3B;&#x52A8;&#x4ECE; RabbitMQ Broker &#x4E0A;&#x3010;&#x53D6;&#x3011;&#x6D88;&#x606F;&#x3002;</p>
+<p>PULL &#x578B;&#x6D88;&#x8D39;&#x4E0D;&#x4F9D;&#x9760; <strong><em><code>@RabbitListener</code></em></strong> &#x548C; <strong><em><code>@RabbitHandler</code></em></strong> &#x6CE8;&#x89E3;&#x3002;&#x800C;&#x662F;&#x9700;&#x8981;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x624B;&#x52A8;&#x8C03;&#x7528; <em><code>.receiveAndConvert()</code></em> &#x65B9;&#x6CD5;&#x3002;</p>
+<p><small><em><code>.receiveAndConvert()</code></em> &#x65B9;&#x6CD5;&#x662F; <em><code>.receive()</code></em> &#x65B9;&#x6CD5;&#x7684;&#x7B80;&#x5316;&#x7248;&#x3002;</small></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo5</span><span class="hljs-params">()</span> </span>{
+    rabbitTemplate.convertAndSend(<span class="hljs-string">&quot;queue-demo-1&quot;</span>, <span class="hljs-string">&quot;hello world&quot;</span>);
+}
+
+<span class="hljs-meta">@Test</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">demo4</span><span class="hljs-params">()</span> </span>{
+    log.info(<span class="hljs-string">&quot;{}&quot;</span>, rabbitTemplate.receiveAndConvert(<span class="hljs-string">&quot;queue-demo-1&quot;</span>));
+}
+</code></pre>
+<h1 id="&#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;"><a name="&#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;"><i class="fa fa-link" aria-hidden="true"></i></a>11. &#x53D1;&#x9001;&#x8005;&#x786E;&#x8BA4;</h1>
+<p>&#x53D1;&#x9001;&#x8005;&#x5982;&#x4F55;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x6240;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x8D39;&#x6210;&#x529F;&#x62B5;&#x8FBE;&#x4E86; RabbitMQ Broker &#x4E2D;&#x7684; Exchange &#x4E2D;&#xFF0C;&#x4E43;&#x81F3;&#x6210;&#x529F;&#x62B5;&#x8FBE;&#x4E86; RabbitMQ Broker &#x4E2D;&#x7684; Queue &#x4E2D;&#xFF1F;</p>
+<p><strong>&#x751F;&#x4EA7;&#x8005;&#x786E;&#x8BA4;</strong></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4E3A; RabbitTemplate &#x6CE8;&#x518C;&#x4E24;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x6D88;&#x606F;&#x6CA1;&#x6709;&#x6210;&#x529F;&#x62B5;&#x8FBE; Queue &#x6216;&#x8005; Exchange &#x65F6;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x4F60;<small>&#xFF08;&#x6D88;&#x8D39;&#x751F;&#x4EA7;&#x8005;&#xFF09;</small>&#x81EA;&#x7136;&#x5C31;&#x77E5;&#x9053;&#x6D88;&#x606F;&#x53D1;&#x751F;&#x5931;&#x8D25;&#x4E86;&#x3002;</p>
+<pre><code># &#x786E;&#x8BA4;&#x6D88;&#x606F;&#x5DF2;&#x53D1;&#x9001;&#x5230;&#x4EA4;&#x6362;&#x673A;&#xFF08;Exchange&#xFF09;
+spring.rabbitmq.publisher-confirms=true
+# &#x786E;&#x8BA4;&#x6D88;&#x606F;&#x5DF2;&#x53D1;&#x9001;&#x5230;&#x961F;&#x5217;&#xFF08;Queue&#xFF09;
+spring.rabbitmq.publisher-returns=true
+</code></pre><p><small>&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x4E0D;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x5E38;&#x8FD9;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x540C;&#x6B65;&#x5F00;&#x5173;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x7684;&#x3002;</small></p>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x662F; <code>spring-rabbit</code> &#x5E2E;&#x6211;&#x4EEC;&#x521B;&#x5EFA; <strong><em><code>ConnectionFactory</code></em></strong>&#xFF0C;&#x518D;&#x8FDB;&#x4E00;&#x6B65;&#x521B;&#x5EFA; <strong><em><code>RabbitTemplate</code></em></strong>&#xFF0C;&#x5E76;&#x6CE8;&#x5165;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x8FDB;&#x800C;&#x88AB;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x5BF9; <strong><em><code>RabbitTemplate</code></em></strong> &#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x5E76;&#x8BBE;&#x7F6E; <strong><em><code>RabbitTemplate</code></em></strong>&#x3002;<small>&#xFF08;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD8;&#x662F;&#x9700;&#x8981; spring-rabbit &#x5E2E;&#x6211;&#x4EEC;&#x521B;&#x5EFA; Connection Factory&#xFF0C;&#x5E76;&#x6CE8;&#x5165;&#xFF09;</small></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> RabbitTemplate <span class="hljs-title">createRabbitTemplate</span><span class="hljs-params">(ConnectionFactory connectionFactory)</span> </span>{
+    RabbitTemplate rabbitTemplate = <span class="hljs-keyword">new</span> RabbitTemplate();
+    rabbitTemplate.setConnectionFactory(connectionFactory);
+
+    <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5F00;&#x542F; Mandatory&#xFF0C;&#x624D;&#x80FD;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x65E0;&#x8BBA;&#x6D88;&#x606F;&#x63A8;&#x9001;&#x7ED3;&#x679C;&#x600E;&#x4E48;&#x6837;&#x90FD;&#x5F3A;&#x5236;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+    rabbitTemplate.setMandatory(<span class="hljs-keyword">true</span>);
+
+    <span class="hljs-comment">// &#x5173;&#x952E;&#x5C31;&#x662F;&#x4EE5;&#x4E0B;&#x4E24;&#x53E5;</span>
+    rabbitTemplate.setConfirmCallback( ... );
+    rabbitTemplate.setReturnCallback( ... );
+
+    <span class="hljs-keyword">return</span> rabbitTemplate;
+}
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; lamda &#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x7B80;&#x5316;&#x4E0B;&#x5217;&#x533F;&#x540D;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-java">rabbitTemplate.setConfirmCallback(<span class="hljs-keyword">new</span> RabbitTemplate.ConfirmCallback() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">confirm</span><span class="hljs-params">(CorrelationData correlationData, <span class="hljs-keyword">boolean</span> ack, java.lang.String cause)</span> </span>{
+        <span class="hljs-keyword">if</span> (ack) {
+            log.info(<span class="hljs-string">&quot;&#x6D88;&#x606F;&#x5DF2;&#x53D1;&#x9001;&#x81F3; Exchange&quot;</span>);
+        } <span class="hljs-keyword">else</span> {
+            log.info(<span class="hljs-string">&quot;&#x6D88;&#x606F;&#x672A;&#x80FD;&#x53D1;&#x9001;&#x5230; Exchange&#x3002;{}&quot;</span>, cause);
+        }
+    }
+});
+
+rabbitTemplate.setReturnCallback(<span class="hljs-keyword">new</span> RabbitTemplate.ReturnCallback() {
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">returnedMessage</span><span class="hljs-params">(Message message, <span class="hljs-keyword">int</span> replyCode, String replyText, String exchange, String routingKey)</span> </span>{
+        log.info(<span class="hljs-string">&quot;ReturnCallback &#x6D88;&#x606F;&#xFF1A;{}&quot;</span>, message);
+        log.info(<span class="hljs-string">&quot;ReturnCallback &#x56DE;&#x5E94;&#x7801;&#xFF1A;{}&quot;</span>, replyCode);
+        log.info(<span class="hljs-string">&quot;ReturnCallback &#x56DE;&#x5E94;&#x4FE1;&#x606F;&#xFF1A;{}&quot;</span>, replyText);
+        log.info(<span class="hljs-string">&quot;ReturnCallback &#x4EA4;&#x6362;&#x673A;&#xFF1A;{}&quot;</span>, exchange);
+        log.info(<span class="hljs-string">&quot;ReturnCallback &#x8DEF;&#x7531;&#x952E;&#xFF1A;{}&quot;</span>, routingKey);
+    }
+});
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5411;&#x4E0D;&#x5B58;&#x5728;&#x7684; Exchange &#x548C; Queue &#x53D1;&#x9001;&#x6D88;&#x606F;&#x5DF2;&#x9A8C;&#x8BC1;&#x6548;&#x679C;&#x3002;</p>
+<h1 id="&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;"><a name="&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;" class="anchor-navigation-ex-anchor" href="#&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;"><i class="fa fa-link" aria-hidden="true"></i></a>12. &#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x4E0E;&#x62D2;&#x7EDD;</h1>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;RabbitMQ &#x542F;&#x7528;&#x7684;&#x662F;&#x6D88;&#x8D39;&#x7AEF;&#x81EA;&#x52A8;<small>&#xFF08;auto&#xFF09;</small>&#x56DE;&#x590D;&#x3002;&#x5373;&#xFF0C;&#x5F53;&#x6D88;&#x8D39;&#x7AEF;&#x6536;&#x5230;&#x6D88;&#x606F;&#xFF0C;&#x5C31;&#x4F1A;&#x7ED9; RabbitMQ Broker &#x4F5C;&#x51FA;&#x56DE;&#x590D;&#xFF0C;&#x8868;&#x793A;&#x5DF2;&#x6536;&#x5230;&#x3002;</p>
+<p><strong>&#x53EA;&#x6709;&#x5728;&#x6D88;&#x8D39;&#x7AEF;&#x56DE;&#x590D; RabbitMQ Broker &#x4E4B;&#x540E;&#xFF0C;RabbitMQ Broker &#x624D;&#x4F1A;&#x5C06;&#x8BE5;&#x6D88;&#x606F;&#x4ECE;&#x6D88;&#x606F;&#x961F;&#x5217;&#x4E2D;&#x79FB;&#x9664;&#x3002;</strong></p>
+<p>&#x56DE;&#x590D;&#x7684;&#x884C;&#x4E3A;&#x9664;&#x4E86;&#x6709; AUTO &#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709; NONE &#x548C; MANUAL &#x3002;</p>
+<p>NONE &#x8868;&#x793A;&#x4E0D;&#x56DE;&#x590D;&#xFF0C;&#x5373;&#xFF0C;RabbitMQ Broker &#x6C38;&#x8FDC;&#x4E0D;&#x53EF;&#x80FD;&#x77E5;&#x9053;&#x6D88;&#x8D39;&#x8005;&#x7AEF;&#x5230;&#x5E95;&#x6709;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x6D88;&#x606F;&#x3002;RabbitMQ Broker &#x53D1;&#x51FA;</p>
+<p>MANUAL &#x5219;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;&#x5728;&#x6D88;&#x8D39;&#x8005;&#x7AEF;&#x624B;&#x52A8;&#x53D1;&#x9001;&#x56DE;&#x590D;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x6D88;&#x8D39;&#x8005;&#x56DE;&#x590D;&#x524D;&#xFF0C;&#x8BE5;&#x6D88;&#x606F;&#x5728;&#x6D88;&#x8D39;&#x7AEF;&#x672A;&#x56DE;&#x590D;&#x524D;&#x5728; RabbitMQ Brocker &#x4E0A;&#x4E00;&#x76F4;&#x5904;&#x4E8E;<strong><code>Unacked</code></strong> &#x72B6;&#x6001;&#x3002;</p>
+<p>&#x542F;&#x7528;&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x786E;&#x8BA4;&#x529F;&#x80FD;&#x9700;&#x8981;&#x6253;&#x5F00;&#x914D;&#x7F6E;&#x5F00;&#x5173;&#xFF1A;</p>
+<pre><code class="lang-properties">spring.rabbitmq.listener.simple.acknowledge-mode=manual
+spring.rabbitmq.listener.direct.acknowledge-mode=manual
+</code></pre>
+<p>&#x4E8E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;&#x6D88;&#x606F;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x6539;&#x9020;&#x6210;&#x4EE5;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-java">
+<span class="hljs-meta">@Component</span>
+<span class="hljs-meta">@RabbitListener</span>(queues = <span class="hljs-string">&quot;queue-demo-1&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Consumer2</span> </span>{
+
+    <span class="hljs-meta">@RabbitHandler</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">(String message, 
+            Channel channel, 
+            @Header(AmqpHeaders.DELIVERY_TAG)</span> <span class="hljs-keyword">long</span> tag) </span>{
+
+        ...
+
+    }
+}
+</code></pre>
+<h2 id="&#x786E;&#x8BA4;&#x6D88;&#x606F;"><a name="&#x786E;&#x8BA4;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x786E;&#x8BA4;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>12.1. &#x786E;&#x8BA4;&#x6D88;&#x606F;</h2>
+<p>&#x786E;&#x8BA4;&#x6D88;&#x606F;&#x4F7F;&#x7528; <em><code>channel</code></em> &#x7684; <em><code>.basicAck()</code></em> &#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-java">channel.basicAck(tag, <span class="hljs-keyword">false</span>);
+</code></pre>
+<p>basicAck &#x65B9;&#x6CD5;&#x9700;&#x8981;&#x4F20;&#x9012;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><p>deliveryTag&#xFF08;&#x552F;&#x4E00;&#x6807;&#x8BC6; ID&#xFF09;&#xFF1A;&#x5F53;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x5411; RabbitMQ &#x6CE8;&#x518C;&#x540E;&#xFF0C;&#x4F1A;&#x5EFA;&#x7ACB;&#x8D77;&#x4E00;&#x4E2A; Channel &#xFF0C;RabbitMQ &#x4F1A;&#x7528; basic.deliver &#x65B9;&#x6CD5;&#x5411;&#x6D88;&#x8D39;&#x8005;&#x63A8;&#x9001;&#x6D88;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x643A;&#x5E26;&#x4E86;&#x4E00;&#x4E2A; delivery tag&#xFF0C; &#x5B83;&#x4EE3;&#x8868;&#x4E86; RabbitMQ &#x5411;&#x8BE5; Channel &#x6295;&#x9012;&#x7684;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6; ID&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x8C03;&#x9012;&#x589E;&#x7684;&#x6B63;&#x6574;&#x6570;&#xFF0C;delivery tag &#x7684;&#x8303;&#x56F4;&#x4EC5;&#x9650;&#x4E8E; Channel &#x3002;</p>
+</li>
+<li><p>multiple&#xFF1A;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#xFF0C;&#x624B;&#x52A8;&#x786E;&#x8BA4;&#x53EF;&#x4EE5;&#x88AB;&#x6279;&#x5904;&#x7406;&#xFF0C;&#x5F53;&#x8BE5;&#x53C2;&#x6570;&#x4E3A; true &#x65F6;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x786E;&#x8BA4; delivery_tag &#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x4F20;&#x5165;&#x503C;&#x7684;&#x6240;&#x6709;&#x6D88;&#x606F;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x62D2;&#x7EDD;&#x6D88;&#x606F;"><a name="&#x62D2;&#x7EDD;&#x6D88;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x62D2;&#x7EDD;&#x6D88;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>12.2. &#x62D2;&#x7EDD;&#x6D88;&#x606F;</h2>
+<p>&#x62D2;&#x7EDD;&#x6D88;&#x606F;&#x4F7F;&#x7528; <em><code>channel</code></em> &#x7684; <em><code>.basicReject()</code></em> &#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-java">channel.basicReject(tag, <span class="hljs-keyword">false</span>);
+</code></pre>
+<p>basicReject &#x65B9;&#x6CD5;&#x4E5F;&#x9700;&#x8981;&#x4F20;&#x529B;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><p>deliveryTag&#xFF08;&#x552F;&#x4E00;&#x6807;&#x8BC6; ID&#xFF09;&#xFF1A;&#x540C;&#x4E0A;&#x3002;</p>
+</li>
+<li><p>requeue&#xFF08;&#x91CD;&#x5165;&#x6807;&#x8BC6;&#xFF09;&#xFF1A;&#x6807;&#x8BC6;&#x8BE5;&#x6D88;&#x606F;&#x662F;&#x5426;&#x9700;&#x8981; RabbitMQ Broker &#x91CD;&#x65B0;&#x5165;&#x961F;&#x3002;<small>&#xFF08;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x88AB;&#x8BE5;&#x961F;&#x5217;&#x7684;&#x5176;&#x5B83;&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;&#xFF09;&#x3002;</small></p>
+</li>
+</ul>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x62D2;&#x7EDD;&#x7684;&#x65B9;&#x6CD5;&#x8FD8;&#x6709; <em><code>.basicNack()</code></em>&#xFF0C;&#x8868;&#x793A;&#x6279;&#x91CF;&#x62D2;&#x7EDD;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-路由-虚拟主机.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: RabbitMQ 中的路由和虚拟主机">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spring Boot 整合 RabbitMQ","level":"5.1.4.2","depth":3,"next":{"title":"其他","level":"6.1","depth":1,"ref":"","articles":[{"title":"WebMagic 爬虫","level":"6.1.1","depth":2,"path":"Part-I/99-webmagic爬虫.md","ref":"Part-I/99-webmagic爬虫.md","articles":[]}]},"previous":{"title":"RabbitMQ 中的路由和虚拟主机","level":"5.1.4.1","depth":3,"path":"Part-II/middleware/message-queue/rabbitmq/01-路由-虚拟主机.md","ref":"Part-II/middleware/message-queue/rabbitmq/01-路由-虚拟主机.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","-livereload","-lunr","-search","search-pro","expandable-chapters","splitter","code","hide-element","anchor-navigation-ex","codeblock-filename","livereload"],"pluginsConfig":{"pluginsConfig":{"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"}},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"Part-II/middleware/message-queue/rabbitmq/02-spring-boot-rabbitmq.md","mtime":"2020-02-01T11:50:38.938Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-02T10:52:43.315Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
