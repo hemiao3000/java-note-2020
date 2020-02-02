@@ -5,6 +5,7 @@ Maven <font color="#0088dd">**聚合**</font> 功能是 <font color="#0088dd">**
 即，Maven 多模块项目一定是父子项目，Maven 父子项目则不一定是多模块项目。
 
 - Maven 继承<small>（父子工程）</small>的目的为了配置文件的复用和配置信息的统一管理。
+
 - Maven 聚合<small>（多模块工程）</small>目的是项目功能上的拆分。
 
 > 例如，在 log4j1 时代，log4j 项目的『产出物』只有一个 `log4j.jar` 包。到了 log4j2 时代，log4j 项目的『产出物』就变成了两个 `log4j-api` 和 `log4j-core`。很明显，就是两部分相对独立的代码分别打成了两个包，而并不像以前那样打成一个包。
